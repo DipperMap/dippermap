@@ -1,16 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Layout } from 'antd';
+import logo from './logo.png';
 import './App.css';
-
+const { Header, Footer, Sider, Content } = Layout;
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          DipperMap 星辰地图网站导航
-        </p>
-      </header>
+      <Layout>
+        <Sider className='App-sider'>DipperMap</Sider>
+        <Layout>
+          <Header className='App-header'>DipperMap</Header>
+          <Content className='App-content'>DipperMap 星辰地图网站导航</Content>
+          <Footer className='App-footer'>DipperMap</Footer>
+        </Layout>
+      </Layout>
     </div>
   );
 }

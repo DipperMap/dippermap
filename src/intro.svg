@@ -1,0 +1,20 @@
+<svg width="1000" height="500" viewBox="0 0 1000 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M1100 500L-1000 250" stroke="#EBEFF5"/>
+<path d="M1100 500L-1000 -100" stroke="#EBEFF5"/>
+<path d="M1100 500L-1000 -500" stroke="#EBEFF5"/>
+<path d="M1100 500L-250 -500" stroke="#EBEFF5"/>
+<path d="M1100 500L300 -500" stroke="#EBEFF5"/>
+<path d="M1100 500L750 -500" stroke="#EBEFF5"/>
+<path d="M1750 0L750 500" stroke="#EBEFF5"/>
+<path d="M1500 0L500 500" stroke="#EBEFF5"/>
+<path d="M1150 0L150 500" stroke="#EBEFF5"/>
+<path d="M700 0L-300 500" stroke="#EBEFF5"/>
+<path d="M150 0L-850 500" stroke="#EBEFF5"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="1000" height="500" fill="white"/>
+</clipPath>
+</defs>
+</svg>
