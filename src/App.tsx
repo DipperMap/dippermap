@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          DipperMap
+          DipperMap 星辰地图网站导航
         </p>
       </header>
     </div>
