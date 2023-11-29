@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  overflow: auto;
+  scroll-behavior: smooth;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -13,52 +15,54 @@
   }
 }
 
-
 .App-link {
   color: #61dafb;
 }
 .App-sider {
-  text-align: center;
-  line-height: 120px;
   color: #fff;
-  background: #1D2531!important;
+  background: #1d2531 !important;
+  width: 280px !important;
+  max-width: 280px !important;
+  min-width: 235px !important;
+  overflow: auto;
   height: 100vh;
-  width: 240px;
-
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
 }
 .App-content {
-  text-align: center;
   min-height: 120px;
   line-height: 120px;
-  color: #fff;
-  background-color: #108ee9;
-  filter: grayscale(.8);
+  filter: grayscale(0.8);
   padding: 0;
-  position: relative;
-  background-color: #F7F9FC;
+  background-color: #f7f9fc;
   background-attachment: fixed;
   background-image: url(./intro.svg);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   transition: margin-left 0.4s;
-  
 }
 .App-footer {
   text-align: center;
-  color: #969EAA;
-  background-color: #FFFFFF;
-  
+  color: #969eaa;
+  background-color: #ffffff;
 }
-
 
 .App-header {
   text-align: center;
-  color: #fff;
-  height: 64;
-  padding-inline: 50;
+  height: 64px;
+  padding-inline: 50px;
   line-height: 64px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 /* @keyframes App-logo-spin {
@@ -69,4 +73,3 @@
     transform: rotate(360deg);
   }
 } */
-
