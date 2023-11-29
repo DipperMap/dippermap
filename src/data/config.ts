@@ -1,6 +1,6 @@
 export type toolsType = 'tool' | 'data' | 'tool' | 'DataBase' | 'Map Server';
 export interface IItem {
-    logo: string;
+    icon: string;
     name: string;
     en_name: string;
     description: string;
@@ -9,6 +9,7 @@ export interface IItem {
     tags: string[];
     github?: string;
     order?: number;
+    favorite?: boolean
 }
 export interface IGroup {
     icon: string;
