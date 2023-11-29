@@ -17,7 +17,12 @@ export const AppCard = () => {
             <div className="card">
               {siteConfig[item].children.map((val) => {
                 return (
-                  <div className="card-item">
+                  <div
+                    className="card-item"
+                    onClick={() => {
+                      window.open(val.site_url);
+                    }}
+                  >
                     <div>
                       <Avatar
                         shape="square"
