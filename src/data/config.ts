@@ -26,7 +26,7 @@ export const siteConfig: IConfig = {
         name: '工具',
         en_name: 'Tools',
         children: [{
-            logo: 'https://www.qgis.org/en/_images/logo_qgis_org.png',
+            icon: 'https://www.qgis.org/en/_images/logo_qgis_org.png',
             name: 'QGIS',
             en_name: 'QGIS',
             description: 'QGIS is a free and open-source cross-platform desktop geographic information system (GIS) application that supports viewing, editing, and analysis of geospatial data.',
@@ -35,7 +35,7 @@ export const siteConfig: IConfig = {
             order: 0,
             tags: ['GIS', 'Desktop']
         }, {
-            logo: 'https://mdn.alipayobjects.com/huamei_k6sfo0/afts/img/A*RSdESJd70P8AAAAAAAAAAAAADjWqAQ/original',
+            icon: 'https://mdn.alipayobjects.com/huamei_k6sfo0/afts/img/A*RSdESJd70P8AAAAAAAAAAAAADjWqAQ/original',
             name: 'L7Editor',
             en_name: 'L7Editor',
             description: '多底图地理绘制工具',
