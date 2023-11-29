@@ -35,7 +35,7 @@
 .App-content {
   min-height: 120px;
   line-height: 120px;
-  filter: grayscale(0.8);
+/*   filter: grayscale(0.8); */
   padding: 0;
   background-color: #f7f9fc;
   background-attachment: fixed;
