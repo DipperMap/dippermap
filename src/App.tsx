@@ -1,20 +1,22 @@
-import React from 'react';
-import { Layout } from 'antd';
-import logo from './logo.png';
-import './App.css';
+import { Layout } from "antd";
+import "./App.css";
+import { AppCard } from "./components/app-content";
+import { AppSider } from "./components/app-sider";
 const { Header, Footer, Sider, Content } = Layout;
 function App() {
   return (
-    <div className="App">
-      <Layout>
-        <Sider className='App-sider'>DipperMap</Sider>
-        <Layout>
-          <Header className='App-header'>DipperMap</Header>
-          <Content className='App-content'>DipperMap 星辰地图网站导航</Content>
-          <Footer className='App-footer'>DipperMap</Footer>
-        </Layout>
+    <Layout className="App">
+      <Sider className="App-sider">
+        <AppSider />
+      </Sider>
+      <Layout style={{ marginLeft: 270 }}>
+        <Header className="App-header">DipperMap</Header>
+        <Content className="App-content">
+          <AppCard />
+        </Content>
+        <Footer className="App-footer">DipperMap</Footer>
       </Layout>
-    </div>
+    </Layout>
   );
 }
 
