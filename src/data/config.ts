@@ -27,7 +27,7 @@ export const siteConfig: IConfig = {
     en_name: "Tools",
     children: [
       {
-        icon: "https://www.qgis.org/en/_images/logo_qgis_org.png",
+        icon: "https://www.qgis.org/en/_static/logo.png",
         name: "QGIS",
         en_name: "QGIS",
         description:
