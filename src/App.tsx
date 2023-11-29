@@ -9,7 +9,7 @@ function App() {
       <Sider className="App-sider">
         <AppSider />
       </Sider>
-      <Layout style={{ marginLeft: 270}}>
+      <Layout style={{ marginLeft: 270 }}>
         <Header className="App-header">DipperMap</Header>
         <Content className="App-content">
           <AppCard />
