@@ -29,12 +29,12 @@ body:
         例如：L7 Editor is a visual geographic data editor based on L7.
     validations:
       required: false
-   - type: input
+  - type: input
     id: github
     attributes:
       label: 站点 Github 地址
       description: |
-       站点 Github 地址
+        站点 Github 地址
       placeholder: |
         https://github.com/antvis/L7Editor
     validations:
