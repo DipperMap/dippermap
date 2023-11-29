@@ -1,6 +1,7 @@
 .App {
-  overflow: scroll;
+  overflow: auto;
   scroll-behavior: smooth;
+  min-height: 100vh;
 }
 
 .App-logo {
