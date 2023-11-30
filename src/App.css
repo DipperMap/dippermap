@@ -21,25 +21,33 @@
 .App-sider {
   color: #fff;
   background: #1d2531 !important;
-  width: 280px !important;
-  max-width: 280px !important;
-  min-width: 235px !important;
   overflow: auto;
   height: 100vh;
   position: fixed !important;
-  left: 0;
+  left: 0px;
   top: 0;
   bottom: 0;
   z-index: 2;
 }
+
+.siderWidth {
+  width: 280px !important;
+  max-width: 280px !important;
+  min-width: 235px !important;
+}
+.retractSiderWidth {
+  width: 0px !important;
+  max-width: 280px !important;
+  min-width: 0px !important;
+}
 .App-content {
   min-height: 120px;
   line-height: 120px;
-  filter: grayscale(0.8);
+  /*   filter: grayscale(0.8); */
   padding: 0;
   background-color: #f7f9fc;
   background-attachment: fixed;
-  background-image: url(./intro.svg);
+  background-image: url(./assets/intro.svg);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 100% 100%;

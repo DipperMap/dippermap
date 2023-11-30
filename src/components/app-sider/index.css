@@ -1,6 +1,6 @@
 .logo {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.02);
   text-align: center;
 }
 

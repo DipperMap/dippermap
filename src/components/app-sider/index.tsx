@@ -1,4 +1,4 @@
-import logo from "../../logo.png";
+import logo from "../../assets/logo.png";
 import { IGroup, siteConfig } from "../../data/config";
 import "./index.css";
 import { Space, Tag } from "antd";

@@ -1,6 +1,16 @@
-name: '在线工具站点提交'
+name: 'GIS工具 提交'
 description: 提交一个常用的 GIS 站点，如数据处理，数据可视化，数据分析等工具。
 body:
+  - type: input
+    id: site_name
+    attributes:
+      label: 站点名称
+      description: |
+        输入站点名称
+      placeholder: |
+        https://l7editor.antv.antgroup.com/ 
+    validations:
+      required: true
   - type: input
     id: site_url
     attributes:
@@ -17,7 +27,7 @@ body:
       label: 站点简介
       description: 清晰的描述站点解决什么问题
       placeholder: |
-        例如：L7 Editor 是一个基于 L7 的可视化地理数据编辑器。
+        例如: L7 Editor 是一个基于 L7 的可视化地理数据编辑器。
     validations:
       required: true
   - type: textarea
@@ -26,7 +36,7 @@ body:
       label: 站点英文介绍
       description: 站点英文的描述。
       placeholder: |
-        例如：L7 Editor is a visual geographic data editor based on L7.
+        例如: L7 Editor is a visual geographic data editor based on L7.
     validations:
       required: false
   - type: input
@@ -43,6 +53,6 @@ body:
     id: logo
     attributes:
       label: 图标 
-      description: 站点logo或icon 图标,url 地址 或者复制图片
+      description: 站点 logo 或 icon 图标, URL 地址或者复制图片
       placeholder: |
         可以将你的图片拖拽到此处↓
