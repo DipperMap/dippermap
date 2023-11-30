@@ -13,22 +13,10 @@
 .card-item {
   border-radius: 8px 24px 8px 8px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
   background-color: #f7f9fc;
   padding: 16px 12px 16px 16px;
   margin-bottom: 16px;
-  /* box-sizing: border-box;
-
-  transition: 0.3s all linear;
-  overflow: hidden;
-  padding: 16px 12px 16px 16px;
-  margin-bottom: 16px;
-  border-radius: 8px 24px 8px 8px;
-
   display: block;
-  display: flex;
-  align-items: center; */
 }
 
 .card-item:hover {
@@ -39,8 +27,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-left: 10px;
-  width: 150px;
+  margin-left: 55px;
   cursor: pointer;
 }
 
