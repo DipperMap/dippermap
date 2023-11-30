@@ -10,6 +10,10 @@
 .card {
   display: flex;
 }
+
+.card-col {
+  width: 100%;
+}
 .card-item {
   border-radius: 8px 24px 8px 8px;
   cursor: pointer;
