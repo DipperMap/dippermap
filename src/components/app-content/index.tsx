@@ -1,27 +1,31 @@
-import { siteConfig } from "../../data/config";
+
+import { SitesConfig } from '../../data/sites'
 import { Avatar, Row, Card, Col, Tooltip } from "antd";
 import "./index.css";
+import { IGroup } from "../../data/types";
 
 export const AppCard = () => {
+  const siteConfig = SitesConfig['main'];
   return (
     <div
       style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
     >
-      {Object.keys(siteConfig).map((item) => {
+      {siteConfig.groups.map((group:IGroup) => {
+        const { name, children} = group;
         return (
           <Card
-            title={siteConfig[item].name}
+            title={name}
             className="item-content"
-            id={siteConfig[item].name}
-            key={siteConfig[item].name}
+            id={name}
+            key={name}
           >
             <Row className="card" gutter={[16, 16]}>
-              {siteConfig[item].children.map((val) => {
+              {children.map((val) => {
                 return (
                   <Col
-                    md={18}
-                    lg={12}
-                    xl={12}
+                    md={16}
+                    lg={8}
+                    xl={6}
                     xxl={4}
                     className="card-col"
                     onClick={() => {
