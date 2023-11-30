@@ -1,9 +1,11 @@
 import logo from "../../assets/logo.png";
-import { IGroup, siteConfig } from "../../data/config";
+import { IGroup,} from "../../data/types";
+import { SitesConfig } from '../../data/sites'
 import "./index.css";
 import { Space, Tag } from "antd";
 
 export const AppSider = () => {
+  const siteConfig = SitesConfig['main'];
   const tagClick = (item: IGroup) => {
     const element = document.querySelector(`#${item.name}`);
     if (element) {
@@ -16,14 +18,14 @@ export const AppSider = () => {
         <img width={150} src={logo} alt="" />
       </div>
       <div className="all-tag">
-        {Object.keys(siteConfig).map((item) => {
+        {siteConfig.groups.map((group: IGroup) => {
           return (
             <Space>
               <Tag
                 className="tag-item"
-                onClick={() => tagClick(siteConfig[item])}
+                onClick={() => tagClick(group)}
               >
-                {siteConfig[item].name}
+                {group.name}
               </Tag>
             </Space>
           );
