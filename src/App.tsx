@@ -2,9 +2,9 @@ import { Layout, Button } from "antd";
 import "./App.css";
 import { AppCard } from "./components/app-content";
 import { AppSider } from "./components/app-sider";
-import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import classNames from "classnames";
+import { AppHeader } from "./components/app-header";
 const { Header, Footer, Sider, Content } = Layout;
 function App() {
   const [collapsed, setCollapsed] = useState(false);
@@ -20,9 +20,7 @@ function App() {
       </Sider>
       <Layout style={{ marginLeft: collapsed ? 0 : 270 }}>
         <Header className="App-header">
-          <div onClick={() => setCollapsed(!collapsed)}>
-            {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-          </div>
+          <AppHeader collapsed={collapsed} setCollapsed={setCollapsed} />
         </Header>
         <Content className="App-content">
           <AppCard />

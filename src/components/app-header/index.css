@@ -1,0 +1,27 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.weChat {
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.weChatText {
+  text-align: center;
+  padding: 12px 12px 6px 12px;
+  border-bottom: solid 1px #0000003b;
+  color: #000;
+}
+
+.gitHub {
+  cursor: pointer;
+}
