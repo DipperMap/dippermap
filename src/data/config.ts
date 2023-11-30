@@ -110,16 +110,6 @@ export const siteConfig: IConfig = {
         order: 2,
         tags: ["GIS", "Web", "Data","Visualization"],
       },
-      {
-        icon: "https://private-user-images.githubusercontent.com/24500520/286623076-96b00efe-d3db-4921-b7fb-5b35ed86477c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDEzNTczNjAsIm5iZiI6MTcwMTM1NzA2MCwicGF0aCI6Ii8yNDUwMDUyMC8yODY2MjMwNzYtOTZiMDBlZmUtZDNkYi00OTIxLWI3ZmItNWIzNWVkODY0NzdjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzExMzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMTMwVDE1MTEwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRiM2FmZTUyZDc3MGIzN2Y4YmE2NzdjMzA5OGEwMjJmMTk3ZWNhYmM3MzI5OTEwNjRmNTAxOWU5YzcwMGFjMmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.zDIRtNfx33WaAkTDC78pSfxh1c5pTboRSyAi9kv-iOA",
-        name: "超图-GIS在线工具",
-        en_name: "SuperMap-GIS online toolbox",
-        description: "超图的GIS在线工具平台。提供坐标，数据格式转换；地理编码；在线切图等功能。",
-        en_description: "SuperMap's GIS online tool platform. Provides functions such as coordinates and data format conversion, geocoding, and online map cutting.",
-        site_url: "https://www.supermapol.com/gistools/home",
-        order: 2,
-        tags: ["GIS", "Web"],
-      },
     ],
   },
 };
