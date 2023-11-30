@@ -5,7 +5,7 @@ export const DataCollaboration: IGroup = {
     order: 2,
     en_name: 'Data Collaboration',
     children: [{
-        icon: "",
+        icon: "https://maptable.com/favicon.ico",
         name: "Maptable",
         en_name: "Maptable",
         description: "空间数据协同工具",

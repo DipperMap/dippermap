@@ -1,7 +1,7 @@
 import { IGroup } from '../../../types'
 export const MapColor: IGroup = {
     icon: '',
-    name: '地图配置',
+    name: '地图颜色',
     en_name: 'map color',
     order: 2,
     children: [

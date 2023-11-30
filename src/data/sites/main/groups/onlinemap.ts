@@ -6,6 +6,16 @@ export const OnlineMap: IGroup = {
     en_name: 'onlinemap',
     children: [
         {
+            icon: "https://www.tianditu.gov.cn/favicon.ico",
+            name: "天地图",
+            en_name: "Tianditu",
+            description: "天地图",
+            en_description: "Tianditu",
+            site_url: "https://www.tianditu.gov.cn/",
+            order: 2,
+            tags: ["GIS", "Web", "Data"],
+        },
+        {
             icon: "https://www.baidu.com/favicon.ico",
             name: "百度地图",
             en_name: "Baidu Map",
