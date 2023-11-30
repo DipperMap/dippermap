@@ -23,7 +23,7 @@ export const AppCard = () => {
                     lg={12}
                     xl={12}
                     xxl={4}
-                    className="card-row"
+                    className="card-col"
                     onClick={() => {
                       window.open(val.site_url);
                     }}

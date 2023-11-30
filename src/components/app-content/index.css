@@ -10,6 +10,10 @@
 .card {
   display: flex;
 }
+
+.card-col {
+  width: 100%;
+}
 .card-item {
   border-radius: 8px 24px 8px 8px;
   cursor: pointer;
@@ -40,6 +44,11 @@
   margin: 0 auto;
   float: left;
   box-shadow: 0 4px 8px 0 #1d253112;
+  color: #000;
+}
+
+.link-img span {
+  line-height: 26px !important;
 }
 
 .card-name {
