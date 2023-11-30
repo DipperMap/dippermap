@@ -13,6 +13,7 @@ export const AppCard = () => {
             title={siteConfig[item].name}
             className="item-content"
             id={siteConfig[item].name}
+            key={siteConfig[item].name}
           >
             <div className="card">
               {siteConfig[item].children.map((val) => {
@@ -22,6 +23,7 @@ export const AppCard = () => {
                     onClick={() => {
                       window.open(val.site_url);
                     }}
+                    key={val.site_url}
                   >
                     <div>
                       <Avatar
