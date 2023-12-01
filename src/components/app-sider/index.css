@@ -19,6 +19,15 @@
   margin-bottom: 10px;
 }
 
-.tag-item:hover{
-    background-color: #d8d8d84e;
+.tag {
+  background-color: #ffffff10;
+  color: #fff;
+}
+.selected-tag{
+  background-color: #fff;
+  color: #000;
+}
+
+.tag-item:hover {
+  background-color: #d8d8d84e;
 }

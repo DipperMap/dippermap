@@ -5,7 +5,7 @@ import {
   GithubOutlined,
 } from "@ant-design/icons";
 import "./index.css";
-import { Tooltip, Divider } from "antd";
+import { Tooltip } from "antd";
 import weChat from "../../assets/weixin.jpeg";
 
 type AppHeaderProps = {
