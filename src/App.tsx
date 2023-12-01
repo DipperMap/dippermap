@@ -5,6 +5,7 @@ import { AppSider } from "./components/app-sider";
 import { useState } from "react";
 import classNames from "classnames";
 import { AppHeader } from "./components/app-header";
+import { AppSearch } from "./components/app-search";
 
 const { Header, Footer, Sider, Content } = Layout;
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <AppHeader collapsed={collapsed} setCollapsed={setCollapsed} />
         </Header>
         <Content className="App-content">
+          <AppSearch />
           <AppCard />
         </Content>
         <Footer className="App-footer">DipperMap</Footer>
