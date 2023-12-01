@@ -8,6 +8,8 @@ import { DataProcess } from "./groups/data_process";
 import { DataSource } from "./groups/data_source";
 import { GeoCoding } from "./groups/geocoding";
 import { OnlineMap } from "./groups/onlinemap";
+import { RSPlatform } from "./groups/rs_platform";
+
 import { Visulization } from "./groups/visualization";
 
 
@@ -25,6 +27,7 @@ export const MainConfig: ISiteConfig = {
         DataCollaboration,
         OnlineMap,
         GeoCoding,
-        DataSource
+        DataSource,
+        RSPlatform
     ].sort((a, b) => a.order - b.order),
 };

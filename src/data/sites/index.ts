@@ -1,5 +1,7 @@
 import { ISiteConfig } from '../types'
 import { MainConfig } from './main'
+import { Tech } from './tech'
 export const SitesConfig:{[key:string]:ISiteConfig} = {
-    main:MainConfig
+    main:MainConfig,
+    tech:Tech
 }
