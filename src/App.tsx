@@ -1,40 +1,40 @@
-import { Layout } from "antd";
-import "./App.css";
-import { AppCard } from "./components/app-content";
-import { AppSider } from "./components/app-sider";
-import { useState, useEffect } from "react";
-import classNames from "classnames";
-import { AppHeader } from "./components/app-header";
-import { AppSearch } from "./components/app-search";
+import { Layout } from 'antd'
+import './App.css'
+import { AppCard } from './components/app-content'
+import { AppSider } from './components/app-sider'
+import { useState, useEffect } from 'react'
+import classNames from 'classnames'
+import { AppHeader } from './components/app-header'
+import { AppSearch } from './components/app-search'
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Footer, Sider, Content } = Layout
 function App() {
-  const [collapsed, setCollapsed] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [collapsed, setCollapsed] = useState(false)
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
   useEffect(() => {
     if (window.innerWidth <= 767) {
-      setCollapsed(true);
+      setCollapsed(true)
     }
     const handleResize = () => {
-      setScreenWidth(window.innerWidth);
-    };
+      setScreenWidth(window.innerWidth)
+    }
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize)
 
     return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
   return (
     <Layout className="App">
       <Sider
         className={classNames([
-          "App-sider",
+          'App-sider',
           collapsed
             ? window.innerWidth <= 767
-              ? "retractSiderHeight"
-              : "retractSiderWidth"
-            : "siderWidth",
+              ? 'retractSiderHeight'
+              : 'retractSiderWidth'
+            : 'siderWidth'
         ])}
       >
         <AppSider
@@ -46,7 +46,7 @@ function App() {
       <Layout
         style={{
           marginLeft: collapsed ? 0 : screenWidth <= 767 ? 0 : 270,
-          marginTop: screenWidth <= 767 ? 64 : 0,
+          marginTop: screenWidth <= 767 ? 64 : 0
         }}
       >
         <Header className="App-header">
@@ -63,7 +63,7 @@ function App() {
         <Footer className="App-footer">DipperMap</Footer>
       </Layout>
     </Layout>
-  );
+  )
 }
 
-export default App;
+export default App
