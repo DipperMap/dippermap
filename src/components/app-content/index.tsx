@@ -1,5 +1,6 @@
 import { SitesConfig } from "../../data/sites";
 import { Avatar, Row, Card, Col, Tooltip, FloatButton } from "antd";
+import { FileTextOutlined } from "@ant-design/icons";
 import "./index.css";
 import { IGroup } from "../../data/types";
 
@@ -54,6 +55,7 @@ export const AppCard = () => {
       })}
       <FloatButton
         tooltip={<div>新站点提报</div>}
+        icon={<FileTextOutlined style={{ color: "#1677ff" }} />}
         onClick={() => {
           window.open(
             "https://www.yuque.com/forms/share/0df1d286-b6c9-4412-9605-504af8cfb21f"
