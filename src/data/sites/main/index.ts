@@ -9,9 +9,8 @@ import { DataSource } from "./groups/data_source";
 import { GeoCoding } from "./groups/geocoding";
 import { OnlineMap } from "./groups/onlinemap";
 import { RSPlatform } from "./groups/rs_platform";
-
+import { GeospatialAnalysis } from "./groups/geospatial_analysis";
 import { Visulization } from "./groups/visualization";
-
 
 
 export const MainConfig: ISiteConfig = {
@@ -28,6 +27,7 @@ export const MainConfig: ISiteConfig = {
         OnlineMap,
         GeoCoding,
         DataSource,
-        RSPlatform
+        RSPlatform,
+        GeospatialAnalysis
     ].sort((a, b) => a.order - b.order),
 };
