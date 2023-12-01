@@ -73,6 +73,35 @@
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .App-sider {
+    color: #fff;
+    background: #1d2531 !important;
+    overflow: auto;
+    /* height: 100vh; */
+    height: 64px;
+    /* width: 100% !important; */
+    position: fixed !important;
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .siderWidth {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .retractSiderHeight {
+    height: 300px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
+}
+
 /* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
