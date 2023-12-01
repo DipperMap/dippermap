@@ -16,5 +16,16 @@ export const DataFormatConvert: IGroup = {
             order: 2,
             tags: ["GIS", "Web", "Data"],
         },
+        {
+            "icon": "https://mygeodata.cloud/favicon.ico",
+            "name": "MyGeodata Cloud Converter",
+            "en_name": "MyGeodata Cloud Converter",
+            "description": "在线地理数据格式转换工具",
+            "en_description": "Online geospatial data format conversion tool",
+            "site_url": "https://mygeodata.cloud/converter/",
+            "order": 5,
+            "tags": ["Geospatial Data", "Converter", "GIS"]
+          }
+          
     ]
 }
