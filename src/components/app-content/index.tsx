@@ -3,6 +3,7 @@ import { Avatar, Row, Card, Col, Tooltip, FloatButton } from "antd";
 import { FileTextOutlined } from "@ant-design/icons";
 import "./index.css";
 import { IGroup } from "../../data/types";
+import { IconFont } from "../../constants";
 
 export const AppCard = () => {
   const siteConfig = SitesConfig["main"];
@@ -11,9 +12,23 @@ export const AppCard = () => {
       style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
     >
       {siteConfig.groups.map((group: IGroup) => {
-        const { name, children } = group;
+        const { name, children, icon } = group;
         return (
-          <Card title={name} className="item-content" id={name} key={name}>
+          <Card
+            title={
+              <div style={{ display: "flex", alignItems: "center" }}>
+                {icon && (
+                  <div className="titleIcon">
+                    <IconFont type={icon} />
+                  </div>
+                )}
+                <div>{name}</div>
+              </div>
+            }
+            className="item-content"
+            id={name}
+            key={name}
+          >
             <Row className="card" gutter={[16, 16]}>
               {children.map((val) => {
                 return (

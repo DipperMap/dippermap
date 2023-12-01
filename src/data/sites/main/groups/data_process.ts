@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const DataProcess: IGroup = {
-    icon: '',
+    icon: 'icon-a-shujuchuli1',
     name: '数据处理',
     en_name: 'data process',
     order: 2,

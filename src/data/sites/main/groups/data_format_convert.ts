@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const DataFormatConvert: IGroup = {
-    icon: '',
+    icon: 'icon-shujuzhuanhuan',
     name: '数据转换',
     order: 2,
     en_name: 'Data format conversion',

@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const RSPlatform: IGroup = {
-    icon: '',
+    icon: 'icon-yaogancehui',
     name: '遥感平台',
     en_name: 'RS Platform',
     order: 2,
