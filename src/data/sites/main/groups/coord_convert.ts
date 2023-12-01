@@ -1,7 +1,7 @@
 // 坐标转换工具
 import { IGroup } from '../../../types'
 export const CoordConvert: IGroup = {
-    icon: '',
+    icon: 'icon-tool_zuobiaozhuanhuan',
     name: '坐标转换',
     order: 2,
     en_name: 'Coord',

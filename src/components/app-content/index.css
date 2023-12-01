@@ -74,3 +74,8 @@
   overflow: hidden;
   white-space: nowrap;
 }
+.titleIcon {
+  margin-right: 10px;
+  color: #000;
+  font-size: 20px;
+}

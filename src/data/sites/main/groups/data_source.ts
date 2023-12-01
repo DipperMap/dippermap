@@ -1,7 +1,7 @@
 // 数据可视化
 import { IGroup } from '../../../types'
 export const DataSource: IGroup = {
-    icon: '',
+    icon: 'icon-shujuyuanguanli',
     name: '数据源',
     en_name: 'data source',
     order: 2,

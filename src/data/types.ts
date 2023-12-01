@@ -12,7 +12,7 @@ export interface IItem {
   favorite?: boolean;
 }
 export interface IGroup {
-  icon?: string;
+  icon?: any;
   name: string;
   en_name: string;
   order: number;
