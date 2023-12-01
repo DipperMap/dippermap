@@ -1,8 +1,8 @@
 import { IGroup } from '../../../types'
 export const GeoCoding: IGroup = {
     icon: '',
-    name: '地理编码',
-    en_name: 'geocoding',
+    name: '空间数据库',
+    en_name: 'spatial_database',
     order: 2,
     children: []
 

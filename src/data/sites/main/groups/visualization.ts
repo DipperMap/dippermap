@@ -25,5 +25,16 @@ export const Visulization: IGroup = {
         order: 2,
         tags: ["GIS", "Web", "Data"],
     },
+    {
+        "icon": "https://app.datawrapper.de/favicon.ico",
+        "name": "Datawrapper",
+        "en_name": "Datawrapper",
+        "description": "Datawrapper 是一个在线数据可视化工具，帮助用户创建各种图表和地图。",
+        "en_description": "Datawrapper is an online data visualization tool that helps users create various charts and maps.",
+        "site_url": "https://app.datawrapper.de/",
+        "order": 11,
+        "tags": ["Data Visualization", "Charts", "Maps"]
+      }
+      
 ]
 }
