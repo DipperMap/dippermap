@@ -10,11 +10,22 @@ export const DataSource: IGroup = {
         name: "DataV.GeoAtlas",
         en_name: "DataV.GeoAtlas",
         description:
-          "由阿里云DataV数据可视化团队出品，多年深耕数据可视化领域，数据大屏业务开拓者和领航者。致力用震撼而清晰的视觉语言，让更多人读懂大数据，受惠数据驱动的决策方式。",
+          "行政区数据下载",
         en_description:
           "A tool for topologically aware shape simplification. Reads and writes Shapefile, GeoJSON and TopoJSON formats.",
         site_url: "https://datav.aliyun.com/portal/school/atlas/area_selector",
         order: 2,
         tags: "阿里云,DataV,数据可视化,GeoAtlas,数字孪生,GIS".split(","),
-      }]
+      },{
+        "icon": "https://mdn.alipayobjects.com/huamei_qa8qxu/afts/img/A*uQbXRLw_Q2UAAAAAAAAAAAAADmJ7AQ/original",
+        "name": "行政区划数据下载",
+        "en_name": "",
+        "description": "一站式行政区划数据下载、应用平台",
+        "en_description": "L7 AntV geocoding tool to retrieve latitude and longitude by address",
+        "site_url": "https://l7.antv.antgroup.com/custom/tools",
+        "order": 4,
+        "tags": ["Geocoding", "Maps", "Location", "AntV"]
+      }
+      
+    ]
 }
