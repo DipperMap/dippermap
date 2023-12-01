@@ -4,8 +4,25 @@
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .logo {
+    padding: 14px 20px;
+    background: rgba(255, 255, 255, 0.02);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .all-tag {
+    padding: 12px 24px;
+    overflow: auto;
+    height: 150px;
+  }
+}
+
 .all-tag {
   padding: 12px 24px;
+  overflow-y: auto;
 }
 
 .tag-item {
@@ -23,7 +40,7 @@
   background-color: #ffffff10;
   color: #fff;
 }
-.selected-tag{
+.selected-tag {
   background-color: #fff;
   color: #000;
 }

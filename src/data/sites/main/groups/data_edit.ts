@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const DataEdit: IGroup = {
-    icon: '',
+    icon: 'icon-shujubianji',
     name: '数据编辑',
     en_name: 'data edit',
     order: 0,

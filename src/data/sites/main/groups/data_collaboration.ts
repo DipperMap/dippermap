@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const DataCollaboration: IGroup = {
-    icon: '',
+    icon: 'icon-shujuxietong',
     name: '数据协同',
     order: 2,
     en_name: 'Data Collaboration',

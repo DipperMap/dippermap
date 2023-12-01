@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const OnlineMap: IGroup = {
-    icon: '',
+    icon: 'icon-a-zaixianditu2',
     name: '在线地图',
     order: 2,
     en_name: 'onlinemap',

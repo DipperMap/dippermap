@@ -5,8 +5,19 @@ import { SitesConfig } from "../../data/sites";
 import "./index.css";
 import { Space, Tag } from "antd";
 import classNames from "classnames";
+import { AppstoreAddOutlined, CloseOutlined } from "@ant-design/icons";
 
-export const AppSider = () => {
+type AppSilderPopup = {
+  collapsed: boolean;
+  screenWidth: number;
+  setCollapsed: (value: boolean) => void;
+};
+
+export const AppSider: React.FC<AppSilderPopup> = ({
+  collapsed,
+  screenWidth,
+  setCollapsed,
+}) => {
   const [selectedTag, setSelectedTag] = useState<string | undefined>(undefined);
   const siteConfig = SitesConfig["main"];
   const tagClick = (item: IGroup) => {
@@ -20,6 +31,15 @@ export const AppSider = () => {
     <div>
       <div className="logo">
         <img width={150} src={logo} alt="" />
+        <div
+          onClick={() => {
+            setCollapsed(!collapsed);
+          }}
+        >
+          {screenWidth <= 767 && (
+            <div>{collapsed ? <CloseOutlined /> : <AppstoreAddOutlined />}</div>
+          )}
+        </div>
       </div>
       <div className="all-tag">
         {siteConfig.groups.map((group: IGroup) => {

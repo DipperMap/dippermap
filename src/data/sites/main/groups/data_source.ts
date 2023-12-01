@@ -1,10 +1,10 @@
 // 数据可视化
 import { IGroup } from '../../../types'
 export const DataSource: IGroup = {
-    icon: '',
+    icon: 'icon-shujuyuanguanli',
     name: '数据源',
     en_name: 'data source',
-    order: 2,
+    order: 1.1,
     children: [{
         icon: "https://img.alicdn.com/imgextra/i3/O1CN01NQARus1gyEAmmQ9T0_!!6000000004210-0-tps-670-670.jpg",
         name: "DataV.GeoAtlas",

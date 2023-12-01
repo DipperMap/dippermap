@@ -1,7 +1,7 @@
 // 数据可视化
 import { IGroup } from '../../../types'
 export const Visulization: IGroup = {
-    icon: '',
+    icon: 'icon-shujukeshihua1',
     name: '数据可视化',
     en_name: 'Coord',
     order: 1,
