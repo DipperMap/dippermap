@@ -19,7 +19,7 @@ export const Visulization: IGroup = {
       tags: ['GIS', 'Web', 'Data']
     },
     {
-      icon: 'https://kepler.gl/favicon.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*961pR7cnTXQAAAAAAAAAAAAADrZ5AQ/original',
       name: 'kepler.gl',
       en_name: 'kepler.gl',
       description:

@@ -6,7 +6,7 @@ export const Weather: IGroup = {
   order: 2,
   children: [
     {
-      icon: 'https://www.windy.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*YoLURLhIs0wAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Windy',
       en_name: 'Windy',
       description: '全球天气预报',
@@ -16,7 +16,7 @@ export const Weather: IGroup = {
       tags: ['GIS', 'Web', 'Data']
     },
     {
-      icon: 'https://caiyunapp.com/imgs/logo/logo-website.png',
+      icon: 'https://caiyunapp.com/imgs/logo.png',
       name: '彩云天气',
       en_name: 'Caiyunapp',
       description: '天气预报平台，提供api',
