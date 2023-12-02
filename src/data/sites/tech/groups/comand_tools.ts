@@ -1,8 +1,8 @@
 import { IGroup } from '../../../types'
 export const GeoCoding: IGroup = {
-  icon: 'icon-dilibianma',
-  name: '地理编码',
-  en_name: 'geocoding',
+  icon: '',
+  name: '命令行工具',
+  en_name: 'comand_tools',
   order: 2,
   children: []
 }

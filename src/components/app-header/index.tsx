@@ -2,30 +2,34 @@ import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   WechatOutlined,
-  GithubOutlined,
-} from "@ant-design/icons";
-import "./index.css";
-import { Tooltip, Divider } from "antd";
-import weChat from "../../assets/weixin.jpeg";
+  GithubOutlined
+} from '@ant-design/icons'
+import './index.css'
+import { Tooltip } from 'antd'
+import weChat from '../../assets/weixin.jpeg'
 
 type AppHeaderProps = {
-  collapsed: boolean;
-  setCollapsed: (val: boolean) => void;
-};
+  collapsed: boolean
+  setCollapsed: (val: boolean) => void
+  screenWidth: number
+}
 
 export const AppHeader: React.FC<AppHeaderProps> = ({
   setCollapsed,
   collapsed,
+  screenWidth
 }) => {
   return (
     <div className="app-header">
       <div onClick={() => setCollapsed(!collapsed)}>
-        {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+        {screenWidth > 767 && (
+          <div>{collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}</div>
+        )}
       </div>
       <div className="header-right">
         <div className="weChat">
           <Tooltip
-            color={"#fff"}
+            color={'#fff'}
             placement="bottom"
             title={
               <div>
@@ -47,11 +51,11 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
         <div className="gitHub">
           <GithubOutlined
             onClick={() => {
-              window.open("https://github.com/DipperMap/dippermap");
+              window.open('https://github.com/DipperMap/dippermap')
             }}
           />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

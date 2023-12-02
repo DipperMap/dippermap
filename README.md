@@ -12,11 +12,9 @@ Inspired by [larkmap](https://larkmap.com/)
 
 [点击提交站点信息](https://github.com/DipperMap/dippermap/issues/new?assignees=&labels=&projects=&template=site_report.yml)
 
-#### 方式二 提交 PR 
+#### 方式二 提交 PR
 
 直接修改站点配置文件，通过 PR 的方式，合并代码，代码合并后站点生效
-
-[点击修改配置文件](https://github.com/DipperMap/dippermap/edit/main/src/data/config.ts)
 
 ## 本地开发
 
@@ -24,12 +22,16 @@ Inspired by [larkmap](https://larkmap.com/)
 
 ```bash
 git clone  https://github.com/DipperMap/dippermap.git
-````
+```
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### `npm commit`
+
+Submit your code this way.
 
 ## 👬 Contributors
 

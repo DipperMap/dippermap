@@ -1,24 +1,24 @@
 .searchWrapper {
-    width: 95%;
-    margin: 30px auto 0;
+  width: 95%;
+  margin: 30px auto 0;
 }
 
 .searchBox {
-    line-height: normal;
+  line-height: normal;
 }
 
 .searchBox .ant-btn {
-    border: none;
-    border-radius: 8px 16px 0px 0px;
-    background-color: #DDE3EC;
+  border: none;
+  border-radius: 8px 16px 0px 0px;
+  background-color: #dde3ec;
 }
 
 .searchBox .ant-btn:hover,
 .searchBox .ant-btn.activeSearch {
-    color: #fff !important;
-    background-color: #38404D !important;
+  color: #fff !important;
+  background-color: #38404d !important;
 }
 
 .searchBox .ant-input.ant-input-lg {
-    border-top-left-radius: 0;
+  border-top-left-radius: 0;
 }

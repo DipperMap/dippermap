@@ -22,7 +22,21 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write .",
+    "lint": "lint-staged",
+    "commit": "cz"
+  },
+  "lint-staged": {
+    "src/*.{js,ts,jsx,tsx,vue}": [
+      "node_modules/.bin/prettier --write .",
+      "node_modules/.bin/eslint --fix .",
+      "git add ."
+    ],
+    "src/*.{css,scss,less,json,html,md}": [
+      "node_modules/.bin/prettier --write .",
+      "git add ."
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +57,19 @@
     ]
   },
   "devDependencies": {
-    "antd": "^5.11.5"
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "antd": "^5.11.5",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.54.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "prettier": "^3.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
