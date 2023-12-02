@@ -24,6 +24,17 @@ export const Weather: IGroup = {
       site_url: 'https://caiyunapp.com/map/',
       order: 2,
       tags: ['GIS', 'Web', 'Data']
+    },
+    {
+      icon: '',
+      name: '空气质量数据',
+      en_name: 'Quotsoft Air Quality Monitor',
+      description: 'Quotsoft 空气质量监测工具，提供实时空气质量数据和分析。',
+      en_description:
+        'Quotsoft Air Quality Monitor provides real-time air quality data and analysis.',
+      site_url: 'https://quotsoft.net/air/',
+      order: 19,
+      tags: ['Air Quality', 'Environmental Monitoring', 'Data Analysis']
     }
   ]
 }

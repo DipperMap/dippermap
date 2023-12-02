@@ -4,6 +4,8 @@
 
 Inspired by [larkmap](https://larkmap.com/)
 
+站点分组图标使用 Iconfont [图标预览](https://at.alicdn.com/t/project/4354752/0222451a-1d85-4919-a555-fcf0ed1d7363.html?spm=a313x.manage_type_myprojects.i1.7.79523a81KuPc2X)
+
 ## 提交站点
 
 #### 方式一 issue 方式
@@ -35,4 +37,6 @@ Submit your code this way.
 
 ## 👬 Contributors
 
-![https://github.com/DipperMap/dippermap/graphs/contributors](https://contrib.rocks/image?repo=DipperMap/dippermap)
+<a href="https://github.com/DipperMap/dippermap/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=DipperMap/dippermap" />
+</a>
