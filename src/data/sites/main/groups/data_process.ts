@@ -6,7 +6,7 @@ export const DataProcess: IGroup = {
   order: 2,
   children: [
     {
-      icon: 'https://mapshaper.org/images/icon.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*SatiTZtUKpEAAAAAAAAAAAAADrZ5AQ/original',
       name: 'MapShaper',
       en_name: 'MapShaper',
       description: '地理数据预览,编辑工具',

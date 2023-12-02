@@ -6,7 +6,7 @@ export const GeospatialAnalysis: IGroup = {
   order: 12,
   children: [
     {
-      icon: 'https://raw.githubusercontent.com/Turfjs/turf/9a1d5e8d99564d4080f1e2bf1517ed41d18012fa/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*x7cSR676G70AAAAAAAAAAAAADrZ5AQ/original',
       name: 'Turf.js',
       en_name: 'Turf.js',
       description: '高级地理空间分析库',

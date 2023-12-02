@@ -1,8 +1,8 @@
 import { IGroup } from '../../../types'
 export const Weather: IGroup = {
-  icon: '',
+  icon: 'icon-tianqi',
   name: '天气',
-  en_name: 'map color',
+  en_name: 'Weather',
   order: 2,
   children: [
     {

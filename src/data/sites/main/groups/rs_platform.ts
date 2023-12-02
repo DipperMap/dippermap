@@ -7,7 +7,7 @@ export const RSPlatform: IGroup = {
   children: [
     // gee
     {
-      icon: 'https://earthengine.google.com/static/images/150dpi/Satellite_150dpi.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*527fS73uMqUAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Google Earth Engine',
       en_name: 'Google Earth Engine',
       description: 'Google Earth Engine',

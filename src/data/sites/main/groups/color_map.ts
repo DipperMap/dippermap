@@ -7,7 +7,7 @@ export const MapColor: IGroup = {
   order: 2,
   children: [
     {
-      icon: 'https://colorbrewer2.org/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*j48OTLE2f4AAAAAAAAAAAAAADrZ5AQ/original',
       name: 'ColorBrewer',
       en_name: 'ColorBrewer',
       description: '地图配色',

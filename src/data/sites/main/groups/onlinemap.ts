@@ -46,7 +46,7 @@ export const OnlineMap: IGroup = {
       tags: ['GIS', 'Web', 'Data']
     },
     {
-      icon: 'https://maps.here.com/favicon.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*kqR8Q7bJYiwAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Here Map',
       en_name: 'Here Map',
       description: 'Here Map',
@@ -56,7 +56,7 @@ export const OnlineMap: IGroup = {
       tags: ['GIS', 'Web', 'Data']
     },
     {
-      icon: 'https://www.google.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*TrBASa3dWpkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Google Map',
       en_name: 'Google Map',
       description: 'Google Map',

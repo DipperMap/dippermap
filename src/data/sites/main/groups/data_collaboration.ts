@@ -16,7 +16,7 @@ export const DataCollaboration: IGroup = {
       tags: ['GIS', 'Web', 'Data']
     },
     {
-      icon: 'https://app-assets.felt.com/images/felt-favicon-06e217d081cb4b0a09a450d82538a9b1.png?vsn=d',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*yWzeTLsK8cQAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Felt',
       en_name: 'Felt',
       description: '地图制图分享',

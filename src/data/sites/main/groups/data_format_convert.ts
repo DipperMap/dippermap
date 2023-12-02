@@ -18,7 +18,7 @@ export const DataFormatConvert: IGroup = {
       tags: ['GIS', 'Web', 'Data']
     },
     {
-      icon: 'https://mygeodata.cloud/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*4wYwSKCJ5AIAAAAAAAAAAAAADrZ5AQ/original',
       name: 'MyGeodata Cloud Converter',
       en_name: 'MyGeodata Cloud Converter',
       description: '在线地理数据格式转换工具',

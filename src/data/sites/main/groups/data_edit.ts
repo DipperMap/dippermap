@@ -16,7 +16,7 @@ export const DataEdit: IGroup = {
       tags: ['GIS', 'Web', 'Data']
     },
     {
-      icon: 'https://geojson.io/img/favicon.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*vx_HRKv0_NQAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Geojson.io',
       en_name: 'Geojson.io',
       description: '用于创建、查看和共享空间数据的快速、简单的工具。',
