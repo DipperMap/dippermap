@@ -64,6 +64,44 @@ export const RSPlatform: IGroup = {
       site_url: 'https://engine.piesat.cn/',
       order: 10,
       tags: ['Satellite Imagery', 'Data Services', 'Geospatial Applications']
+    },
+    {
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*gLUJTZxg6usAAAAAAAAAAAAADrZ5AQ/original',
+      name: 'EO Browser',
+      en_name: 'EO Browser',
+      description: 'EO Browser 是 Sentinel Hub 提供的在线遥感图像浏览工具。',
+      en_description:
+        'EO Browser is an online remote sensing image browsing tool provided by Sentinel Hub.',
+      site_url: 'https://apps.sentinel-hub.com/eo-browser',
+      order: 15,
+      tags: ['Earth Observation', 'Satellite Imagery', 'Remote Sensing']
+    },
+    {
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*83WgR51K6xgAAAAAAAAAAAAADrZ5AQ/original',
+      name: 'EOS LandViewer',
+      en_name: 'EOS LandViewer',
+      description: 'EOS LandViewer 是一个提供卫星图像和地理信息的在线平台。',
+      en_description:
+        'EOS LandViewer is an online platform providing satellite imagery and geospatial information.',
+      site_url: 'https://eos.com/landviewer/?day=true&s=Modis',
+      order: 16,
+      tags: ['Satellite Imagery', 'Geospatial Information', 'Remote Sensing']
+    },
+    {
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*RCHPRq0zdWkAAAAAAAAAAAAADrZ5AQ/original',
+      name: '卫星资源中心数据平台',
+      en_name: 'Cresda Data Platform',
+      description: 'Cresda 数据平台提供地球空间数据的集成、管理和应用服务。',
+      en_description:
+        'Cresda Data Platform offers integrated, managed, and applied services for Earth spatial data.',
+      site_url: 'https://data.cresda.cn/#/home',
+      order: 18,
+      tags: [
+        'Spatial Data',
+        'Data Integration',
+        'Data Management',
+        'Data Application'
+      ]
     }
   ]
 }

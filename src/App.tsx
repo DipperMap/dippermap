@@ -2,7 +2,7 @@ import { Layout } from 'antd'
 import './App.css'
 import { AppCard } from './components/app-content'
 import { AppSider } from './components/app-sider'
-import React,{ useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import classNames from 'classnames'
 import { AppHeader } from './components/app-header'
 import { AppSearch } from './components/app-search'
@@ -60,7 +60,7 @@ function App() {
           <AppSearch />
           <AppCard />
         </Content>
-        <Footer className="App-footer">DipperMap</Footer>
+        <Footer className="App-footer">DipperMap 星辰地图站点导航</Footer>
       </Layout>
     </Layout>
   )

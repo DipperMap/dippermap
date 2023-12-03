@@ -29,7 +29,7 @@ export const CoordConvert: IGroup = {
     {
       site_url: 'http://www.wmksj.com/tool/coordinate.html',
       name: '坐标系转换',
-      icon: 'http://www.wmksj.com/resources/wmksj/images/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*KVUpTJBVXl4AAAAAAAAAAAAADrZ5AQ/original',
       description: 'BD09、GCJ02、WGS84坐标系转换',
       en_name: '坐标系转换',
       en_description: 'BD09、GCJ02、WGS84坐标系转换   ',
