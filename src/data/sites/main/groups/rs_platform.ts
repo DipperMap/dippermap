@@ -88,7 +88,7 @@ export const RSPlatform: IGroup = {
       tags: ['Satellite Imagery', 'Geospatial Information', 'Remote Sensing']
     },
     {
-      icon: 'https://data.cresda.cn/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*RCHPRq0zdWkAAAAAAAAAAAAADrZ5AQ/original',
       name: '卫星资源中心数据平台',
       en_name: 'Cresda Data Platform',
       description: 'Cresda 数据平台提供地球空间数据的集成、管理和应用服务。',
