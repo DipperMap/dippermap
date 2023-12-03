@@ -29,6 +29,17 @@ export const Visulization: IGroup = {
       site_url: 'https://kepler.gl/',
       order: 2,
       tags: ['GIS', 'Web', 'Data']
+    },
+    {
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*83WgR51K6xgAAAAAAAAAAAAADrZ5AQ/original',
+      name: 'Foursquare Studio',
+      en_name: 'Foursquare Studio',
+      description: 'Foursquare Studio 提供地理位置数据的可视化和分析工具。',
+      en_description:
+        'Foursquare Studio offers tools for the visualization and analysis of location data.',
+      site_url: 'https://studio.foursquare.com/home',
+      order: 17,
+      tags: ['Location Data', 'Data Visualization', 'Analysis']
     }
   ]
 }
