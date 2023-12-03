@@ -2,7 +2,7 @@
 import { IGroup } from '../../../types'
 export const DataSource: IGroup = {
   icon: 'icon-shujuyuanguanli',
-  name: '数据源',
+  name: '行政区划数据',
   en_name: 'data source',
   order: 1.1,
   children: [
