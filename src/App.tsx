@@ -2,63 +2,65 @@ import { Layout } from 'antd'
 import './App.css'
 import { AppCard } from './components/app-content'
 import { AppSider } from './components/app-sider'
-import { useState, useEffect } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import classNames from 'classnames'
 import { AppHeader } from './components/app-header'
 import { AppSearch } from './components/app-search'
-
+import { useLocalStorageState } from 'ahooks'
 const { Header, Footer, Sider, Content } = Layout
+
 function App() {
   const [collapsed, setCollapsed] = useState(false)
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+  const [siteData, setSiteData] = useLocalStorageState<any>('siteData', {
+    defaultValue: 'main'
+  })
+
   useEffect(() => {
-    if (window.innerWidth <= 767) {
-      setCollapsed(true)
-    }
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth)
-    }
+    // 获取当前页面的URL对象
+    const currentUrl = new URL(window.location.href)
 
-    window.addEventListener('resize', handleResize)
+    // 获取URL的查询参数对象
+    const searchParams = new URLSearchParams(currentUrl.search)
+    if (searchParams.get('site')) {
+      setSiteData(searchParams.get('site'))
+    } else {
+      searchParams.append('site', siteData) // 添加新的参数param3
+      // 将更新后的查询参数设置到URL对象
+      currentUrl.search = searchParams.toString()
 
-    return () => {
-      window.removeEventListener('resize', handleResize)
+      // 更新浏览器地址栏，但不会重新加载页面
+      window.history.pushState({}, '', currentUrl)
     }
+  }, [])
+  const isPc = useMemo(() => {
+    return !/Mobi|Android|iPhone/i.test(navigator.userAgent)
   }, [])
   return (
     <Layout className="App">
       <Sider
         className={classNames([
           'App-sider',
-          collapsed
-            ? window.innerWidth <= 767
-              ? 'retractSiderHeight'
-              : 'retractSiderWidth'
-            : 'siderWidth'
+          collapsed ? 'retractSiderWidth' : 'siderWidth'
         ])}
       >
         <AppSider
           collapsed={collapsed}
-          setCollapsed={setCollapsed}
-          screenWidth={screenWidth}
+          siteData={siteData}
+          setSiteData={setSiteData}
         />
       </Sider>
       <Layout
         style={{
-          marginLeft: collapsed ? 0 : screenWidth <= 767 ? 0 : 270,
-          marginTop: screenWidth <= 767 ? 64 : 0
+          marginLeft: collapsed ? 80 : 270
         }}
+        className="contentLayout"
       >
         <Header className="App-header">
-          <AppHeader
-            collapsed={collapsed}
-            setCollapsed={setCollapsed}
-            screenWidth={screenWidth}
-          />
+          <AppHeader collapsed={collapsed} setCollapsed={setCollapsed} />
         </Header>
         <Content className="App-content">
           <AppSearch />
-          <AppCard />
+          <AppCard siteData={siteData} />
         </Content>
         <Footer className="App-footer">DipperMap 星辰地图站点导航</Footer>
       </Layout>
