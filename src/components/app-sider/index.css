@@ -40,6 +40,18 @@
   justify-content: space-between;
 }
 
+.active-site-text {
+  color: #fff;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.site-text {
+  color: #7a7f86;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
 .site-icon {
   display: flex;
   flex-direction: column;

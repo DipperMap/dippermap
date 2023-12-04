@@ -3,7 +3,7 @@ import logo from '../../assets/logo.png'
 import type { IGroup } from '../../data/types'
 import { SitesConfig } from '../../data/sites'
 import './index.css'
-import { Space, Tag } from 'antd'
+import { Space, Tag, Tooltip } from 'antd'
 import classNames from 'classnames'
 import logoIcon from '../../assets/logo_icon.png'
 import {
@@ -32,7 +32,7 @@ export const AppSider: React.FC<AppSilderPopup> = ({
   const collapsedTag = useRef<any>(null)
 
   const tagClick = (item: IGroup) => {
-    const element = document.querySelector(`#${item.name}`)
+    const element = document.querySelector(`#map-${item.name}`)
     if (element) {
       element.scrollIntoView({ block: 'start', behavior: 'smooth' })
       setSelectedTag(item.name)
@@ -90,17 +90,28 @@ export const AppSider: React.FC<AppSilderPopup> = ({
         ) : (
           <div className="site">
             <img width={150} src={logo} alt="" />
+
             <div
-              className={activeSite ? 'active-site-icon' : 'site-icon'}
               ref={divRef}
               onClick={(e) => {
                 e.stopPropagation()
                 setActiveSite(!activeSite)
               }}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                cursor: 'pointer'
+              }}
             >
-              <CaretUpOutlined />
-              <CaretDownOutlined />
+              <div className={activeSite ? 'active-site-text' : 'site-text'}>
+                {siteConfig.name}
+              </div>
+              <div className={activeSite ? 'active-site-icon' : 'site-icon'}>
+                <CaretUpOutlined />
+                <CaretDownOutlined />
+              </div>
             </div>
+
             {content}
           </div>
         )}

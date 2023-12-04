@@ -31,7 +31,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
               </div>
             }
             className="item-content"
-            id={name}
+            id={`map-${name}`}
             key={name}
           >
             <Row className="card" gutter={[16, 16]}>

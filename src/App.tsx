@@ -35,6 +35,7 @@ function App() {
         style={{
           marginLeft: collapsed ? 80 : 270
         }}
+        className='contentLayout'
       >
         <Header className="App-header">
           <AppHeader collapsed={collapsed} setCollapsed={setCollapsed} />
