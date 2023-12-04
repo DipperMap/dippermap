@@ -4,9 +4,14 @@ import { FileTextOutlined } from '@ant-design/icons'
 import './index.css'
 import { IGroup } from '../../data/types'
 import { IconFont } from '../../constants'
+import React from 'react'
 
-export const AppCard = () => {
-  const siteConfig = SitesConfig['main']
+type AppCardPopup = {
+  siteData: string
+}
+
+export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
+  const siteConfig = SitesConfig[siteData]
   return (
     <div
       style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}
@@ -26,7 +31,7 @@ export const AppCard = () => {
               </div>
             }
             className="item-content"
-            id={name}
+            id={`map-${name}`}
             key={name}
           >
             <Row className="card" gutter={[16, 16]}>
