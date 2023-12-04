@@ -1,8 +1,8 @@
 import { IGroup } from '../../../types'
-export const GeoCoding: IGroup = {
+export const Tiles3D: IGroup = {
   icon: '',
-  name: '3D 瓦片',
-  en_name: '3D Tiles',
+  name: '3D瓦片',
+  en_name: '3DTiles',
   order: 2,
   children: [
     

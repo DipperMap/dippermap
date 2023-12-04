@@ -11,20 +11,20 @@ import weChat from '../../assets/weixin.jpeg'
 type AppHeaderProps = {
   collapsed: boolean
   setCollapsed: (val: boolean) => void
-  screenWidth: number
 }
 
 export const AppHeader: React.FC<AppHeaderProps> = ({
   setCollapsed,
-  collapsed,
-  screenWidth
+  collapsed
 }) => {
   return (
     <div className="app-header">
-      <div onClick={() => setCollapsed(!collapsed)}>
-        {screenWidth > 767 && (
-          <div>{collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}</div>
-        )}
+      <div
+        onClick={() => {
+          setCollapsed(!collapsed)
+        }}
+      >
+        <div>{collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}</div>
       </div>
       <div className="header-right">
         <div className="weChat">

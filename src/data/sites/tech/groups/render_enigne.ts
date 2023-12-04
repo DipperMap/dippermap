@@ -1,5 +1,5 @@
 import { IGroup } from '../../../types'
-export const GeoCoding: IGroup = {
+export const renderEnigne: IGroup = {
   icon: '',
   name: '渲染引擎',
   en_name: 'render_enigne',
