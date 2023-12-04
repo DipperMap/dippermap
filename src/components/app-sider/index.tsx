@@ -70,6 +70,16 @@ export const AppSider: React.FC<AppSilderPopup> = ({
               onClick={(e) => {
                 e.stopPropagation()
                 setSiteData(key)
+                const currentUrl = new URL(window.location.href)
+
+                // 获取URL的查询参数对象
+                const searchParams = new URLSearchParams(currentUrl.search)
+                searchParams.set('site', key) // 添加新的参数param3
+                // 将更新后的查询参数设置到URL对象
+                currentUrl.search = searchParams.toString()
+
+                // 更新浏览器地址栏，但不会重新加载页面
+                window.history.pushState({}, '', currentUrl)
               }}
             >
               <div>{SitesConfig[key].name}</div>
