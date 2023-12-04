@@ -12,11 +12,12 @@ export interface IItem {
   favorite?: boolean
 }
 export interface IGroup {
-  icon?: any
+  icon?: string
   name: string
   en_name: string
   order: number
   children: IItem[]
+  visible?: boolean
 }
 export interface IConfig {
   [key: string]: IGroup

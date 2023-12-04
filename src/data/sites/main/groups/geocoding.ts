@@ -4,5 +4,6 @@ export const GeoCoding: IGroup = {
   name: '地理编码',
   en_name: 'geocoding',
   order: 2,
+  visible: false,
   children: []
 }

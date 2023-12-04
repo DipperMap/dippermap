@@ -8,7 +8,7 @@ export const CoordConvert: IGroup = {
   children: [
     {
       icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*D4jaRr4AnI0AAAAAAAAAAAAADrZ5AQ/original',
-      name: 'epsg.io',
+      name: 'EPSG.io',
       en_name: 'epsg.io',
       description: '全球坐标系转换工具',
       en_description: 'Global Coordinate System Conversion Tool',

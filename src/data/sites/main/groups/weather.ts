@@ -35,6 +35,19 @@ export const Weather: IGroup = {
       site_url: 'https://quotsoft.net/air/',
       order: 19,
       tags: ['Air Quality', 'Environmental Monitoring', 'Data Analysis']
+    },
+    {
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*QuGzQpWdTiEAAAAAAAAAAAAADrZ5AQ/original',
+      name: 'Earth Nullschool',
+      en_name: 'Earth Nullschool',
+      description:
+        'Visualize global weather conditions in real-time with this interactive map.',
+      en_description:
+        'Visualize global weather conditions in real-time with this interactive map.',
+      site_url:
+        'https://earth.nullschool.net/#current/wind/surface/level/orthographic=-231.21,0.00,546',
+      order: 25,
+      tags: ['Weather', 'Real-time', 'Visualization']
     }
   ]
 }

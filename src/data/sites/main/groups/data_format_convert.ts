@@ -8,8 +8,8 @@ export const DataFormatConvert: IGroup = {
     // https://gdal3.js.org/
     {
       icon: '',
-      name: 'gdal3.js',
-      en_name: 'gdal3.js',
+      name: 'GDAL3.js',
+      en_name: 'GDAL3.js',
       description: '栅格矢量格式转换',
       en_description:
         ' Convert raster and vector geospatial data to various formats and coordinate systems entirely in the browser',

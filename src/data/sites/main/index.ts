@@ -30,5 +30,5 @@ export const MainConfig: ISiteConfig = {
     RSPlatform,
     GeospatialAnalysis,
     Weather
-  ].sort((a, b) => a.order - b.order)
+  ].filter(v=>v.visible !== false).sort((a, b) => a.order - b.order)
 }
