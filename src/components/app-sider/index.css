@@ -2,22 +2,7 @@
   padding: 14px 20px;
   background: rgba(255, 255, 255, 0.02);
   text-align: center;
-}
-
-@media (max-width: 767px) {
-  .logo {
-    padding: 14px 20px;
-    background: rgba(255, 255, 255, 0.02);
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .all-tag {
-    padding: 12px 24px;
-    overflow: auto;
-    height: 150px;
-  }
+  position: relative;
 }
 
 .all-tag {
@@ -47,4 +32,98 @@
 
 .tag-item:hover {
   background-color: #d8d8d84e;
+}
+
+.site {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-icon {
+  display: flex;
+  flex-direction: column;
+  font-size: 9px;
+  color: #7a7f86;
+}
+
+.active-site-icon {
+  display: flex;
+  flex-direction: column;
+  font-size: 9px;
+  color: #fff;
+}
+
+.site-content {
+  width: 240px;
+  position: absolute;
+  /* height: 200px; */
+  background: #222935;
+  top: 61px;
+  left: 20px;
+  z-index: 20;
+  padding: 20px 10px;
+  border-radius: 8px;
+  border: solid 1px rgba(255, 255, 255, 0.12);
+}
+
+.active-site-item {
+  background: linear-gradient(to top, lightgray, white);
+  border: solid 1px rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+  border-radius: 6px;
+  padding: 0px 12px;
+  margin-bottom: 10px;
+}
+
+.site-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  line-height: 40px;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0.06)
+  );
+  color: #fff;
+  border-radius: 6px;
+  padding: 0px 12px;
+  margin-bottom: 10px;
+}
+
+.collapsed_block {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+  position: relative;
+}
+
+.collapsed_icon {
+  padding: 5px;
+  background: #2b323d;
+}
+
+.active_collapsed_icon {
+  padding: 5px;
+  background: #fff;
+  color: #2b323d;
+}
+
+.collapsed_tag {
+  position: fixed;
+  width: 408px;
+  left: 86px;
+  top: 50px;
+  background-color: #1d2531;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: left;
 }
