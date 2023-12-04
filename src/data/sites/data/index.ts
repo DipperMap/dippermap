@@ -1,13 +1,9 @@
 import { ISiteConfig } from '../../types'
-import { DataEdit } from './groups/data_edit'
-import { DataFormatConvert } from './groups/data_format_convert'
-import { DataProcess } from './groups/data_process'
+import { ToBeSorted } from './groups/to_be_sorted'
 export const Data: ISiteConfig = {
   name: '数据资源',
   en_name: 'data',
-  groups: [
-    DataEdit,
-    DataProcess,
-    DataFormatConvert
+  groups: [ 
+    ToBeSorted
   ].sort((a, b) => a.order - b.order)
 }
