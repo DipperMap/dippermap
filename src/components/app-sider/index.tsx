@@ -93,14 +93,28 @@ export const AppSider: React.FC<AppSilderPopup> = ({
   return (
     <div>
       <div className="logo">
-        {collapsed ? (
+        <img
+          width={40}
+          style={{
+            maxWidth: 40,
+            minWidth: 40,
+            display: collapsed ? 'block' : 'none'
+          }}
+          src={logoIcon}
+          alt=""
+        />
+        <img
+          width={150}
+          style={{
+            maxWidth: 150,
+            minWidth: 150,
+            display: !collapsed ? 'block' : 'none'
+          }}
+          src={logo}
+          alt=""
+        />
+        {!collapsed && (
           <div className="site">
-            <img width={40} src={logoIcon} alt="" />
-          </div>
-        ) : (
-          <div className="site">
-            <img width={150} src={logo} alt="" />
-
             <div
               ref={divRef}
               onClick={(e) => {
