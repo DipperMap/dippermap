@@ -11,7 +11,8 @@ export const searchConfig: ISearchItem[] = [
     id: 'baidu',
     name: '百度',
     site: 'https://www.baidu.com/s',
-    paramKey: 'wd'
+    paramKey: 'wd',
+    icon: 'https://www.baidu.com/favicon.ico'
   },
   {
     id: 'baidu-dev',
