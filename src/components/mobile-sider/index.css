@@ -1,0 +1,56 @@
+.mobile-sider {
+  color: #fff;
+  overflow: hidden;
+  height: 64px;
+  position: fixed !important;
+  left: 0px;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.mobile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px 0 0;
+}
+
+.mobile-logo {
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  align-items: center;
+}
+
+.mobile-icon {
+  border-radius: 4px;
+}
+
+.mobile-content {
+  padding: 14px 18px;
+  overflow-y: auto;
+  height: 166px;
+}
+
+.mobile-tag-item {
+  background-color: #ffffff10;
+  border: solid 1px #ffffff10;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.mobile-selected-tag {
+  background-color: #fff;
+  color: #000;
+}
+
+.mobile-tag-item:hover {
+  background-color: #fff;
+}
