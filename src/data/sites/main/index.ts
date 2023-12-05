@@ -24,7 +24,6 @@ export const MainConfig: ISiteConfig = {
     MapColor,
     DataCollaboration,
     OnlineMap,
-    GeoCoding,
     DataSource,
     RSPlatform,
     Weather

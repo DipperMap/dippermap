@@ -15,6 +15,17 @@ export const DataProcess: IGroup = {
       site_url: 'http://www.mapshaper.org/',
       order: 2,
       tags: ['GIS', 'Web', 'Data']
+    },
+    {
+      "icon": "https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*kpIwTZzKPrkAAAAAAAAAAAAADrZ5AQ/original",
+      "name": "QGIS",
+      "en_name": "QGIS",
+      "description": "A free and open-source geographic information system (GIS) for viewing, editing, and analyzing spatial data.",
+      "en_description": "A free and open-source geographic information system (GIS) for viewing, editing, and analyzing spatial data.",
+      "site_url": "https://www.qgis.org/",
+      "order": 11,
+      "tags": ["GIS", "Open-source", "Spatial Data"]
     }
+    
   ]
 }

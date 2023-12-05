@@ -45,7 +45,7 @@ export const DataSource: IGroup = {
       en_name: 'China Map by the Ministry of Civil Affairs',
       description: '中华人民共和国行政区划地图，提供全国范围内的行政区划信息。',
       en_description:
-      // tslint:disable-next-line
+        // tslint:disable-next-line
         "Administrative division map of the People's Republic of China, providing nationwide administrative division information.",
       site_url: 'http://xzqh.mca.gov.cn/map',
       order: 14,
