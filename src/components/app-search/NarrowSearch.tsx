@@ -80,7 +80,7 @@ export const NarrowSearch = (props: {
           theme={{
             components: {
               Button: {
-                defaultBg: '#d9d9d9'
+                colorBorder: '#ccc'
               }
             }
           }}
@@ -89,7 +89,6 @@ export const NarrowSearch = (props: {
             {searchConfig.map((item) => {
               return (
                 <Button
-                  type="text"
                   key={item.id}
                   className={item.id === curSearchType.id ? 'activeSearch' : ''}
                   onClick={() => {
