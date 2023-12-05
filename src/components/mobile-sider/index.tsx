@@ -118,8 +118,10 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
                   <Space key={group.name}>
                     <Tag
                       className={classNames([
-                        'tag-item',
-                        selectedTag === group.name ? 'selected-tag' : 'tag'
+                        'mobile-tag-item',
+                        selectedTag === group.name
+                          ? 'mobile-selected-tag'
+                          : 'mobile-tag'
                       ])}
                       onClick={(e) => {
                         e.stopPropagation()

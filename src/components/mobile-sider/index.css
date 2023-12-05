@@ -25,7 +25,7 @@
   align-items: center;
 }
 
-.mobile-icon{
+.mobile-icon {
   border-radius: 4px;
 }
 
@@ -35,11 +35,22 @@
   height: 166px;
 }
 
-.selected-tag {
+.mobile-tag-item {
+  background-color: #ffffff10;
+  border: solid 1px #ffffff10;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.mobile-selected-tag {
   background-color: #fff;
   color: #000;
 }
 
-.tag-item:hover {
+.mobile-tag-item:hover {
   background-color: #fff;
 }
