@@ -34,7 +34,7 @@ export const DataSource: IGroup = {
       en_name: 'Standard Map Service',
       description: '中华人民共和国自然资源部的地理信息服务平台。',
       en_description:
-        "BZDT is the Geographic Information Service Platform of the Ministry of Natural Resources of the People's Republic of China.",
+        "the Geographic Information Service Platform of the Ministry of Natural Resources of the People's Republic of China.",
       site_url: 'http://bzdt.ch.mnr.gov.cn/',
       order: 12,
       tags: ['Geographic Information', 'China', 'Government']
@@ -45,6 +45,7 @@ export const DataSource: IGroup = {
       en_name: 'China Map by the Ministry of Civil Affairs',
       description: '中华人民共和国行政区划地图，提供全国范围内的行政区划信息。',
       en_description:
+      // tslint:disable-next-line
         "Administrative division map of the People's Republic of China, providing nationwide administrative division information.",
       site_url: 'http://xzqh.mca.gov.cn/map',
       order: 14,

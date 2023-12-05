@@ -11,9 +11,19 @@ export const GeospatialAnalysis: IGroup = {
       en_name: 'Turf.js',
       description: '高级地理空间分析库',
       en_description: 'Advanced geospatial analysis for browsers and Node.js',
-      site_url: 'https://turfjs.org/',
+      site_url: 'https://github.com/Turfjs/turf/',
       order: 1,
       tags: ['GIS', 'Geospatial', 'Analysis']
+    },{
+      "icon": "",
+      "name": "GEOS-WASM",
+      "en_name": "GEOS-WASM",
+      "description": "WebAssembly port of the Geometry Engine - Open Source (GEOS) library for geometric operations.",
+      "en_description": "WebAssembly port of the Geometry Engine - Open Source (GEOS) library for geometric operations.",
+      "site_url": "https://github.com/chrispahm/geos-wasm",
+      "order": 9,
+      "tags": ["WebAssembly", "Geometry Engine", "Geometric Operations"]
     }
+    
   ]
 }

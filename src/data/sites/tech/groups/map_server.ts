@@ -3,6 +3,6 @@ export const mapServer: IGroup = {
   icon: '',
   name: '地图服务',
   en_name: 'map_server',
-  order: 2,
+  order: 7,
   children: []
 }
