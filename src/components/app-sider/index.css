@@ -7,7 +7,8 @@
 
 .all-tag {
   padding: 12px 24px;
-  overflow-y: auto;
+  overflow: hidden;
+  min-width: 280px;
 }
 
 .tag-item {
@@ -121,12 +122,14 @@
 .collapsed_icon {
   padding: 5px;
   background: #2b323d;
+  border-radius: 4px;
 }
 
 .active_collapsed_icon {
   padding: 5px;
   background: #fff;
   color: #2b323d;
+  border-radius: 4px;
 }
 
 .collapsed_tag {
