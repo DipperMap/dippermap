@@ -24,6 +24,18 @@ export const DataCollaboration: IGroup = {
       site_url: 'https://felt.com',
       order: 1,
       tags: ['Crafts', 'Marketplace', 'Handmade']
+    },
+    {
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*8nBdR6HWreoAAAAAAAAAAAAADrZ5AQ/original',
+      name: 'Scribble Maps',
+      en_name: 'Scribble Maps',
+      description:
+        'Create custom maps with scribbles, shapes, and more with this online mapping tool.',
+      en_description:
+        'Create custom maps with scribbles, shapes, and more with this online mapping tool.',
+      site_url: 'https://www.scribblemaps.com/',
+      order: 26,
+      tags: ['Custom Maps', 'Mapping Tool', 'Online Maps']
     }
   ]
 }

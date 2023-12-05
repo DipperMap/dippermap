@@ -9,7 +9,6 @@ import { DataSource } from './groups/data_source'
 import { GeoCoding } from './groups/geocoding'
 import { OnlineMap } from './groups/onlinemap'
 import { RSPlatform } from './groups/rs_platform'
-import { GeospatialAnalysis } from './groups/geospatial_analysis'
 import { Visulization } from './groups/visualization'
 import { Weather } from './groups/weather'
 
@@ -25,10 +24,8 @@ export const MainConfig: ISiteConfig = {
     MapColor,
     DataCollaboration,
     OnlineMap,
-    GeoCoding,
     DataSource,
     RSPlatform,
-    GeospatialAnalysis,
     Weather
   ].sort((a, b) => a.order - b.order)
 }
