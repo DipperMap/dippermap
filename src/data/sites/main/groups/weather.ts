@@ -26,6 +26,19 @@ export const Weather: IGroup = {
       tags: ['GIS', 'Web', 'Data']
     },
     {
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*QuGzQpWdTiEAAAAAAAAAAAAADrZ5AQ/original',
+      name: 'Earth Nullschool',
+      en_name: 'Earth Nullschool',
+      description:
+        'Visualize global weather conditions, ocean currents, and greenhouse gas concentrations in a stunning interactive map.',
+      en_description:
+        'Visualize global weather conditions, ocean currents, and greenhouse gas concentrations in a stunning interactive map.',
+      site_url: 'http://earth.nullschool.net/',
+      order: 10,
+      tags: ['Global Weather', 'Ocean Currents', 'Interactive Map']
+    },
+
+    {
       icon: '',
       name: '空气质量数据',
       en_name: 'Quotsoft Air Quality Monitor',

@@ -3,11 +3,24 @@
   background: rgba(255, 255, 255, 0.02);
   text-align: center;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.silder-select {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 80px;
+  cursor: pointer;
 }
 
 .all-tag {
   padding: 12px 24px;
-  overflow-y: auto;
+  overflow: hidden;
+  min-width: 280px;
 }
 
 .tag-item {
@@ -121,12 +134,14 @@
 .collapsed_icon {
   padding: 5px;
   background: #2b323d;
+  border-radius: 4px;
 }
 
 .active_collapsed_icon {
   padding: 5px;
   background: #fff;
   color: #2b323d;
+  border-radius: 4px;
 }
 
 .collapsed_tag {

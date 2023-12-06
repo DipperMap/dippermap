@@ -20,7 +20,7 @@
 }
 .App-sider {
   color: #fff;
-  overflow: auto;
+  overflow: hidden;
   height: 100vh;
   position: fixed !important;
   left: 0px;

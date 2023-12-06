@@ -22,3 +22,24 @@
 .searchBox .ant-input.ant-input-lg {
   border-top-left-radius: 0;
 }
+
+.searchBox .ant-input-prefix .ant-btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBox .ant-input-prefix .ant-btn-icon img {
+  width: 65%;
+  border-radius: 4px;
+}
+
+.selectSearchDrawer .ant-btn.activeSearch {
+  color: #fff !important;
+  background-color: #38404d !important;
+}
+
+.selectSearchDrawer {
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+}

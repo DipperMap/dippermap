@@ -1,4 +1,4 @@
-import { Layout } from 'antd'
+import { Layout, FloatButton } from 'antd'
 import './App.css'
 import { AppCard } from './components/app-content'
 import { AppSider } from './components/app-sider'
@@ -7,10 +7,12 @@ import classNames from 'classnames'
 import { AppHeader } from './components/app-header'
 import { AppSearch } from './components/app-search'
 import { useLocalStorageState } from 'ahooks'
+import { isMobileDevice } from './utils'
+import { MobileSider } from './components/mobile-sider'
 const { Header, Footer, Sider, Content } = Layout
 
 function App() {
-  const [collapsed, setCollapsed] = useState(false)
+  const [collapsed, setCollapsed] = useState(isMobileDevice())
   const [siteData, setSiteData] = useLocalStorageState<any>('siteData', {
     defaultValue: 'main'
   })
@@ -37,32 +39,41 @@ function App() {
   }, [])
   return (
     <Layout className="App">
-      <Sider
-        className={classNames([
-          'App-sider',
-          collapsed ? 'retractSiderWidth' : 'siderWidth'
-        ])}
-      >
-        <AppSider
-          collapsed={collapsed}
-          siteData={siteData}
-          setSiteData={setSiteData}
-        />
-      </Sider>
+      {isPc ? (
+        <Sider
+          className={classNames([
+            'App-sider',
+            collapsed ? 'retractSiderWidth' : 'siderWidth'
+          ])}
+        >
+          <AppSider
+            collapsed={collapsed}
+            siteData={siteData}
+            setSiteData={setSiteData}
+          />
+        </Sider>
+      ) : (
+        <MobileSider siteData={siteData} setSiteData={setSiteData} />
+      )}
       <Layout
         style={{
-          marginLeft: collapsed ? 80 : 270
+          marginLeft: isPc ? (collapsed ? 80 : 270) : 0,
+          marginTop: isPc ? 0 : 64
         }}
         className="contentLayout"
       >
-        <Header className="App-header">
-          <AppHeader collapsed={collapsed} setCollapsed={setCollapsed} />
-        </Header>
+        {isPc && (
+          <Header className="App-header">
+            <AppHeader collapsed={collapsed} setCollapsed={setCollapsed} />
+          </Header>
+        )}
+
         <Content className="App-content">
           <AppSearch />
           <AppCard siteData={siteData} />
         </Content>
         <Footer className="App-footer">DipperMap 星辰地图站点导航</Footer>
+        <FloatButton.BackTop style={{ insetBlockEnd: '96px' }} />
       </Layout>
     </Layout>
   )
