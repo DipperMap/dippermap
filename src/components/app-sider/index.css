@@ -9,6 +9,14 @@
   height: 64px;
 }
 
+.silder-select {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 80px;
+  cursor: pointer;
+}
+
 .all-tag {
   padding: 12px 24px;
   overflow: hidden;

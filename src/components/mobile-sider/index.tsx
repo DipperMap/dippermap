@@ -75,12 +75,8 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
                   setCollapsed(false)
                 }
               }}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                cursor: 'pointer',
-                marginLeft: 20
-              }}
+              className='mobile-sider-select'
+         
             >
               <div className={activeSite ? 'active-site-text' : 'site-text'}>
                 {siteConfig.name}
