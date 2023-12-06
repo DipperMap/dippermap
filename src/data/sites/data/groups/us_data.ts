@@ -1,9 +1,9 @@
 import { IGroup } from '../../../types'
 
-export const ToBeSorted: IGroup = {
+export const USData: IGroup = {
   icon: 'icon-ditupeise',
-  name: '待整理',
-  en_name: 'to be sorted',
+  name: '美国数据',
+  en_name: 'US Data',
   order: 2,
   children: [
     {
