@@ -1,13 +1,13 @@
 import { IGroup } from '../../../types'
 
-export const ToBeSorted: IGroup = {
+export const RemoteSensing: IGroup = {
   icon: 'icon-ditupeise',
-  name: '待整理',
-  en_name: 'to be sorted',
+  name: '遥感数据',
+  en_name: 'remote sensing',
   order: 2,
   children: [
     {
-      icon: '',
+      icon:'',
       tags: ['GIS', 'Web', 'Data'],
       name: 'Alexandria Global Digital LIbrary at UC Santa Barbara',
       en_name: 'Alexandria Global Digital LIbrary at UC Santa Barbara',
@@ -15,6 +15,6 @@ export const ToBeSorted: IGroup = {
       en_description: '',
       site_url: 'http://www.alexandria.ucsb.edu/ '
     },
-
+    
   ]
 }
