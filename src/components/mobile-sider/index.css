@@ -25,6 +25,15 @@
   align-items: center;
 }
 
+.mobile-sider-select {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 80px;
+  justify-content: space-around;
+}
+
 .mobile-icon {
   border-radius: 4px;
 }
