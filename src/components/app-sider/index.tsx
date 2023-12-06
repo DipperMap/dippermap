@@ -121,11 +121,7 @@ export const AppSider: React.FC<AppSilderPopup> = ({
                 e.stopPropagation()
                 setActiveSite(!activeSite)
               }}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                cursor: 'pointer'
-              }}
+              className="silder-select"
             >
               <div className={activeSite ? 'active-site-text' : 'site-text'}>
                 {siteConfig.name}
