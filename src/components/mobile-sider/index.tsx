@@ -39,16 +39,12 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
   useEffect(() => {
     const handleTouchStart = (event: any) => {
       if (divRef.current && !divRef.current.contains(event.target)) {
-        // 触摸开始于元素之外
         setActiveIcon(false)
         setActiveSite(false)
         setCollapsed(false)
       }
     }
-
     document.addEventListener('touchstart', handleTouchStart)
-
-    // 清理函数，移除事件监听器
     return () => {
       document.removeEventListener('touchstart', handleTouchStart)
     }
@@ -75,8 +71,7 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
                   setCollapsed(false)
                 }
               }}
-              className='mobile-sider-select'
-         
+              className="mobile-sider-select"
             >
               <div className={activeSite ? 'active-site-text' : 'site-text'}>
                 {siteConfig.name}
@@ -144,16 +139,11 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
                       e.stopPropagation()
                       setSiteData(key)
                       const currentUrl = new URL(window.location.href)
-
-                      // 获取URL的查询参数对象
                       const searchParams = new URLSearchParams(
                         currentUrl.search
                       )
-                      searchParams.set('site', key) // 添加新的参数param3
-                      // 将更新后的查询参数设置到URL对象
+                      searchParams.set('site', key)
                       currentUrl.search = searchParams.toString()
-
-                      // 更新浏览器地址栏，但不会重新加载页面
                       window.history.pushState({}, '', currentUrl)
                     }}
                   >
