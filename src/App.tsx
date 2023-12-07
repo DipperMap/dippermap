@@ -34,12 +34,10 @@ function App() {
       window.history.pushState({}, '', currentUrl)
     }
   }, [])
-  const isPc = useMemo(() => {
-    return !/Mobi|Android|iPhone/i.test(navigator.userAgent)
-  }, [])
+
   return (
     <Layout className="App">
-      {isPc ? (
+      {!isMobileDevice() ? (
         <Sider
           className={classNames([
             'App-sider',
@@ -57,12 +55,12 @@ function App() {
       )}
       <Layout
         style={{
-          marginLeft: isPc ? (collapsed ? 80 : 270) : 0,
-          marginTop: isPc ? 0 : 64
+          marginLeft: !isMobileDevice() ? (collapsed ? 80 : 270) : 0,
+          marginTop: !isMobileDevice() ? 0 : 64
         }}
         className="contentLayout"
       >
-        {isPc && (
+        {!isMobileDevice() && (
           <Header className="App-header">
             <AppHeader collapsed={collapsed} setCollapsed={setCollapsed} />
           </Header>
