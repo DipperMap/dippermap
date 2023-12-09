@@ -27,7 +27,7 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
   const [activeIcon, setActiveIcon] = useState(false)
   const [activeSite, setActiveSite] = useState(false)
   const siteConfig = SitesConfig[siteData]
-  const divRef = useRef<any>(null)
+  const divRef = useRef<HTMLDivElement>(null)
 
   const tagClick = (item: IGroup) => {
     const element = document.querySelector(`#map-${item.name}`)
@@ -37,8 +37,8 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
     }
   }
   useEffect(() => {
-    const handleTouchStart = (event: any) => {
-      if (divRef.current && !divRef.current.contains(event.target)) {
+    const handleTouchStart: EventListener = (event) => {
+      if (divRef.current && !divRef.current.contains(event.target as Node)) {
         setActiveIcon(false)
         setActiveSite(false)
         setCollapsed(false)

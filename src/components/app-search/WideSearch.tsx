@@ -2,9 +2,7 @@ import { useState } from 'react'
 import { ISearchItem } from '../../data/searchConfig'
 import { Input, Button, Space, ConfigProvider } from 'antd'
 
-export const WideSearch = (props: {
-  searchConfig: ISearchItem[]
-}) => {
+export const WideSearch = (props: { searchConfig: ISearchItem[] }) => {
   const { searchConfig } = props
   const [curSearchType, setCurSearchType] = useState<ISearchItem>(
     searchConfig[0]
