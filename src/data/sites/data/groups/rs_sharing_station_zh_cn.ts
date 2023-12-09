@@ -61,5 +61,19 @@ export const RSSharingStationCN: IGroup = {
         'Landsat',
       ]
     },
+    {
+      icon: 'https://search.earthdata.nasa.gov/favicon.ico?v=1.1',
+      name: 'MODIS-NASA Earthdata Search',
+      en_name: 'MODIS-NASA Earthdata Search',
+      description: 'MODIS数据发布平台',
+      en_description:
+        'MODIS data publishing platform',
+      site_url: 'https://search.earthdata.nasa.gov/search',
+      order: 2,
+      tags: [
+        'Remote Sensing',
+        'MODIS',
+      ]
+    },
   ]
 }
