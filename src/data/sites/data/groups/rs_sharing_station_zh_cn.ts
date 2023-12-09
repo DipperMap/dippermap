@@ -74,6 +74,23 @@ export const RSSharingStationCN: IGroup = {
       site_url: 'https://www.jl1mall.com/store/',
       order: 2,
       tags: ['Remote Sensing', 'Jilin']
+    },
+    {
+      icon: 'https://www.geoportal.org/images/gws/favicons/favicon.ico',
+      name: 'GEOSS Portal',
+      en_name: 'Global Earth Observation System of Systems (GEOSS) Portal',
+      description:
+        'GEOSS Portal is the primary access point for the Global Earth Observation System of Systems (GEOSS), a collaborative effort to build a comprehensive and coordinated global network of Earth observation systems. The portal provides users with access to a wealth of Earth observation data, information, and services contributed by various international organizations, space agencies, and research institutions.',
+      en_description:
+        'The GEOSS Portal serves as a central hub for accessing a wide range of Earth observation data and resources. It plays a crucial role in promoting the sharing of environmental data and information on a global scale. Users, including scientists, policymakers, and the general public, can explore and utilize the diverse datasets available through the portal to address environmental challenges, monitor changes, and support informed decision-making.',
+      site_url: 'https://www.geoportal.org/',
+      order: 8,
+      tags: [
+        'Earth Observation',
+        'Global Collaboration',
+        'Data Access',
+        'Environmental Monitoring'
+      ]
     }
   ]
 }
