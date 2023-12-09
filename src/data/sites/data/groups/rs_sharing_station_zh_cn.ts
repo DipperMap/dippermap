@@ -76,7 +76,7 @@ export const RSSharingStationCN: IGroup = {
       tags: ['Remote Sensing', 'Jilin']
     },
     {
-      icon: 'https://www.geoportal.org/images/gws/favicons/favicon.ico',
+      icon: 'https://www.geoportal.org/favicon.ico',
       name: 'GEOSS Portal',
       en_name: 'Global Earth Observation System of Systems (GEOSS) Portal',
       description:
