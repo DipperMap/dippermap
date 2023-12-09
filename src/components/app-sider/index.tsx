@@ -28,8 +28,8 @@ export const AppSider: React.FC<AppSilderPopup> = ({
   const [activeIcon, setActiveIcon] = useState(false)
   const [activeSite, setActiveSite] = useState(false)
   const siteConfig = SitesConfig[siteData]
-  const divRef = useRef<any>(null)
-  const collapsedTag = useRef<any>(null)
+  const divRef = useRef<HTMLDivElement | null>(null)
+  const collapsedTag = useRef<HTMLDivElement | null>(null)
 
   const tagClick = (item: IGroup) => {
     const element = document.querySelector(`#map-${item.name}`)
@@ -39,13 +39,13 @@ export const AppSider: React.FC<AppSilderPopup> = ({
     }
   }
   useEffect(() => {
-    const handleClickOutside = (event: any) => {
-      if (divRef.current && !divRef.current.contains(event.target)) {
+    const handleClickOutside :EventListener = (event) => {
+      if (divRef.current && !divRef.current.contains(event.target as Node)) {
         setActiveSite(false)
       }
       if (
         collapsedTag.current &&
-        !collapsedTag.current.contains(event.target)
+        !collapsedTag.current.contains(event.target as Node)
       ) {
         setActiveIcon(false)
       }

@@ -13,21 +13,22 @@ const { Header, Footer, Sider, Content } = Layout
 
 function App() {
   const [collapsed, setCollapsed] = useState(isMobileDevice())
-  const [siteData, setSiteData] = useLocalStorageState<any>('siteData', {
+  const [siteData, setSiteData] = useLocalStorageState<string>('siteData', {
     defaultValue: 'main'
   })
 
   useEffect(() => {
     const currentUrl = new URL(window.location.href)
     const searchParams = new URLSearchParams(currentUrl.search)
-    if (searchParams.get('site')) {
-      setSiteData(searchParams.get('site'))
+    const siteFromParams = searchParams.get('site')
+    if (siteFromParams) {
+      setSiteData(siteFromParams)
     } else {
-      searchParams.append('site', siteData)
+      searchParams.append('site', siteData || '')
       currentUrl.search = searchParams.toString()
       window.history.pushState({}, '', currentUrl)
     }
-  }, [])
+  }, [siteData])
 
   return (
     <Layout className="App">
@@ -40,12 +41,12 @@ function App() {
         >
           <AppSider
             collapsed={collapsed}
-            siteData={siteData}
+            siteData={siteData || ''}
             setSiteData={setSiteData}
           />
         </Sider>
       ) : (
-        <MobileSider siteData={siteData} setSiteData={setSiteData} />
+        <MobileSider siteData={siteData || ''} setSiteData={setSiteData} />
       )}
       <Layout
         style={{
@@ -62,7 +63,7 @@ function App() {
 
         <Content className="App-content">
           <AppSearch />
-          <AppCard siteData={siteData} />
+          <AppCard siteData={siteData || ''} />
         </Content>
         <Footer className="App-footer">DipperMap 星辰地图站点导航</Footer>
         <FloatButton.BackTop style={{ insetBlockEnd: '96px' }} />
