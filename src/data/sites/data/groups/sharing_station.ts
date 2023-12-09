@@ -4,7 +4,7 @@ export const SharingStation: IGroup = {
   icon: 'icon-ditupeise',
   name: '综合分享站',
   en_name: 'Sharing station',
-  order: 1,
+  order: 2,
   children: [
     {
       icon: '',

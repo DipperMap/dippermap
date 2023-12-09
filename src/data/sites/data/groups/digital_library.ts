@@ -16,6 +16,16 @@ export const DigitalLibrary: IGroup = {
       site_url: 'http://www.alexandria.ucsb.edu/ ',
       order: 2,
       tags: ['GIS', 'Web', 'Data']
+    },
+    {
+      icon: 'https://digimap.edina.ac.uk/favicon.ico',
+      name: 'Digimap',
+      en_name: 'Digimap',
+      description: '英国地理信息平台，爱丁堡大学孵化',
+      en_description: 'Geographic Information Plantform, provided by EDINA',
+      site_url: 'https://digimap.edina.ac.uk/',
+      order: 2,
+      tags: ['GIS', 'Web', 'Data']
     }
   ]
 }
