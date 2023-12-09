@@ -3,7 +3,7 @@ import logo from '../../assets/logo.png'
 import type { IGroup } from '../../data/types'
 import { SitesConfig } from '../../data/sites'
 import './index.css'
-import { Space, Tag, Tooltip } from 'antd'
+import { Space, Tag } from 'antd'
 import classNames from 'classnames'
 import logoIcon from '../../assets/logo_icon.png'
 import {
@@ -39,7 +39,6 @@ export const AppSider: React.FC<AppSilderPopup> = ({
     }
   }
   useEffect(() => {
-    // 定义处理点击事件的函数
     const handleClickOutside = (event: any) => {
       if (divRef.current && !divRef.current.contains(event.target)) {
         setActiveSite(false)
@@ -51,10 +50,7 @@ export const AppSider: React.FC<AppSilderPopup> = ({
         setActiveIcon(false)
       }
     }
-
     document.addEventListener('click', handleClickOutside)
-
-    // 清理函数，移除事件监听器
     return () => {
       document.removeEventListener('click', handleClickOutside)
     }
@@ -71,14 +67,9 @@ export const AppSider: React.FC<AppSilderPopup> = ({
                 e.stopPropagation()
                 setSiteData(key)
                 const currentUrl = new URL(window.location.href)
-
-                // 获取URL的查询参数对象
                 const searchParams = new URLSearchParams(currentUrl.search)
-                searchParams.set('site', key) // 添加新的参数param3
-                // 将更新后的查询参数设置到URL对象
+                searchParams.set('site', key)
                 currentUrl.search = searchParams.toString()
-
-                // 更新浏览器地址栏，但不会重新加载页面
                 window.history.pushState({}, '', currentUrl)
               }}
             >
