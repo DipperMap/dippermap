@@ -73,7 +73,7 @@ export const RSSharingStationCN: IGroup = {
       en_description: 'Jilin yihao satellite shopping mall',
       site_url: 'https://www.jl1mall.com/store/',
       order: 2,
-      tags: ['Remote Sensing', 'MODIS']
+      tags: ['Remote Sensing', 'Jilin']
     }
   ]
 }
