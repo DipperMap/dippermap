@@ -1,7 +1,7 @@
 import { IGroup } from '../../../types'
 
 export const CommonlyUsed: IGroup = {
-  icon: 'icon-ditupeise',
+  icon: 'icon-shujuyuan',
   name: '常用站点',
   en_name: 'Commonly Used',
   order: 1,

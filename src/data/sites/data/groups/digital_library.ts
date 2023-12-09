@@ -1,7 +1,7 @@
 import { IGroup } from '../../../types'
 
 export const DigitalLibrary: IGroup = {
-  icon: 'icon-ditupeise',
+  icon: 'icon-shujuyuanguanli',
   name: '数字馆藏',
   en_name: 'Digital Library',
   order: 3,
