@@ -39,7 +39,7 @@ export const AppSider: React.FC<AppSilderPopup> = ({
     }
   }
   useEffect(() => {
-    const handleClickOutside :EventListener = (event) => {
+    const handleClickOutside: EventListener = (event) => {
       if (divRef.current && !divRef.current.contains(event.target as Node)) {
         setActiveSite(false)
       }

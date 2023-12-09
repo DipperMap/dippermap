@@ -37,7 +37,7 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
     }
   }
   useEffect(() => {
-    const handleTouchStart:EventListener  = (event) => {
+    const handleTouchStart: EventListener = (event) => {
       if (divRef.current && !divRef.current.contains(event.target as Node)) {
         setActiveIcon(false)
         setActiveSite(false)
