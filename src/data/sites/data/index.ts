@@ -9,7 +9,7 @@ import { OverseasData } from './groups/us_data'
 export const Data: ISiteConfig = {
   name: '数据资源',
   en_name: 'data',
-  groups: [ 
+  groups: [
     DigitalLibrary,
     // OverseasData,
     IndustryData,

@@ -11,11 +11,11 @@ export const DigitalLibrary: IGroup = {
       name: 'Alexandria Global Digital LIbrary at UC Santa Barbara',
       en_name: 'Alexandria Global Digital LIbrary at UC Santa Barbara',
       description: 'UCSB图书馆，包含地理空间信息分享',
-      en_description: 'Providing access to unique digital research materials from UC Santa Barbara Library',
+      en_description:
+        'Providing access to unique digital research materials from UC Santa Barbara Library',
       site_url: 'http://www.alexandria.ucsb.edu/ ',
       order: 2,
-      tags: ['GIS', 'Web', 'Data'],
-    },
-
+      tags: ['GIS', 'Web', 'Data']
+    }
   ]
 }

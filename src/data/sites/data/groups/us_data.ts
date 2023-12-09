@@ -14,7 +14,6 @@ export const OverseasData: IGroup = {
       description: '',
       en_description: '',
       site_url: 'http://www.alexandria.ucsb.edu/ '
-    },
-
+    }
   ]
 }

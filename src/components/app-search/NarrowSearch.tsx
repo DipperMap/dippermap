@@ -2,9 +2,7 @@ import { useState } from 'react'
 import { ISearchItem } from '../../data/searchConfig'
 import { Input, Button, Space, Drawer, ConfigProvider } from 'antd'
 
-export const NarrowSearch = (props: {
-  searchConfig: ISearchItem[]
-}) => {
+export const NarrowSearch = (props: { searchConfig: ISearchItem[] }) => {
   const { searchConfig } = props
   const [curSearchType, setCurSearchType] = useState<ISearchItem>(
     searchConfig[0]
@@ -21,7 +19,7 @@ export const NarrowSearch = (props: {
               activeBorderColor: '#38404D',
               hoverBorderColor: '#38404D',
               activeShadow: '0px 2px 4px 0px #1D25310A'
-            },
+            }
           }
         }}
       >
@@ -30,15 +28,23 @@ export const NarrowSearch = (props: {
           placeholder={`回车> ${curSearchType.name}搜索`}
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
-          prefix={<Button
-            ghost
-            icon={curSearchType.icon ? <img src={curSearchType.icon} /> : curSearchType.name[0]}
-            style={{
-              borderRadius: '10px',
-              color: '#000'
-            }}
-            onClick={() => setOpen(true)}
-          />}
+          prefix={
+            <Button
+              ghost
+              icon={
+                curSearchType.icon ? (
+                  <img src={curSearchType.icon} />
+                ) : (
+                  curSearchType.name[0]
+                )
+              }
+              style={{
+                borderRadius: '10px',
+                color: '#000'
+              }}
+              onClick={() => setOpen(true)}
+            />
+          }
           onPressEnter={() => {
             window.open(
               `${curSearchType.site}?${curSearchType.paramKey}=${searchText}`
@@ -47,11 +53,11 @@ export const NarrowSearch = (props: {
         />
       </ConfigProvider>
       <Drawer
-        placement='bottom'
+        placement="bottom"
         open={open}
         title="选择搜索引擎"
         closeIcon={false}
-        className='selectSearchDrawer'
+        className="selectSearchDrawer"
         mask
         maskClosable
         onClose={() => setOpen(false)}
@@ -62,15 +68,12 @@ export const NarrowSearch = (props: {
                 Button: {
                   defaultBg: '#d9d9d9',
                   borderRadius: 8,
-                  fontWeight: 500,
+                  fontWeight: 500
                 }
               }
             }}
           >
-            <Button
-              onClick={() => setOpen(false)}
-              block
-            >
+            <Button onClick={() => setOpen(false)} block>
               取消
             </Button>
           </ConfigProvider>
@@ -102,7 +105,7 @@ export const NarrowSearch = (props: {
             })}
           </Space>
         </ConfigProvider>
-      </Drawer >
+      </Drawer>
     </>
   )
 }
