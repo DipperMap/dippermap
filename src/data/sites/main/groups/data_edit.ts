@@ -16,6 +16,17 @@ export const DataEdit: IGroup = {
       tags: ['GIS', 'Web', 'Data']
     },
     {
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*SatiTZtUKpEAAAAAAAAAAAAADrZ5AQ/original',
+      name: 'MapShaper',
+      en_name: 'MapShaper',
+      description: '地理数据预览,编辑工具',
+      en_description:
+        'A tool for topologically aware shape simplification. Reads and writes Shapefile, GeoJSON and TopoJSON formats.',
+      site_url: 'http://www.mapshaper.org/',
+      order: 2,
+      tags: ['GIS', 'Web', 'Data']
+    },
+    {
       icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*vx_HRKv0_NQAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Geojson.io',
       en_name: 'Geojson.io',
@@ -25,6 +36,18 @@ export const DataEdit: IGroup = {
       site_url: 'https://geojson.io',
       order: 2,
       tags: ['GIS', 'Web', 'Data']
+    },
+    {
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
+      name: 'Mapbox Developer Tools',
+      en_name: 'Mapbox Developer Tools',
+      description:
+        'A collection of developer tools and resources for working with Mapbox services and APIs.',
+      en_description:
+        'A collection of developer tools and resources for working with Mapbox services and APIs.',
+      site_url: 'https://docs.mapbox.com/resources/dev-tools/',
+      order: 13,
+      tags: ['Developer Tools', 'Mapbox', 'APIs']
     }
   ]
 }
