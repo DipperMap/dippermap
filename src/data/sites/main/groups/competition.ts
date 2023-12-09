@@ -37,6 +37,16 @@ export const Competition: IGroup = {
       site_url: "https://gisera.com/",
       order: 6,
       tags: ["GIS", "Skills Competition", "Education", "Technology"]
+    },
+    {
+      icon: "",
+      name: "全国大学生测绘学科创新创业智能大赛",
+      en_name: "National College Students' Innovation and Entrepreneurship Intelligent Competition in Surveying and Mapping",
+      description: "全国大学生测绘学科创新创业智能大赛旨在促进大学生在测绘学科领域的创新和创业，为他们提供展示才华和交流经验的平台。该赛事关注测绘科技的前沿发展，鼓励学生运用智能技术、创新思维解决实际问题，推动测绘行业的发展。",
+      en_description: "The National College Students' Innovation and Entrepreneurship Intelligent Competition in Surveying and Mapping aims to promote innovation and entrepreneurship among college students in the field of surveying and mapping. It provides a platform for students to showcase their talents and exchange experiences. The competition focuses on the cutting-edge development of surveying and mapping technology, encouraging students to apply intelligent technology and innovative thinking to solve practical problems, thereby advancing the development of the surveying and mapping industry.",
+      site_url: "https://smt.whu.edu.cn/sshd/dxscxcyznds.htm",
+      order: 7,
+      tags: ["Surveying and Mapping", "Innovation", "Entrepreneurship", "Intelligent Technology"]
     }
 
   ]
