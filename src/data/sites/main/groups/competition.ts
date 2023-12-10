@@ -40,7 +40,7 @@ export const Competition: IGroup = {
         'The official website of the National College GIS Skills Competition is the unified platform for GIS skills competitions in various universities across China. The competition aims to promote learning and exchange among university students in the field of Geographic Information Systems (GIS), fostering the improvement and innovation of GIS skills.',
       site_url: 'https://gisera.com/',
       order: 6,
-      tags: ['GIS', 'Skills Competition', 'Education', 'Technology'
+      tags: ['GIS', 'Skills Competition', 'Education', 'Technology']
     },
     {
       icon: '',
