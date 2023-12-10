@@ -6,7 +6,7 @@ export const VectorTile: IGroup = {
   order: 2,
   children: [
     {
-      icon: 'https://github.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Mapbox Vector Tile JS',
       en_name: 'Mapbox Vector Tile JS',
       description: 'A small library for working with vector tiles.',
@@ -16,7 +16,7 @@ export const VectorTile: IGroup = {
       tags: ['Vector Tiles', 'JavaScript', 'Mapbox']
     },
     {
-      icon: 'https://github.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Mapnik Vector Tile',
       en_name: 'Mapnik Vector Tile',
       description: 'Mapnik implementation of Mapbox Vector Tiles (MVT).',
