@@ -1,4 +1,5 @@
 import { ISiteConfig } from '../../types'
+import { AIPlatform } from './groups/ai_platform'
 import { MapColor } from './groups/color_map'
 import { Competition } from './groups/competition'
 import { CoordConvert } from './groups/coord_convert'
@@ -19,6 +20,7 @@ export const MainConfig: ISiteConfig = {
     Competition,
     DataEdit,
     DataProcess,
+    AIPlatform,
     DataFormatConvert,
     CoordConvert,
     Visulization,
