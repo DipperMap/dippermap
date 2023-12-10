@@ -1,7 +1,7 @@
 import { IGroup } from '../../../types'
 
 export const RSSharingStationCN: IGroup = {
-  icon: 'icon-ditupeise',
+  icon: 'icon-yaogancehui',
   name: '遥感',
   en_name: 'RS Data Sharing station',
   order: 2,

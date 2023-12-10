@@ -1,6 +1,7 @@
 import { ISiteConfig } from '../../types'
 import { AIPlatform } from './groups/ai_platform'
 import { MapColor } from './groups/color_map'
+import { Competition } from './groups/competition'
 import { CoordConvert } from './groups/coord_convert'
 import { DataCollaboration } from './groups/data_collaboration'
 import { DataEdit } from './groups/data_edit'
@@ -16,6 +17,7 @@ export const MainConfig: ISiteConfig = {
   name: '主站',
   en_name: 'main',
   groups: [
+    Competition,
     DataEdit,
     DataProcess,
     AIPlatform,
