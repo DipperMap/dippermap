@@ -1,4 +1,5 @@
 import { ISiteConfig } from '../../types'
+import { AIPlatform } from './groups/ai_platform'
 import { MapColor } from './groups/color_map'
 import { CoordConvert } from './groups/coord_convert'
 import { DataCollaboration } from './groups/data_collaboration'
@@ -17,6 +18,7 @@ export const MainConfig: ISiteConfig = {
   groups: [
     DataEdit,
     DataProcess,
+    AIPlatform,
     DataFormatConvert,
     CoordConvert,
     Visulization,
