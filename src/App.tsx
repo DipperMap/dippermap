@@ -46,9 +46,7 @@ function App() {
           />
         </Sider>
       ) : (
-        <>
-          <MobileSider siteData={siteData || ''} setSiteData={setSiteData} />
-        </>
+        <MobileSider siteData={siteData || ''} setSiteData={setSiteData} />
       )}
       <Layout
         style={{
