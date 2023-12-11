@@ -35,7 +35,13 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
       `#map-${item.name.replace(/\s/g, '-').replace(/\+/g, 'plus')}`
     )
     if (element) {
-      element.scrollIntoView({ block: 'start', behavior: 'smooth' })
+      // element.scrollIntoView({ block: 'start', behavior: 'smooth' })
+      const elementPosition = element.getBoundingClientRect().top
+      const offsetPosition = elementPosition + window.scrollY - 68
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
       setSelectedTag(item.name)
     }
   }
