@@ -25,6 +25,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
           const { name, children, icon } = group
           return (
             <Card
+              bodyStyle={{ paddingBottom: 8 }}
               title={
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   {icon && (
@@ -32,11 +33,11 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                       <IconFont type={icon} />
                     </div>
                   )}
-                  <div>{name}</div>
+                  <div style={{ color: '#1D2B3A' }}>{name}</div>
                 </div>
               }
               className="item-content"
-              id={`map-${name}`}
+              id={`map-${name.replace(/\s/g, "-").replace(/\+/g, "plus")}`}
               key={name}
             >
               <Row className="card" gutter={[16, 16]}>

@@ -50,7 +50,7 @@ function App() {
       )}
       <Layout
         style={{
-          marginLeft: !isMobileDevice() ? (collapsed ? 80 : 270) : 0,
+          marginLeft: !isMobileDevice() ? (collapsed ? 80 : 280) : 0,
           marginTop: !isMobileDevice() ? 0 : 64
         }}
         className="contentLayout"

@@ -25,3 +25,12 @@
 .gitHub {
   cursor: pointer;
 }
+
+.header_icon {
+  font-size: 16px;
+  color: #676F7B;
+}
+
+.header_icon:hover{
+  color: #38404D;
+}
