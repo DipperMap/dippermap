@@ -3,7 +3,7 @@ export const GeospatialAnalysis: IGroup = {
   icon: 'icon-a-shujuchuli1',
   name: '空间分析',
   en_name: 'data process',
-  order: 12,
+  order: 4,
   children: [
     {
       icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*x7cSR676G70AAAAAAAAAAAAADrZ5AQ/original',

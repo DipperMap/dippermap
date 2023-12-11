@@ -3,7 +3,6 @@ import { Tiles3D } from './groups/3d_tiles'
 import { dataSpec } from './groups/data_spec'
 import { MapEngine } from './groups/map_engine'
 import { spatialDatabase } from './groups/spatial_database'
-import { Visualization } from './groups/visualization_engine'
 import { GeospatialAnalysis } from './groups/geospatial_analysis'
 import { GISSoftWare } from './groups/gis_software'
 import { RSSoftWare } from './groups/rs_software'
@@ -31,7 +30,6 @@ export const Tech: ISiteConfig = {
     GISSoftWare,
     Tiles3D,
     dataSpec,
-    Visualization,
     MapEngine,
     spatialDatabase,
     GeospatialAnalysis,

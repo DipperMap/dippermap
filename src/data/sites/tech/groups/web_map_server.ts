@@ -6,7 +6,7 @@ export const WebMapServer: IGroup = {
   order: 5,
   children: [
     {
-      icon: 'http://server.arcgis.com/en/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lvWgQa9WbVwAAAAAAAAAAAAADrZ5AQ/original',
       name: 'ArcGIS Server',
       en_name: 'ArcGIS Server',
       description: '用于企业应用程序的GIS服务器。',
@@ -95,7 +95,7 @@ export const WebMapServer: IGroup = {
       tags: ['Open Source', 'Geospatial Data Sharing', 'Server']
     },
     {
-      icon: 'https://github.com/locationtech/geotrellis/raw/main/docs/src/main/resources/magritte/images/logo/Geotrellis-Logo-Purple.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'GeoTrellis',
       en_name: 'GeoTrellis',
       description:
@@ -123,7 +123,7 @@ export const WebMapServer: IGroup = {
       tags: ['Java Web Application', 'Map Image Delivery', 'Cache']
     },
     {
-      icon: 'https://github.com/google/earthenterprise/raw/master/earth_enterprise_logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Google Earth Enterprise',
       en_name: 'Google Earth Enterprise',
       description:
@@ -169,7 +169,7 @@ export const WebMapServer: IGroup = {
       tags: ['Web Client', 'JavaScript Framework', 'Cartographic Data']
     },
     {
-      icon: 'http://mapnik.org/assets/images/mapnik-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*ZQUtRpmMY7EAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Mapnik',
       en_name: 'Mapnik',
       description: '用于桌面和服务器端地图渲染的C++编写的开源映射工具包。',
@@ -260,7 +260,7 @@ export const WebMapServer: IGroup = {
       tags: ['FastCGI/CGI Application', 'C++', 'Webserver']
     },
     {
-      icon: 'https://www.supermap.com/en/html/SuperMap_GIS_products1160212.html',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lvWgQa9WbVwAAAAAAAAAAAAADrZ5AQ/original',
       name: 'SuperMap iServer',
       en_name: 'SuperMap iServer',
       description:

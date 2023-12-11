@@ -45,7 +45,7 @@ export const FrontEndFramework: IGroup = {
       ]
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*4SqnSoaKpskAAAAAAAAAAAAADrZ5AQ/original',
       name: 'd3-carto-map',
       en_name: 'd3-carto-map',
       description: '使用D3创建基于图层的地图的库。',
@@ -55,7 +55,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['Layer-based Maps', 'D3']
     },
     {
-      icon: 'https://d3-geomap.github.io/d3-geomap-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*4SqnSoaKpskAAAAAAAAAAAAADrZ5AQ/original',
       name: 'd3-geomap',
       en_name: 'd3-geomap',
       description: '基于D3.js创建地理地图的库。',
@@ -66,7 +66,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['Geographical Maps', 'D3.js']
     },
     {
-      icon: 'https://d3js.org/logo.svg',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*4SqnSoaKpskAAAAAAAAAAAAADrZ5AQ/original',
       name: 'D3.js',
       en_name: 'D3.js',
       description: '用于根据数据操作文档的JavaScript库。',
@@ -77,29 +77,18 @@ export const FrontEndFramework: IGroup = {
       tags: ['Data Manipulation', 'JavaScript Library']
     },
     {
-      icon: 'http://echarts.baidu.com/favicon.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*4SqnSoaKpskAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Echarts',
       en_name: 'Echarts',
       description: '由百度支持的用户友好的数据可视化库。',
       en_description:
         'A user-friendly data visualization library supported by Baidu.',
-      site_url: 'http://echarts.baidu.com/',
+      site_url: 'https://echarts.apache.org/zh/index.html',
       order: 141,
       tags: ['Data Visualization', 'Baidu']
     },
     {
-      icon: 'http://www.geomajas.org/img/geomajas.png',
-      name: 'geomajas-client javascript',
-      en_name: 'geomajas-client javascript',
-      description: '用于创建酷炫地图和应用程序的开源JavaScript映射API。',
-      en_description:
-        'Open source JavaScript mapping API for cool maps and apps.',
-      site_url: 'http://www.geomajas.org/client-javascript',
-      order: 142,
-      tags: ['Open Source', 'JavaScript Mapping API']
-    },
-    {
-      icon: 'https://developers.google.com/maps/documentation/javascript/images/new-google-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*TrBASa3dWpkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Google Maps Javascript API',
       en_name: 'Google Maps Javascript API',
       description: '用于谷歌地图的JavaScript API。',
@@ -109,7 +98,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['Google Map', 'JavaScript API']
     },
     {
-      icon: 'http://jvectormap.com/assets/img/jvectormap-icon.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*VgV-RJ3blbIAAAAAAAAAAAAADrZ5AQ/original',
       name: 'jVectorMap',
       en_name: 'jVectorMap',
       description:
@@ -125,7 +114,7 @@ export const FrontEndFramework: IGroup = {
       ]
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original?s=200&v=4',
+      icon: 'https://gw.alipayobjects.com/zos/antfincdn/OI%26h7HXH33/L7%252520dilikongjianshujukeshihua.svg',
       name: 'L7',
       en_name: 'L7',
       description: '由蚂蚁金融支持的大规模WebGL动力地理空间数据可视化。',
@@ -136,7 +125,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['WebGL', 'Geospatial Data Visualization', 'Ant Financial']
     },
     {
-      icon: 'https://leafletjs.com/docs/images/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*Y9hQQIqG4RwAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Leaflet',
       en_name: 'Leaflet',
       description: '用于创建移动友好的交互式地图的开源JavaScript库。',
@@ -147,7 +136,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['Open Source', 'JavaScript Library', 'Interactive Maps']
     },
     {
-      icon: 'https://www.mapbox.com/images/mark/mapbox-icon.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Mapbox GL JS',
       en_name: 'Mapbox GL JS',
       description:
@@ -159,7 +148,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['JavaScript Library', 'WebGL', 'Interactive Maps', 'Vector Tiles']
     },
     {
-      icon: 'https://github.com/maplibre/maplibre-gl-js/raw/main/docs/_media/maplibre-icon.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*BJsjQrU57ZkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'MapLibre GL',
       en_name: 'MapLibre GL',
       description: '是Mapbox GL JS切换到非OSS许可证之前的社区主导分支。',
@@ -170,7 +159,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['Community Led Fork', 'Mapbox GL JS', 'Non-OSS License']
     },
     {
-      icon: 'https://raw.githubusercontent.com/maptalks/maptalks.js/main/assets/logo.png',
+      icon: '',
       name: 'maptalks.js',
       en_name: 'maptalks.js',
       description: '一个轻量级且可插拔的JavaScript库，用于集成2D/3D地图。',
@@ -181,7 +170,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['Lightweight', 'Plugable', 'JavaScript Library', '2D/3D Maps']
     },
     {
-      icon: 'https://github.com/huiyan-fe/mapv/raw/master/assets/images/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Mapv',
       en_name: 'Mapv',
       description: '一种地理可视化库。',
@@ -191,7 +180,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['Geography Visualization']
     },
     {
-      icon: 'https://www.openglobus.org/images/logo2.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'OpenGlobus',
       en_name: 'OpenGlobus',
       description:
@@ -208,7 +197,7 @@ export const FrontEndFramework: IGroup = {
       ]
     },
     {
-      icon: 'https://openlayers.org/en/latest/doc/resources/ol-icon.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*ebYBSJl97_8AAAAAAAAAAAAADrZ5AQ/original',
       name: 'OpenLayers',
       en_name: 'OpenLayers',
       description: '用于查看开源JavaScript地图的库。',
@@ -218,7 +207,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['Open Source', 'JavaScript Library', 'Map Viewing']
     },
     {
-      icon: 'https://openmaptiles.org/favicon.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*CkAkTa8vxnUAAAAAAAAAAAAADrZ5AQ/original',
       name: 'OpenMapTiles',
       en_name: 'OpenMapTiles',
       description: '用于自主托管OpenStreetMap地图的一套开源工具。',
@@ -229,7 +218,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['Open Source', 'Self-hosting', 'OpenStreetMap Maps']
     },
     {
-      icon: 'http://polymaps.org/images/icon.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*kC6YTrxlXZEAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Polymaps',
       en_name: 'Polymaps',
       description: '使用SVG创建图像和矢量切片地图的JavaScript库。',
@@ -240,7 +229,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['JavaScript Library', 'Image Maps', 'Vector-tiled Maps', 'SVG']
     },
     {
-      icon: 'https://www.supermap.com/images/about/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*7Xu_Rrs0QBMAAAAAAAAAAAAADrZ5AQ/original',
       name: 'SuperMap iClient JavaScript',
       en_name: 'SuperMap iClient JavaScript',
       description: '由超图支持的云GIS Web客户端开发平台。',
@@ -251,7 +240,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['Cloud GIS', 'Web Client Development', 'SuperMap']
     },
     {
-      icon: 'https://github.com/w3reality/three-geo/raw/main/docs/images/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'three-geo',
       en_name: 'three-geo',
       description: '基于three.js的地理可视化库。',
@@ -261,7 +250,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['three.js', 'Geographic Visualization']
     },
     {
-      icon: 'http://threejs.org/files/logo.png',
+      icon: '',
       name: 'three.js',
       en_name: 'three.js',
       description: '使WebGL更简单的JavaScript 3D库。',
@@ -271,7 +260,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['JavaScript Library', 'WebGL', '3D']
     },
     {
-      icon: 'http://turfjs.org/images/turf-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*x7cSR676G70AAAAAAAAAAAAADrZ5AQ/original',
       name: 'turf.js',
       en_name: 'turf.js',
       description: '用于浏览器和Node的高级地理空间分析库，得到Mapbox支持。',
@@ -282,7 +271,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['Browser', 'Node', 'Geospatial Analysis', 'Mapbox']
     },
     {
-      icon: 'https://webglearth.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'webglearth2',
       en_name: 'webglearth2',
       description:

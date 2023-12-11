@@ -77,7 +77,7 @@ export const Java: IGroup = {
       tags: ['Open Source', 'Java Library']
     },
     {
-      icon: 'https://locationtech.github.io/geowave/images/geowave.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'GeoWave',
       en_name: 'GeoWave',
       description:
@@ -125,7 +125,7 @@ export const Java: IGroup = {
       tags: ['Geolocalisation', 'Geocoding', 'Java APIs', 'REST Webservices']
     },
     {
-      icon: 'https://github.com/graphhopper/logo/blob/master/round-logo.png?raw=true',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'GraphHopper Routing Engine',
       en_name: 'GraphHopper Routing Engine',
       description:
@@ -147,7 +147,7 @@ export const Java: IGroup = {
       tags: ['Java', 'Geocoder']
     },
     {
-      icon: 'https://github.com/openvenues/jpostal/raw/master/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'jpostal',
       en_name: 'jpostal',
       description:
@@ -182,7 +182,7 @@ export const Java: IGroup = {
       tags: ['Java Library', 'Geospatial Analytics']
     },
     {
-      icon: 'http://mapfish.github.io/mapfish-print/images/mapfish_logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'MapFish Print',
       en_name: 'MapFish Print',
       description:
@@ -194,7 +194,7 @@ export const Java: IGroup = {
       tags: ['Java', 'Reports', 'Map']
     },
     {
-      icon: 'https://github.com/openmap-java/openmap/raw/master/docs/images/openmap_logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Openmap',
       en_name: 'Openmap',
       description: "Open Source JavaBeans-based programmer's toolkit.",
@@ -204,7 +204,7 @@ export const Java: IGroup = {
       tags: ['Open Source', 'JavaBeans', 'Toolkit']
     },
     {
-      icon: 'https://github.com/komoot/photon/raw/master/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Photon',
       en_name: 'Photon',
       description:
@@ -216,7 +216,7 @@ export const Java: IGroup = {
       tags: ['Open Source', 'Geocoder', 'OpenStreetMap']
     },
     {
-      icon: 'https://github.com/locationtech/spatial4j/raw/main/docs/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Spatial4j',
       en_name: 'Spatial4j',
       description:
@@ -228,7 +228,7 @@ export const Java: IGroup = {
       tags: ['Geospatial', 'Java Library']
     },
     {
-      icon: 'https://github.com/jblindsay/whitebox-geospatial-analysis-tools/raw/main/docs/images/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'whitebox-geospatial-analysis-tools',
       en_name: 'whitebox-geospatial-analysis-tools',
       description: 'An open-source GIS and remote sensing package.',

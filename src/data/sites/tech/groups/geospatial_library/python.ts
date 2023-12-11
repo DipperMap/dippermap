@@ -142,7 +142,7 @@ export const Python: IGroup = {
       tags: ['FreeType', 'Font Glyphs', 'Polygons']
     },
     {
-      icon: 'https://github.com/giswqs/geemap/raw/master/docs/img/geemap_logo_v1.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'geemap',
       en_name: 'geemap',
       description:
@@ -154,7 +154,7 @@ export const Python: IGroup = {
       tags: ['geemap', 'Interactive Mapping', 'Google Earth Engine']
     },
     {
-      icon: 'https://github.com/samapriya/geeup/raw/main/geeup/assets/geeup-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'geeup',
       en_name: 'geeup',
       description: 'Simple CLI for Earth Engine Uploads.',
@@ -164,7 +164,7 @@ export const Python: IGroup = {
       tags: ['geeup', 'CLI', 'Earth Engine']
     },
     {
-      icon: 'https://github.com/geoalchemy/geoalchemy/raw/master/docs/_static/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'geoalchemy',
       en_name: 'geoalchemy',
       description: 'Using SQLAlchemy with spatial databases.',
@@ -174,7 +174,7 @@ export const Python: IGroup = {
       tags: ['geoalchemy', 'SQLAlchemy', 'Spatial Databases']
     },
     {
-      icon: 'https://github.com/GoogleCloudPlatform/dataflow-geobeam/raw/master/docs/images/geobeam-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'geobeam',
       en_name: 'geobeam',
       description:
@@ -536,7 +536,7 @@ export const Python: IGroup = {
       tags: ['OpenStreetMap', 'Street Networks', 'Python']
     },
     {
-      icon: 'https://geopython.github.io/OWSLib/graphics/owslib_logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'OWSLib',
       en_name: 'OWSLib',
       description:

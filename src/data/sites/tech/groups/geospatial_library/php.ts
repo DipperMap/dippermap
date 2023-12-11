@@ -28,7 +28,7 @@ export const PHP: IGroup = {
       tags: ['GeoJSON', 'PHP']
     },
     {
-      icon: 'https://geophp.net/assets/geophp.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'GeoPHP',
       en_name: 'GeoPHP',
       description: 'Advanced geometry operations in PHP.',

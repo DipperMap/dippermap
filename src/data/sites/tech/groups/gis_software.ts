@@ -31,7 +31,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'Geographic Information System', 'Biodiversity']
     },
     {
-      icon: 'http://geodacenter.github.io/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'GeoDa',
       en_name: 'GeoDa',
       description: '一款免费且开源的软件工具，用作空间数据分析的入门工具。',
@@ -125,7 +125,7 @@ export const GISSoftWare: IGroup = {
       tags: ['Virtual Globe', 'World Atlas']
     },
     {
-      icon: 'https://github.com/openorienteering/mapper/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'OpenOrienteering Mapper',
       en_name: 'OpenOrienteering Mapper',
       description: '用于制作定向运动地图的软件。',
@@ -136,7 +136,7 @@ export const GISSoftWare: IGroup = {
       tags: ['Orienteering', 'Map Creation', 'Sport']
     },
     {
-      icon: 'http://qgis.org/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*kpIwTZzKPrkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'QGIS',
       en_name: 'QGIS',
       description: '一款免费且开源的GIS。',
@@ -157,7 +157,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'Geoscientific Analysis', 'Open Source']
     },
     {
-      icon: 'https://github.com/SharpMap/SharpMap/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'SharpMap',
       en_name: 'SharpMap',
       description: '用于Web和桌面应用程序的易于使用的映射库。',
@@ -168,7 +168,7 @@ export const GISSoftWare: IGroup = {
       tags: ['Mapping Library', 'Web', 'Desktop Applications']
     },
     {
-      icon: 'https://tilemill-project.github.io/tilemill/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'TileMill',
       en_name: 'TileMill',
       description: '一个开源的地图设计工作室，由志愿者开发的社区提供支持。',

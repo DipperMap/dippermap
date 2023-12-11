@@ -40,7 +40,7 @@ export const Application3D: IGroup = {
       tags: ['3D Terrain', 'DEM', 'STL', 'glTF']
     },
     {
-      icon: 'https://github.com/google/earthenterprise/raw/master/earth_enterprise.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Earth Enterprise',
       en_name: 'Earth Enterprise',
       description:
@@ -123,7 +123,7 @@ export const Application3D: IGroup = {
       tags: ['3D Terrain', 'DEM', 'STL', 'glTF']
     },
     {
-      icon: 'https://github.com/google/earthenterprise/raw/master/earth_enterprise.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Earth Enterprise',
       en_name: 'Earth Enterprise',
       description:

@@ -30,7 +30,7 @@ export const JavaScript: IGroup = {
       tags: ['GeoJSON', 'WKT', 'Great Circles']
     },
     {
-      icon: 'https://microsoft.github.io/BingMapsV8CodeSamples/Content/images/bing-maps.svg',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Bing Maps V8 Code Samples',
       en_name: 'Bing Maps V8 Code Samples',
       description:
@@ -154,7 +154,7 @@ export const JavaScript: IGroup = {
       tags: ['Geospatial', 'Raster', 'Processing', 'JavaScript']
     },
     {
-      icon: 'https://geoext.github.io/geoext3/resources/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'GeoExt',
       en_name: 'GeoExt',
       description:
@@ -178,7 +178,7 @@ export const JavaScript: IGroup = {
       tags: ['GeoJSON', 'SVG', 'Map']
     },
     {
-      icon: 'https://github.com/developmentseed/geokit/raw/main/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Geokit',
       en_name: 'Geokit',
       description:
@@ -277,7 +277,7 @@ export const JavaScript: IGroup = {
       tags: ['Java', 'JTS Library']
     },
     {
-      icon: 'https://uber.github.io/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'kepler.gl',
       en_name: 'kepler.gl',
       description:

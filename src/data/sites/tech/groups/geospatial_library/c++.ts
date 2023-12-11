@@ -64,7 +64,7 @@ export const CPlus: IGroup = {
       tags: ['Point Clouds', 'Data Organization']
     },
     {
-      icon: 'http://www.gdal.org/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*ZQUtRpmMY7EAAAAAAAAAAAAADrZ5AQ/original',
       name: 'GDAL',
       en_name: 'GDAL',
       description: '用作栅格和矢量地理空间数据格式的翻译库的计算机库。',
@@ -87,7 +87,7 @@ export const CPlus: IGroup = {
       tags: ['Earth Observation', 'Data Cubes', 'Library']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*w-DqRZd3f88AAAAAAAAAAAAADrZ5AQ/original',
       name: 'geojson-vt-cpp',
       en_name: 'geojson-vt-cpp',
       description: 'JS GeoJSON-VT 的 C++ 移植，用于动态切片 GeoJSON。',
@@ -98,7 +98,7 @@ export const CPlus: IGroup = {
       tags: ['GeoJSON', 'Vector Tiles', 'C++']
     },
     {
-      icon: 'https://trac.osgeo.org/geos/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*ieZFQrEOZPQAAAAAAAAAAAAADrZ5AQ/original',
       name: 'GEOS',
       en_name: 'GEOS',
       description:
@@ -198,7 +198,7 @@ export const CPlus: IGroup = {
       tags: ['R*-tree', 'MVR-tree', 'TPR-tree', 'C++']
     },
     {
-      icon: 'https://github.com/mapbox/mapbox-gl-native/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*w-DqRZd3f88AAAAAAAAAAAAADrZ5AQ/original',
       name: 'Mapbox GL Native',
       en_name: 'Mapbox GL Native',
       description:
@@ -210,7 +210,7 @@ export const CPlus: IGroup = {
       tags: ['C++', 'OpenGL', 'Map Rendering']
     },
     {
-      icon: 'https://www.mapbox.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*w-DqRZd3f88AAAAAAAAAAAAADrZ5AQ/original',
       name: 'Mapbox Maps SDK for Qt',
       en_name: 'Mapbox Maps SDK for Qt',
       description: 'Qt Automotive Map Suite。',
@@ -220,7 +220,7 @@ export const CPlus: IGroup = {
       tags: ['Qt', 'Mapping SDK']
     },
     {
-      icon: 'http://mapnik.org/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*ZQUtRpmMY7EAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Mapnik',
       en_name: 'Mapnik',
       description: '用于地图渲染的 C++ 库。',
@@ -230,7 +230,7 @@ export const CPlus: IGroup = {
       tags: ['Map Rendering', 'C++']
     },
     {
-      icon: 'https://github.com/mapbox/mapnik-vector-tile/raw/master/mapnik-vector-tile.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*ZQUtRpmMY7EAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Mapnik Vector Tile',
       en_name: 'Mapnik Vector Tile',
       description:
@@ -242,7 +242,7 @@ export const CPlus: IGroup = {
       tags: ['Mapnik', 'C++', 'Vector Tile']
     },
     {
-      icon: 'https://github.com/tangrams/tangram-es/raw/master/docs/images/tangram.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Mapzen Tangram-ES',
       en_name: 'Mapzen Tangram-ES',
       description:
@@ -254,7 +254,7 @@ export const CPlus: IGroup = {
       tags: ['C++', 'OpenGL ES', '2D Maps', '3D Maps']
     },
     {
-      icon: 'https://github.com/OpenDroneMap/OpenDroneMap/raw/master/docs/odm_logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'OpenDroneMap',
       en_name: 'OpenDroneMap',
       description:
@@ -266,7 +266,7 @@ export const CPlus: IGroup = {
       tags: ['Drone Data', 'Orthophotos', 'Point Clouds', 'Textured Mesh']
     },
     {
-      icon: 'https://github.com/OpenOrienteering/mapper/raw/master/doc/images/mapper_logo_small.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'OpenOrienteering Mapper',
       en_name: 'OpenOrienteering Mapper',
       description: 'Software for creating maps for the orienteering sport.',
@@ -288,7 +288,7 @@ export const CPlus: IGroup = {
       tags: ['Remote Sensing', 'Image Processing']
     },
     {
-      icon: 'https://github.com/gwaldron/osgearth/raw/master/data/icons/osgearth.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'osgearth',
       en_name: 'osgearth',
       description: 'A free open source C++ geospatial toolkit.',
@@ -321,7 +321,7 @@ export const CPlus: IGroup = {
       tags: ['Point Cloud Data', 'GDAL']
     },
     {
-      icon: 'https://github.com/ahhz/raster/raw/master/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Pronto Raster',
       en_name: 'Pronto Raster',
       description: 'C++ library for geographical raster data analysis.',
@@ -344,7 +344,7 @@ export const CPlus: IGroup = {
       tags: ['Remote Sensing', 'GIS', 'Dataset Processing']
     },
     {
-      icon: 'https://github.com/google/s2geometry/raw/main/assets/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'S2 Geometry',
       en_name: 'S2 Geometry',
       description: 'Computational geometry and spatial indexing on the sphere.',
@@ -355,7 +355,7 @@ export const CPlus: IGroup = {
       tags: ['Computational Geometry', 'Spatial Indexing']
     },
     {
-      icon: 'https://github.com/kmhofmann/selene/raw/master/selene_logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Selene',
       en_name: 'Selene',
       description: 'A C++14 image representation, processing and I/O library.',
@@ -378,7 +378,7 @@ export const CPlus: IGroup = {
       tags: ['C++', 'Header-only Library', 'Multi-dimensional Containers']
     },
     {
-      icon: 'https://github.com/mapbox/supercluster.hpp/raw/master/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*w-DqRZd3f88AAAAAAAAAAAAADrZ5AQ/original',
       name: 'Supercluster',
       en_name: 'Supercluster',
       description:
@@ -390,7 +390,7 @@ export const CPlus: IGroup = {
       tags: ['C++14', 'Point Clustering', 'Interactive Maps']
     },
     {
-      icon: 'https://github.com/dtarb/TauDEM/raw/master/images/taudem_logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'TauDEM',
       en_name: 'TauDEM',
       description:
@@ -412,7 +412,7 @@ export const CPlus: IGroup = {
       tags: ['GIS', 'Open Source Library']
     },
     {
-      icon: 'https://github.com/heremaps/tin-terrain/raw/master/docs/tin_terrain_logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'TIN Terrain',
       en_name: 'TIN Terrain',
       description:
