@@ -146,7 +146,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'Open Source']
     },
     {
-      icon: 'http://www.saga-gis.org/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*evU9QIx_cIcAAAAAAAAAAAAADrZ5AQ/original',
       name: 'SAGA',
       en_name: 'SAGA',
       description: '用于自动地球科学分析的开源系统。',
