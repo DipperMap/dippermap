@@ -24,7 +24,9 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
           setCollapsed(!collapsed)
         }}
       >
-        <div>{collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}</div>
+        <div className="header_icon">
+          {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+        </div>
       </div>
       <div className="header-right">
         <div className="weChat">
@@ -45,11 +47,12 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
               </div>
             }
           >
-            <WechatOutlined />
+            <WechatOutlined className="header_icon" />
           </Tooltip>
         </div>
         <div className="gitHub">
           <GithubOutlined
+            className="header_icon"
             onClick={() => {
               window.open('https://github.com/DipperMap/dippermap')
             }}

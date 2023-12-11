@@ -12,6 +12,7 @@ import {
   CheckOutlined
 } from '@ant-design/icons'
 import { Space, Tag } from 'antd'
+import { UrlSetSite } from '../../utils'
 
 type MobileSiderPopup = {
   siteData: string
@@ -30,7 +31,9 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
   const divRef = useRef<HTMLDivElement>(null)
 
   const tagClick = (item: IGroup) => {
-    const element = document.querySelector(`#map-${item.name}`)
+    const element = document.querySelector(
+      `#map-${item.name.replace(/\s/g, '-').replace(/\+/g, 'plus')}`
+    )
     if (element) {
       element.scrollIntoView({ block: 'start', behavior: 'smooth' })
       setSelectedTag(item.name)
@@ -57,7 +60,19 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
       <div ref={divRef}>
         <div className="mobile-header">
           <div className="mobile-logo">
-            <img width={40} src={logoIcon} alt="" />
+            <img
+              width={40}
+              src={logoIcon}
+              alt=""
+              onClick={() => {
+                setSiteData('main')
+                UrlSetSite('main')
+                setSelectedTag(undefined)
+                setActiveIcon(false)
+                setActiveSite(false)
+                setCollapsed(false)
+              }}
+            />
             <div
               onClick={(e) => {
                 e.stopPropagation()
@@ -138,13 +153,7 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
                     onClick={(e) => {
                       e.stopPropagation()
                       setSiteData(key)
-                      const currentUrl = new URL(window.location.href)
-                      const searchParams = new URLSearchParams(
-                        currentUrl.search
-                      )
-                      searchParams.set('site', key)
-                      currentUrl.search = searchParams.toString()
-                      window.history.pushState({}, '', currentUrl)
+                      UrlSetSite(key)
                     }}
                   >
                     <div>{SitesConfig[key].name}</div>

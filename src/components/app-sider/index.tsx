@@ -12,6 +12,7 @@ import {
   CaretUpOutlined,
   CheckOutlined
 } from '@ant-design/icons'
+import { UrlSetSite } from '../../utils'
 
 type AppSilderPopup = {
   collapsed: boolean
@@ -32,7 +33,9 @@ export const AppSider: React.FC<AppSilderPopup> = ({
   const collapsedTag = useRef<HTMLDivElement | null>(null)
 
   const tagClick = (item: IGroup) => {
-    const element = document.querySelector(`#map-${item.name}`)
+    const element = document.querySelector(
+      `#map-${item.name.replace(/\s/g, '-').replace(/\+/g, 'plus')}`
+    )
     if (element) {
       element.scrollIntoView({ block: 'start', behavior: 'smooth' })
       setSelectedTag(item.name)
@@ -66,11 +69,7 @@ export const AppSider: React.FC<AppSilderPopup> = ({
               onClick={(e) => {
                 e.stopPropagation()
                 setSiteData(key)
-                const currentUrl = new URL(window.location.href)
-                const searchParams = new URLSearchParams(currentUrl.search)
-                searchParams.set('site', key)
-                currentUrl.search = searchParams.toString()
-                window.history.pushState({}, '', currentUrl)
+                UrlSetSite(key)
               }}
             >
               <div>{SitesConfig[key].name}</div>
@@ -91,6 +90,11 @@ export const AppSider: React.FC<AppSilderPopup> = ({
             minWidth: 40,
             display: collapsed ? 'block' : 'none'
           }}
+          onClick={() => {
+            setSiteData('main')
+            UrlSetSite('main')
+            setSelectedTag(undefined)
+          }}
           src={logoIcon}
           alt=""
         />
@@ -100,6 +104,11 @@ export const AppSider: React.FC<AppSilderPopup> = ({
             maxWidth: 150,
             minWidth: 150,
             display: !collapsed ? 'block' : 'none'
+          }}
+          onClick={() => {
+            setSiteData('main')
+            UrlSetSite('main')
+            setSelectedTag(undefined)
           }}
           src={logo}
           alt=""

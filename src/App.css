@@ -27,6 +27,7 @@
   top: 0;
   bottom: 0;
   z-index: 2;
+  background-color: #1D2531;
 }
 
 .siderWidth {
@@ -67,7 +68,7 @@
 .App-header {
   text-align: center;
   height: 64px;
-  padding-inline: 50px;
+  padding-inline: 32px;
   line-height: 64px;
   background-color: #ffffff;
   position: sticky;
