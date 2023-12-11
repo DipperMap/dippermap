@@ -218,6 +218,18 @@ export const FrontEndFramework: IGroup = {
       tags: ['Open Source', 'Self-hosting', 'OpenStreetMap Maps']
     },
     {
+      icon: '',
+      name: 'GEOS-WASM',
+      en_name: 'GEOS-WASM',
+      description:
+        'WebAssembly port of the Geometry Engine - Open Source (GEOS) library for geometric operations.',
+      en_description:
+        'WebAssembly port of the Geometry Engine - Open Source (GEOS) library for geometric operations.',
+      site_url: 'https://github.com/chrispahm/geos-wasm',
+      order: 9,
+      tags: ['WebAssembly', 'Geometry Engine', 'Geometric Operations']
+    },
+    {
       icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*kC6YTrxlXZEAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Polymaps',
       en_name: 'Polymaps',
