@@ -41,12 +41,18 @@
 .tag {
   background-color: #ffffff10;
   color: #fff;
+  font-weight: 500;
 }
 
 .selected-tag {
   background-color: #fff;
   color: #1d2531;
   font-weight: 500;
+}
+
+.selected-tag:hover {
+  background-color: #fff;
+  color: #1d2531;
 }
 
 .site {
