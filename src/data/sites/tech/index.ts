@@ -1,9 +1,7 @@
 import { ISiteConfig } from '../../types'
 import { Tiles3D } from './groups/3d_tiles'
-import { dataSpec } from './groups/data_spec'
 import { MapEngine } from './groups/map_engine'
 import { spatialDatabase } from './groups/spatial_database'
-import { GeospatialAnalysis } from './groups/geospatial_analysis'
 import { GISSoftWare } from './groups/gis_software'
 import { RSSoftWare } from './groups/rs_software'
 import { Application3D } from './groups/3d_applications'
@@ -18,25 +16,24 @@ import { Python } from './groups/geospatial_library/python'
 import { PHP } from './groups/geospatial_library/php'
 import { Julia } from './groups/geospatial_library/julia'
 import { FrontEndFramework } from './groups/front_end_framework'
-import { R } from './groups/geospatial_library/r'
 import { OpenStandards } from './groups/open_standards'
 import { Ruby } from './groups/geospatial_library/ruby'
 import { Rust } from './groups/geospatial_library/rust'
+import { Awesome } from './groups/awesome'
 
 export const Tech: ISiteConfig = {
   name: '开源技术',
   en_name: 'tech',
   groups: [
+    Awesome,
     GISSoftWare,
-    Tiles3D,
-    dataSpec,
     MapEngine,
     spatialDatabase,
-    GeospatialAnalysis,
     RSSoftWare,
     Application3D,
     WebMapServer,
     FrontEndFramework,
+    Tiles3D,
     C,
     CPlus,
     CSharp,
@@ -46,7 +43,6 @@ export const Tech: ISiteConfig = {
     Python,
     PHP,
     Julia,
-    R,
     OpenStandards,
     Rust,
     Ruby
