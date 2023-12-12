@@ -41,6 +41,7 @@
 .tag {
   background-color: #ffffff10;
   color: #fff;
+  font-weight: 500;
 }
 
 .selected-tag {
