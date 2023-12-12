@@ -81,6 +81,26 @@ export const SharingStation: IGroup = {
       site_url: 'http://www.data.ac.cn/',
       order: 4,
       tags: ['Resource Science', 'Innovation Platform', 'Data Services']
+    },
+    {
+      icon: 'https://worldmap.maps.arcgis.com/favicon.ico',
+      name: '哈佛大学世界地图',
+      en_name: 'Harvard World Map',
+      description:
+        '哈佛大学世界地图提供多种数据类型，包括交通网络（含高铁、高速、机场等）、宗教信仰分布、人口密度图、能源图、教育分布、环境（水质、空气质量、CO2、PM2.5等）。',
+      en_description:
+        'The Harvard World Map provides various types of data, including transportation networks (including high-speed rail, highways, airports), religious beliefs distribution, population density maps, energy maps, education distribution, and environmental data (water quality, air quality, CO2, PM2.5, etc.).',
+      site_url: 'https://worldmap.maps.arcgis.com/home/index.html',
+      order: 5,
+      tags: [
+        'Geospatial Data',
+        'Transportation Network',
+        'Religious Distribution',
+        'Population Density',
+        'Energy Map',
+        'Education Distribution',
+        'Environmental Data'
+      ]
     }
   ]
 }
