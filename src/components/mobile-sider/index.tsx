@@ -138,6 +138,8 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
                       onClick={(e) => {
                         e.stopPropagation()
                         tagClick(group)
+                        setCollapsed(false)
+                        setActiveIcon(false)
                       }}
                     >
                       {group.name}
@@ -160,6 +162,8 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
                       e.stopPropagation()
                       setSiteData(key)
                       UrlSetSite(key)
+                      setCollapsed(false)
+                      setActiveSite(false)
                     }}
                   >
                     <div>{SitesConfig[key].name}</div>

@@ -16,11 +16,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 20px 0 0;
+  background: rgba(255, 255, 255, 0.02);
+  height: 64px;
 }
 
 .mobile-logo {
   padding: 14px 20px;
-  background: rgba(255, 255, 255, 0.02);
   display: flex;
   align-items: center;
 }

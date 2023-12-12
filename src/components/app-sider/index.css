@@ -110,6 +110,7 @@
   border-radius: 6px;
   padding: 0px 12px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .site-item {
@@ -128,6 +129,7 @@
   border-radius: 6px;
   padding: 0px 12px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .collapsed_block {
