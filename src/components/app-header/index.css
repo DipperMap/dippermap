@@ -12,7 +12,7 @@
 
 .weChat {
   cursor: pointer;
-  margin-right: 40px;
+  margin-right: 24px;
 }
 
 .weChatText {
@@ -28,9 +28,10 @@
 
 .header_icon {
   font-size: 16px;
-  color: #676F7B;
+  color: #676f7b;
+  cursor: pointer;
 }
 
-.header_icon:hover{
-  color: #38404D;
+.header_icon:hover {
+  color: #38404d;
 }

@@ -70,6 +70,7 @@ export const AppSider: React.FC<AppSilderPopup> = ({
                 e.stopPropagation()
                 setSiteData(key)
                 UrlSetSite(key)
+                setActiveSite(false)
               }}
             >
               <div>{SitesConfig[key].name}</div>
@@ -88,7 +89,8 @@ export const AppSider: React.FC<AppSilderPopup> = ({
           style={{
             maxWidth: 40,
             minWidth: 40,
-            display: collapsed ? 'block' : 'none'
+            display: collapsed ? 'block' : 'none',
+            cursor: 'pointer'
           }}
           onClick={() => {
             setSiteData('main')
@@ -103,7 +105,8 @@ export const AppSider: React.FC<AppSilderPopup> = ({
           style={{
             maxWidth: 150,
             minWidth: 150,
-            display: !collapsed ? 'block' : 'none'
+            display: !collapsed ? 'block' : 'none',
+            cursor: 'pointer'
           }}
           onClick={() => {
             setSiteData('main')
@@ -157,6 +160,7 @@ export const AppSider: React.FC<AppSilderPopup> = ({
                       onClick={(e) => {
                         e.stopPropagation()
                         tagClick(group)
+                        setActiveIcon(false)
                       }}
                     >
                       {group.name}
