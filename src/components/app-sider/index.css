@@ -49,6 +49,11 @@
   font-weight: 500;
 }
 
+.selected-tag:hover {
+  background-color: #fff;
+  color: #1d2531;
+}
+
 .site {
   display: flex;
   align-items: center;
