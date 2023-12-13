@@ -116,7 +116,6 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                               }}
                               onClick={(e) => {
                                 e.stopPropagation()
-
                                 const newData = {
                                   ...localCollect,
 
