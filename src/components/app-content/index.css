@@ -93,3 +93,10 @@
   justify-content: center;
   background: rgba(245, 247, 250, 1);
 }
+
+.empty {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 15px;
+  color: rgba(147, 158, 169, 1);
+}

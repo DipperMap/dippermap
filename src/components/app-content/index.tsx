@@ -1,5 +1,5 @@
 import { SitesConfig } from '../../data/sites'
-import { Avatar, Row, Card, Col, Tooltip, FloatButton } from 'antd'
+import { Avatar, Row, Card, Col, Tooltip, FloatButton, Empty } from 'antd'
 import { FileTextOutlined } from '@ant-design/icons'
 import './index.css'
 import { IGroup, IItem } from '../../data/types'
@@ -54,84 +54,92 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
               key={name}
             >
               <Row className="card" gutter={[16, 16]}>
-                {children.map((val) => {
-                  const findData = localCollect?.[siteData]?.find((item) => {
-                    return item.name === val.name
+                {children.length ? (
+                  children.map((val) => {
+                    const findData = localCollect?.[siteData]?.find((item) => {
+                      return item.name === val.name
+                    })
+                    return (
+                      <Col
+                        md={16}
+                        lg={8}
+                        xl={6}
+                        xxl={4}
+                        className="card-col"
+                        onClick={() => {
+                          window.open(val.site_url)
+                        }}
+                        key={val.site_url}
+                      >
+                        <div className="card-item">
+                          <div>
+                            <Avatar
+                              className="link-img"
+                              shape="square"
+                              size={45}
+                              src={val.icon ? val.icon : undefined}
+                            >
+                              {val.icon ? null : val.name.charAt(0)}
+                            </Avatar>
+                          </div>
+                          <div className="link-content">
+                            <span className="card-name">{val.name}</span>
+                            <Tooltip title={val.description}>
+                              <p className="card-description">
+                                {val.description}
+                              </p>
+                            </Tooltip>
+                          </div>
+                          <div className="collect">
+                            {findData ? (
+                              <IconFont
+                                type="icon-a-xin21"
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  const newSiteData = localCollect?.[
+                                    siteData
+                                  ]?.filter((item) => {
+                                    return item.name !== val.name
+                                  })
+                                  setLocalCollect({
+                                    ...localCollect,
+                                    [siteData]: newSiteData ?? []
+                                  })
+                                }}
+                              />
+                            ) : (
+                              <IconFont
+                                type="icon-xin2"
+                                style={{
+                                  width: 32,
+                                  height: 32,
+                                  justifyContent: 'center'
+                                }}
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  const newData = {
+                                    ...localCollect,
+                                    [siteData]: localCollect?.[siteData]
+                                      ? [...localCollect[siteData], val]
+                                      : [val]
+                                  }
+                                  setLocalCollect(newData)
+                                }}
+                              />
+                            )}
+                          </div>
+                        </div>
+                      </Col>
+                    )
                   })
-                  return (
-                    <Col
-                      md={16}
-                      lg={8}
-                      xl={6}
-                      xxl={4}
-                      className="card-col"
-                      onClick={() => {
-                        window.open(val.site_url)
-                      }}
-                      key={val.site_url}
-                    >
-                      <div className="card-item">
-                        <div>
-                          <Avatar
-                            className="link-img"
-                            shape="square"
-                            size={45}
-                            src={val.icon ? val.icon : undefined}
-                          >
-                            {val.icon ? null : val.name.charAt(0)}
-                          </Avatar>
-                        </div>
-                        <div className="link-content">
-                          <span className="card-name">{val.name}</span>
-                          <Tooltip title={val.description}>
-                            <p className="card-description">
-                              {val.description}
-                            </p>
-                          </Tooltip>
-                        </div>
-                        <div className="collect">
-                          {findData ? (
-                            <IconFont
-                              type="icon-a-shoucangyishoucang"
-                              onClick={(e) => {
-                                e.stopPropagation()
-                                const newSiteData = localCollect?.[
-                                  siteData
-                                ]?.filter((item) => {
-                                  return item.name !== val.name
-                                })
-                                setLocalCollect({
-                                  ...localCollect,
-                                  [siteData]: newSiteData ?? []
-                                })
-                              }}
-                            />
-                          ) : (
-                            <IconFont
-                              type="icon-a-shoucangweishoucang"
-                              style={{
-                                width: 32,
-                                height: 32,
-                                justifyContent: 'center'
-                              }}
-                              onClick={(e) => {
-                                e.stopPropagation()
-                                const newData = {
-                                  ...localCollect,
-
-                                  [siteData]: localCollect
-                                    ? [...localCollect[siteData], val]
-                                    : [val]
-                                }
-                                setLocalCollect(newData)
-                              }}
-                            />
-                          )}
-                        </div>
-                      </div>
-                    </Col>
-                  )
-                })}
+                ) : (
+                  <div className="empty">
+                    <Empty
+                      image={Empty.PRESENTED_IMAGE_SIMPLE}
+                      description={'暂未收藏网站'}
+                    />
+                  </div>
+                )}
               </Row>
             </Card>
           )

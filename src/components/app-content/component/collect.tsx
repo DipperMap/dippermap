@@ -1,4 +1,4 @@
-import { Avatar, Card, Col, Row, Tooltip } from 'antd'
+import { Avatar, Card, Col, Empty, Row, Tooltip } from 'antd'
 import { IconFont } from '../../../constants'
 import { IItem } from '../../../data/types'
 
@@ -29,7 +29,7 @@ export const CollectCard: React.FC<collectPopup> = ({
       id={`map-collect`}
     >
       <Row className="card" gutter={[16, 16]}>
-        {localCollect?.[siteData] &&
+        {localCollect?.[siteData] && localCollect?.[siteData].length ? (
           localCollect?.[siteData].map((val) => {
             return (
               <Col
@@ -62,7 +62,7 @@ export const CollectCard: React.FC<collectPopup> = ({
                   </div>
                   <div className="collect">
                     <IconFont
-                      type="icon-a-shoucangyishoucang"
+                      type="icon-a-xin21"
                       onClick={(e) => {
                         e.stopPropagation()
                         const newSiteData = localCollect?.[siteData]?.filter(
@@ -80,7 +80,15 @@ export const CollectCard: React.FC<collectPopup> = ({
                 </div>
               </Col>
             )
-          })}
+          })
+        ) : (
+          <div className="empty">
+            <Empty
+              image={Empty.PRESENTED_IMAGE_SIMPLE}
+              description={'暂未收藏网站'}
+            />
+          </div>
+        )}
       </Row>
     </Card>
   )
