@@ -2,9 +2,11 @@ import { SitesConfig } from '../../data/sites'
 import { Avatar, Row, Card, Col, Tooltip, FloatButton } from 'antd'
 import { FileTextOutlined } from '@ant-design/icons'
 import './index.css'
-import { IGroup } from '../../data/types'
+import { IGroup, IItem } from '../../data/types'
 import { IconFont } from '../../constants'
 import React from 'react'
+import { CollectCard } from './component/collect'
+import { useLocalStorageState } from 'ahooks'
 
 type AppCardPopup = {
   siteData: string
@@ -12,6 +14,12 @@ type AppCardPopup = {
 
 export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
   const siteConfig = SitesConfig[siteData]
+  const [localCollect, setLocalCollect] = useLocalStorageState<{
+    [key: string]: IItem[]
+  }>('collect', {
+    defaultValue: {}
+  })
+
   return (
     <>
       <div
@@ -21,6 +29,11 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
           flexDirection: 'column'
         }}
       >
+        <CollectCard
+          localCollect={localCollect}
+          siteData={siteData}
+          setLocalCollect={setLocalCollect}
+        />
         {siteConfig.groups.map((group: IGroup) => {
           const { name, children, icon } = group
           return (
@@ -37,11 +50,14 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                 </div>
               }
               className="item-content"
-              id={`map-${name.replace(/\s/g, "-").replace(/\+/g, "plus")}`}
+              id={`map-${name.replace(/\s/g, '-').replace(/\+/g, 'plus')}`}
               key={name}
             >
               <Row className="card" gutter={[16, 16]}>
                 {children.map((val) => {
+                  const findData = localCollect?.[siteData]?.find((item) => {
+                    return item.name === val.name
+                  })
                   return (
                     <Col
                       md={16}
@@ -72,6 +88,46 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                               {val.description}
                             </p>
                           </Tooltip>
+                        </div>
+                        <div className="collect">
+                          {findData ? (
+                            <IconFont
+                              type="icon-a-shoucangyishoucang"
+                              onClick={(e) => {
+                                e.stopPropagation()
+                                const newSiteData = localCollect?.[
+                                  siteData
+                                ]?.filter((item) => {
+                                  return item.name !== val.name
+                                })
+                                setLocalCollect({
+                                  ...localCollect,
+                                  [siteData]: newSiteData ?? []
+                                })
+                              }}
+                            />
+                          ) : (
+                            <IconFont
+                              type="icon-a-shoucangweishoucang"
+                              style={{
+                                width: 32,
+                                height: 32,
+                                justifyContent: 'center'
+                              }}
+                              onClick={(e) => {
+                                e.stopPropagation()
+
+                                const newData = {
+                                  ...localCollect,
+
+                                  [siteData]: localCollect
+                                    ? [...localCollect[siteData], val]
+                                    : [val]
+                                }
+                                setLocalCollect(newData)
+                              }}
+                            />
+                          )}
                         </div>
                       </div>
                     </Col>

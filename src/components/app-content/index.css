@@ -21,10 +21,11 @@
   padding: 16px 12px 16px 16px;
   margin-bottom: 16px;
   display: block;
+  position: relative;
 }
 
 .card-item:hover {
-  background-color: #EBEFF5;
+  background-color: #ebeff5;
 }
 
 .link-content {
@@ -76,6 +77,19 @@
 }
 .titleIcon {
   margin-right: 10px;
-  color: #1D2B3A;
+  color: #1d2b3a;
   font-size: 16px;
+}
+
+.collect {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px 24px 4px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(245, 247, 250, 1);
 }
