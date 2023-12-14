@@ -6,7 +6,7 @@ export const Tiles3D: IGroup = {
   order: 4,
   children: [
     {
-      icon: 'https://github.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'CesiumJS',
       en_name: 'CesiumJS',
       description:
@@ -18,7 +18,7 @@ export const Tiles3D: IGroup = {
       tags: ['JavaScript', 'WebGL', '3D Globes', '2D Maps']
     },
     {
-      icon: 'https://github.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: '3DCityDB-Web-Map-Client',
       en_name: '3DCityDB-Web-Map-Client',
       description: '基于 Cesium 的 CityGML 和 3D Tiles 查看器。',
@@ -28,7 +28,7 @@ export const Tiles3D: IGroup = {
       tags: ['Cesium', 'CityGML', '3D Tiles']
     },
     {
-      icon: 'https://github.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'loaders.gl',
       en_name: 'loaders.gl',
       description: '用于许多主要 3D、地理空间和表格式的解析器和编码器。',
@@ -39,7 +39,7 @@ export const Tiles3D: IGroup = {
       tags: ['3D Formats', 'Geospatial Data', 'WebGL']
     },
     {
-      icon: 'https://github.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'deck.gl',
       en_name: 'deck.gl',
       description:
@@ -51,7 +51,7 @@ export const Tiles3D: IGroup = {
       tags: ['WebGL', 'Data Analysis', 'Geospatial Data']
     },
     {
-      icon: 'https://github.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: '3d-tiles-renderer',
       en_name: '3d-tiles-renderer',
       description: '基于 Three.js 的 3D Tiles 渲染器。',
@@ -61,7 +61,7 @@ export const Tiles3D: IGroup = {
       tags: ['Three.js', '3D Tiles', 'Rendering']
     },
     {
-      icon: 'https://github.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'three-loader-3dtiles',
       en_name: 'three-loader-3dtiles',
       description:
@@ -73,7 +73,7 @@ export const Tiles3D: IGroup = {
       tags: ['Three.js', 'OGC 3D Tiles', 'Loader']
     },
     {
-      icon: 'https://github.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'threedtiles',
       en_name: 'threedtiles',
       description: 'three.js 的 3DTiles 查看器。',
@@ -83,7 +83,7 @@ export const Tiles3D: IGroup = {
       tags: ['Three.js', '3DTiles', 'Viewer']
     },
     {
-      icon: 'https://github.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'mapbox-3dtiles',
       en_name: 'mapbox-3dtiles',
       description: 'Mapbox GL JS 的 3D Tiles 自定义图层。',
@@ -93,7 +93,7 @@ export const Tiles3D: IGroup = {
       tags: ['Mapbox GL JS', '3D Tiles', 'Custom Layer']
     },
     {
-      icon: 'https://github.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'A-Frame component',
       en_name: 'A-Frame component',
       description: '[A-Frame](https://aframe.io/) 使用 3D-Tiles 的组件。',
@@ -103,7 +103,7 @@ export const Tiles3D: IGroup = {
       tags: ['A-Frame', '3D-Tiles', 'Component']
     },
     {
-      icon: 'https://github.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'iTowns',
       en_name: 'iTowns',
       description: '基于 Three.js 的 JS/WebGL 框架。',
@@ -113,7 +113,7 @@ export const Tiles3D: IGroup = {
       tags: ['Three.js', 'WebGL', 'JS Framework']
     },
     {
-      icon: 'https://gitlab.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*IVw2QL05J6oAAAAAAAAAAAAADrZ5AQ/original',
       name: 'giro3d',
       en_name: 'giro3d',
       description: '基于 Three.js 的 JS/WebGL 框架（iTown 的后继者）。',
@@ -123,7 +123,7 @@ export const Tiles3D: IGroup = {
       tags: ['Three.js', 'WebGL', 'JS Framework']
     },
     {
-      icon: 'https://github.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'UD-Viz',
       en_name: 'UD-Viz',
       description:
@@ -140,7 +140,7 @@ export const Tiles3D: IGroup = {
       ]
     },
     {
-      icon: 'https://github.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'vsgCs',
       en_name: 'vsgCs',
       description:

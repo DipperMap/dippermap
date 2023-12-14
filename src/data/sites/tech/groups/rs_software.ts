@@ -18,7 +18,7 @@ export const RSSoftWare: IGroup = {
       tags: ['Image Analysis', 'Remote Sensing', 'Object-based Analysis']
     },
     {
-      icon: 'https://www.harris.com/themes/custom/harris/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*38inQ7A2iPkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'ENVI',
       en_name: 'ENVI',
       description: 'Geospatial imagery analysis and processing software.',
@@ -28,7 +28,7 @@ export const RSSoftWare: IGroup = {
       tags: ['Geospatial Imagery', 'Image Analysis', 'Remote Sensing']
     },
     {
-      icon: 'https://www.hexagongeospatial.com/themes/custom/intergraph_bootstrap_subtheme/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*TrBASa3dWpkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'ERDAS IMAGINE',
       en_name: 'ERDAS IMAGINE',
       description: 'Geospatial imagery analysis and processing software.',
@@ -39,7 +39,7 @@ export const RSSoftWare: IGroup = {
       tags: ['Geospatial Imagery', 'Image Analysis', 'Remote Sensing']
     },
     {
-      icon: 'https://www.google.com/earth/images/hp/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*TrBASa3dWpkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Google Earth',
       en_name: 'Google Earth',
       description:
@@ -51,7 +51,7 @@ export const RSSoftWare: IGroup = {
       tags: ['3D Representation', 'Satellite Imagery']
     },
     {
-      icon: 'https://www.google.com/earth/images/hp/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*TrBASa3dWpkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Google Earth Studio',
       en_name: 'Google Earth Studio',
       description:
