@@ -28,6 +28,10 @@
   background-color: #ebeff5;
 }
 
+.card-item:hover .collectIcon {
+  display: block;
+}
+
 .link-content {
   display: flex;
   align-items: flex-start;
@@ -99,4 +103,11 @@
   width: 100%;
   padding-bottom: 15px;
   color: rgba(147, 158, 169, 1);
+}
+
+.collectIcon {
+  display: none;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
 }
