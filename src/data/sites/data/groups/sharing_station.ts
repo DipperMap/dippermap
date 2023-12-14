@@ -101,6 +101,23 @@ export const SharingStation: IGroup = {
         'Education Distribution',
         'Environmental Data'
       ]
+    },
+    {
+      icon: 'https://datausa.io/images/favicon.ico?v=3',
+      name: '数据美国',
+      en_name: 'Data USA',
+      description:
+        '数据美国提供全面的可视化数据库。该平台汇聚了丰富的数据，通过直观的可视化工具，帮助用户深入了解美国的各个领域，包括经济、教育、就业等。',
+      en_description:
+        'Data USA provides a comprehensive visual database. The platform aggregates rich data and uses intuitive visualization tools to help users gain insights into various aspects of the United States, including the economy, education, employment, and more.',
+      site_url: 'https://datausa.io/',
+      tags: [
+        'Data Visualization',
+        'US Data',
+        'Economy',
+        'Education',
+        'Employment'
+      ]
     }
   ]
 }
