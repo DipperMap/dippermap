@@ -62,7 +62,11 @@ export const CollectCard: React.FC<collectPopup> = ({
                   </div>
                   <div className="collect">
                     <IconFont
-                      type="icon-a-xin21"
+                      type="icon-a-xingxing1"
+                      style={{
+                        display: 'block'
+                      }}
+                      className="collect_icon"
                       onClick={(e) => {
                         e.stopPropagation()
                         const newSiteData = localCollect?.[siteData]?.filter(

@@ -93,7 +93,11 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                           <div className="collect">
                             {findData ? (
                               <IconFont
-                                type="icon-a-xin21"
+                                type="icon-a-xingxing1"
+                                style={{
+                                  display: 'block'
+                                }}
+                                className="collect_icon"
                                 onClick={(e) => {
                                   e.stopPropagation()
                                   const newSiteData = localCollect?.[
@@ -109,12 +113,8 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                               />
                             ) : (
                               <IconFont
-                                type="icon-xin2"
-                                style={{
-                                  width: 32,
-                                  height: 32,
-                                  justifyContent: 'center'
-                                }}
+                                type="icon-xingxing"
+                                className="collect_icon"
                                 onClick={(e) => {
                                   e.stopPropagation()
                                   const newData = {
