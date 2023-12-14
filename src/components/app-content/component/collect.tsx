@@ -41,7 +41,7 @@ export const CollectCard: React.FC<collectPopup> = ({
                 onClick={() => {
                   window.open(val.site_url)
                 }}
-                key={val.site_url}
+                key={`collect_${val.site_url}`}
               >
                 <div className="card-item">
                   <div>
