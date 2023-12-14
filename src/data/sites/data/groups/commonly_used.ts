@@ -48,6 +48,16 @@ export const CommonlyUsed: IGroup = {
       site_url: 'http://www.gscloud.cn/sources',
       order: 4,
       tags: ['Remote Sensing', 'Satellite', 'Earth Observation']
+    },
+    {
+      icon: "https://ladsweb.modaps.eosdis.nasa.gov/images/favicon/index.ico",
+      name: "一级和大气存档与分发系统分布式活动存档中心",
+      en_name: "Level 1 and Atmospheric Archive and Distribution System Distributed Active Archive Center",
+      description: "LAADS DAAC是美国国家航空航天局戈达德航天中心用于存储数据的网站接口。该平台提供了MODIS、Envisat、Sentinel等常见遥感数据。",
+      en_description: "LAADS DAAC, the Level 1 and Atmospheric Archive and Distribution System Distributed Active Archive Center, is a website interface used by NASA's Goddard Space Flight Center for data storage. The platform offers commonly used remote sensing data such as MODIS, Envisat, Sentinel, and more.",
+      site_url: "https://ladsweb.modaps.eosdis.nasa.gov/",
+      order:5,
+      tags: ["NASA", "Remote Sensing Data", "MODIS", "Envisat", "Sentinel"]
     }
   ]
 }
