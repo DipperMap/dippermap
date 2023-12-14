@@ -45,6 +45,15 @@ export const IndustryData: IGroup = {
         'Data Platform',
         'Environmental Monitoring'
       ]
+    },
+    {
+      icon: "https://openflights.org/img/icon_favicon.png",
+      name: "OpenFlights",
+      en_name: "OpenFlights",
+      description: "OpenFlights提供航空航天以及航线数据，可用于绘制全球航班地图。用户可以通过搜索和过滤航班，并自动计算统计数据。",
+      en_description: "OpenFlights provides aviation and route data for creating global flight maps. Users can search and filter flights, and automatically calculate statistical data.",
+      site_url: "https://openflights.org/data",
+      tags: ["Aviation Data", "Flight Routes", "Global Flight Map", "Statistical Data"]
     }
   ]
 }
