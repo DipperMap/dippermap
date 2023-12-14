@@ -52,7 +52,7 @@ export const Application3D: IGroup = {
       tags: ['Open Source', '3D Globes', 'Geospatial Application']
     },
     {
-      icon: 'http://earth.google.com/images/social/earth_logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*TrBASa3dWpkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Google Earth',
       en_name: 'Google Earth',
       description:
@@ -64,7 +64,7 @@ export const Application3D: IGroup = {
       tags: ['3D Representation', 'Satellite Imagery', 'Maps']
     },
     {
-      icon: 'http://www.skylineglobe.com/images/default-source/logos/skylineglobe_logo_rgb.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*xynuQp6nSv0AAAAAAAAAAAAADjDHAQ/original',
       name: 'Skyline',
       en_name: 'Skyline',
       description:
@@ -77,7 +77,7 @@ export const Application3D: IGroup = {
       tags: ['3D Applications', 'Web-Based', 'Geospatial Analysis']
     },
     {
-      icon: 'http://worldwind.arc.nasa.gov/images/wind.png',
+      icon: 'https://worldwind.arc.nasa.gov/img/favicon.ico',
       name: 'World Wind',
       en_name: 'World Wind',
       description:
