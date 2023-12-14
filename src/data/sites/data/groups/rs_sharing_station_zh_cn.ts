@@ -91,6 +91,36 @@ export const RSSharingStationCN: IGroup = {
         'Data Access',
         'Environmental Monitoring'
       ]
+    },
+    {
+      icon: "https://ladsweb.modaps.eosdis.nasa.gov/images/favicon/index.ico",
+      name: "一级和大气存档与分发系统分布式活动存档中心",
+      en_name: "Level 1 and Atmospheric Archive and Distribution System Distributed Active Archive Center",
+      description: "LAADS DAAC是美国国家航空航天局戈达德航天中心用于存储数据的网站接口。该平台提供了MODIS、Envisat、Sentinel等常见遥感数据。",
+      en_description: "LAADS DAAC, the Level 1 and Atmospheric Archive and Distribution System Distributed Active Archive Center, is a website interface used by NASA's Goddard Space Flight Center for data storage. The platform offers commonly used remote sensing data such as MODIS, Envisat, Sentinel, and more.",
+      site_url: "https://ladsweb.modaps.eosdis.nasa.gov/",
+      order:9,
+      tags: ["NASA", "Remote Sensing Data", "MODIS", "Envisat", "Sentinel"]
+    },
+    {
+      icon: "https://srtm.csi.cgiar.org/wp-content/uploads/2018/11/cropped-cgiar-csi_new_logo_2011_final-2.png",
+      name: "航天飞机雷达地形测绘使命SRTM",
+      en_name: "Space Shuttle Radar Topography Mission SRTM",
+      description: "SRTM是由美国太空总署（NASA）和国防部国家测绘局（NIMA）联合测量的地形测绘使命。该任务主要以航天飞机为平台，对地球表面进行遥感测量，提供高质量的地形数据。",
+      en_description: "The Space Shuttle Radar Topography Mission (SRTM) is a topographic mapping mission conducted in collaboration between NASA (National Aeronautics and Space Administration) and the National Geospatial-Intelligence Agency (NGA). Using the Space Shuttle as a platform, SRTM performs remote sensing measurements on Earth's surface, providing high-quality terrain data.",
+      site_url: "http://srtm.csi.cgiar.org/srtmdata/",
+      order:10,
+      tags: ["NASA", "Topography Mapping", "SRTM", "Remote Sensing", "Terrain Data"]
+    },
+    {
+      icon: "https://www.ngdc.noaa.gov/favicon.ico",
+      name: "夜光遥感数据",
+      en_name: "Nighttime Lights Remote Sensing Data",
+      description: "夜光遥感数据由美国国家地球物理数据中心（NGDC）提供。该数据用于观测地球表面的夜光亮度，为研究城市化、经济活动和人口分布等提供重要信息。",
+      en_description: "Nighttime Lights Remote Sensing Data is provided by the National Geophysical Data Center (NGDC) of the United States. This data is used to observe the nighttime brightness of the Earth's surface, providing crucial information for studying urbanization, economic activities, and population distribution.",
+      site_url: "https://www.ngdc.noaa.gov/eog/download.html",
+      order:11,
+      tags: ["Nighttime Lights", "Remote Sensing Data", "Urbanization", "Economic Activities", "Population Distribution"]
     }
   ]
 }
