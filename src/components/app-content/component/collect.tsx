@@ -71,7 +71,10 @@ export const CollectCard: React.FC<collectPopup> = ({
                         e.stopPropagation()
                         const newSiteData = localCollect?.[siteData]?.filter(
                           (item) => {
-                            return item.name !== val.name
+                            return (
+                              item.name !== val.name &&
+                              item.site_url !== val.site_url
+                            )
                           }
                         )
                         setLocalCollect({

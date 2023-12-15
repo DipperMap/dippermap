@@ -30,7 +30,7 @@ export const CPlus: IGroup = {
       tags: ['Boost', 'C++', 'Geometry']
     },
     {
-      icon: 'https://en.wikipedia.org/favicon.ico',
+      icon: '',
       name: 'Capaware',
       en_name: 'Capaware',
       description: '带有多层表示的三维地形表示。',
@@ -176,7 +176,7 @@ export const CPlus: IGroup = {
       tags: ['LAZ', 'C++', 'JavaScript']
     },
     {
-      icon: 'https://trac.osgeo.org/geotiff/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*ieZFQrEOZPQAAAAAAAAAAAAADrZ5AQ/original',
       name: 'libGeoTiff',
       en_name: 'libGeoTiff',
       description: '操作基于 TIFF 的地理引用栅格图像的轻量级 SQL 库。',
@@ -276,7 +276,7 @@ export const CPlus: IGroup = {
       tags: ['Orienteering Sport', 'Mapping']
     },
     {
-      icon: 'https://www.orfeo-toolbox.org/wp-content/uploads/2015/03/orfeo-toolbox-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*c394T4_DVG4AAAAAAAAAAAAADjDHAQ/original',
       name: 'Orfeo ToolBox',
       en_name: 'Orfeo ToolBox',
       description:
@@ -298,7 +298,7 @@ export const CPlus: IGroup = {
       tags: ['C++', 'Geospatial Toolkit']
     },
     {
-      icon: 'http://project-osrm.org/assets/osrm-logo.svg',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*Jd2dQoZEZzwAAAAAAAAAAAAADjDHAQ/original',
       name: 'OSRM (Open Source Routing Machine)',
       en_name: 'OSRM (Open Source Routing Machine)',
       description:
@@ -310,7 +310,7 @@ export const CPlus: IGroup = {
       tags: ['Routing Engine', 'C++', 'OpenStreetMap']
     },
     {
-      icon: 'https://pdal.io/_static/og_image.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*Xp0aQaT3hrkAAAAAAAAAAAAADjDHAQ/original',
       name: 'PDAL',
       en_name: 'PDAL',
       description: 'Point Data Abstraction Library. GDAL for point cloud data.',
@@ -331,7 +331,7 @@ export const CPlus: IGroup = {
       tags: ['C++', 'Raster Data', 'Geographical Analysis']
     },
     {
-      icon: 'https://bitbucket.org/petebunting/rsgislib/raw/bf7933996822f679f9f09cc2d13b2210fe5be5b5/doc/images/rsgislib.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'RSGISLib',
       en_name: 'RSGISLib',
       description:
@@ -366,7 +366,7 @@ export const CPlus: IGroup = {
       tags: ['C++14', 'Image Processing', 'I/O Library']
     },
     {
-      icon: 'https://sourceforge.net/p/spatial/code/HEAD/tree/trunk/images/spatial-logo.png',
+      icon: 'https://a.fsdn.com/allura/p/spatial/icon?1449397942',
       name: 'Spatial',
       en_name: 'Spatial',
       description:
@@ -402,7 +402,7 @@ export const CPlus: IGroup = {
       tags: ['Terrain Analysis', 'Digital Elevation Models']
     },
     {
-      icon: 'http://www.dpi.inpe.br/terralib5/wiki/lib/exe/fetch.php?media=5x:img_20150327_113125_0.jpg',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*k-6MRI1YbAoAAAAAAAAAAAAADjDHAQ/original',
       name: 'Terralib',
       en_name: 'Terralib',
       description: 'GIS classes and functions open source library.',

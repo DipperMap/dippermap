@@ -6,7 +6,7 @@ export const RSSoftWare: IGroup = {
   order: 5,
   children: [
     {
-      icon: 'http://www.ecognition.com/suite/ecognition-developer/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*KACdTYozmn0AAAAAAAAAAAAADjDHAQ/original',
       name: 'eCognition',
       en_name: 'eCognition',
       description:
@@ -63,7 +63,7 @@ export const RSSoftWare: IGroup = {
       tags: ['Animation', 'Satellite Imagery', '3D Imagery']
     },
     {
-      icon: 'https://grass.osgeo.org/wp-content/uploads/2017/01/grass_logo_512.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*JGrmS4HBS7kAAAAAAAAAAAAADjDHAQ/original',
       name: 'GRASS GIS',
       en_name: 'GRASS GIS',
       description:
@@ -75,7 +75,7 @@ export const RSSoftWare: IGroup = {
       tags: ['GIS', 'Open Source', 'Geospatial Data']
     },
     {
-      icon: 'https://opticks.org/images/opticks-logo.png',
+      icon: '',
       name: 'Opticks',
       en_name: 'Opticks',
       description:
@@ -87,7 +87,7 @@ export const RSSoftWare: IGroup = {
       tags: ['Remote Sensing', 'Imagery Analysis', 'Open Source']
     },
     {
-      icon: 'https://www.orfeo-toolbox.org/wp-content/uploads/2015/09/OTB-logo.jpg',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*c394T4_DVG4AAAAAAAAAAAAADjDHAQ/original',
       name: 'Orfeo toolbox',
       en_name: 'Orfeo toolbox',
       description:
@@ -99,7 +99,7 @@ export const RSSoftWare: IGroup = {
       tags: ['Remote Sensing', 'Imagery Analysis', 'Open Source']
     },
     {
-      icon: 'https://www.giss.nasa.gov/tools/panoply/icons/pan_icon_128x128.png',
+      icon: 'https://search.earthdata.nasa.gov/favicon.ico?v=1.1',
       name: 'PANOPLY',
       en_name: 'PANOPLY',
       description:
@@ -111,7 +111,7 @@ export const RSSoftWare: IGroup = {
       tags: ['Data Visualization', 'netCDF', 'GRIB']
     },
     {
-      icon: 'http://www.pcigeomatics.com/wp-content/themes/pcigeo2014/images/favicon.ico',
+      icon: '',
       name: 'PCI Geomatica',
       en_name: 'PCI Geomatica',
       description:
@@ -123,7 +123,7 @@ export const RSSoftWare: IGroup = {
       tags: ['Remote Sensing', 'Geomatics', 'Earth Observation']
     },
     {
-      icon: 'http://step.esa.int/wp-content/uploads/2013/03/SNAP_logo_rgb_cropped.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*3R7zT5fCygUAAAAAAAAAAAAADjDHAQ/original',
       name: 'SNAP',
       en_name: 'SNAP',
       description: 'A common architecture for all Sentinel Toolboxes.',

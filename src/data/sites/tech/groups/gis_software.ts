@@ -19,7 +19,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'ArcGIS', 'Desktop', 'Spatial Analysis']
     },
     {
-      icon: 'https://www.diva-gis.org/favicon.ico',
+      icon: '',
       name: 'DIVA-GIS',
       en_name: 'DIVA-GIS',
       description:
@@ -53,7 +53,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'GDAL', 'MapServer', 'Development']
     },
     {
-      icon: 'http://www.bluemarblegeo.com/favicon.ico',
+      icon: '',
       name: 'Global Mapper',
       en_name: 'Global Mapper',
       description:
@@ -65,7 +65,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'Spatial Data Processing', 'Data Formats']
     },
     {
-      icon: 'https://grass.osgeo.org/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*JGrmS4HBS7kAAAAAAAAAAAAADjDHAQ/original',
       name: 'GRASS GIS',
       en_name: 'GRASS GIS',
       description:
@@ -92,7 +92,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'User-friendly', 'Interoperable']
     },
     {
-      icon: 'http://jump-pilot.sourceforge.net/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*KjlKQKsVoxAAAAAAAAAAAAAADjDHAQ/original',
       name: 'JUMP GIS',
       en_name: 'JUMP GIS',
       description: '用Java编写的开源GIS。',
@@ -179,7 +179,7 @@ export const GISSoftWare: IGroup = {
       tags: ['Open Source', 'Map Design']
     },
     {
-      icon: 'http://udig.refractions.net/favicon.ico',
+      icon: 'http://udig.refractions.net/images/udig.png',
       name: 'uDig',
       en_name: 'uDig',
       description:
@@ -191,7 +191,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'Web GIS', 'Data Import', 'Data Export']
     },
     {
-      icon: 'http://www.uoguelph.ca/~hydrogeo/Whitebox/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*7uF4QbzWn0AAAAAAAAAAAAAADjDHAQ/original',
       name: 'Whitebox GAT',
       en_name: 'Whitebox GAT',
       description: '用于地理空间分析和数据可视化的开源桌面GIS和遥感软件包。',
@@ -202,7 +202,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'Geospatial Analysis', 'Remote Sensing', 'Open Source']
     },
     {
-      icon: 'https://abc-map.fr/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*0x5oSpVFjjkAAAAAAAAAAAAADjDHAQ/original',
       name: 'Abc-Map',
       en_name: 'Abc-Map',
       description:

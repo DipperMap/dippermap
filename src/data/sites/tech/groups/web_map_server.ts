@@ -16,7 +16,7 @@ export const WebMapServer: IGroup = {
       tags: ['Enterprise Application', 'GIS Server']
     },
     {
-      icon: 'https://www.baremaps.com/img/logo.png',
+      icon: '',
       name: 'Baremaps',
       en_name: 'Baremaps',
       description:
@@ -33,7 +33,7 @@ export const WebMapServer: IGroup = {
       ]
     },
     {
-      icon: 'http://www.deegree.org/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*3wjFSZ6NicIAAAAAAAAAAAAADjDHAQ/original',
       name: 'deegree',
       en_name: 'deegree',
       description: '用于空间数据基础设施和地理空间Web的开源软件。',
@@ -44,7 +44,7 @@ export const WebMapServer: IGroup = {
       tags: ['Spatial Data Infrastructures', 'Geospatial Web', 'Open Source']
     },
     {
-      icon: 'https://docs.djangoproject.com/en/3.1/_static/img/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*-m_JSqNzcwYAAAAAAAAAAAAADjDHAQ/original',
       name: 'GeoDjango',
       en_name: 'GeoDjango',
       description: '使用Python Web框架Django构建的GIS服务器。',
@@ -54,7 +54,7 @@ export const WebMapServer: IGroup = {
       tags: ['Python Web Framework', 'Django', 'GIS Server']
     },
     {
-      icon: 'http://www.geomajas.org/wp-content/uploads/2014/03/geomajas_logo_final.png',
+      icon: '',
       name: 'geomajas',
       en_name: 'geomajas',
       description: '用于创建Web GIS应用程序的开源平台。',
@@ -64,7 +64,7 @@ export const WebMapServer: IGroup = {
       tags: ['Web GIS Applications', 'Open Source Platform']
     },
     {
-      icon: 'http://www.geomoose.org/sites/default/files/geomoose_logo_small.png',
+      icon: '',
       name: 'GeoMOOSE',
       en_name: 'GeoMOOSE',
       description: '用于显示分布式制图数据的Web客户端JavaScript框架。',
@@ -75,7 +75,7 @@ export const WebMapServer: IGroup = {
       tags: ['Web Client', 'JavaScript Framework', 'Cartographic Data']
     },
     {
-      icon: 'http://geonode.org/img/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*z1MMSraMrdUAAAAAAAAAAAAADjDHAQ/original',
       name: 'GeoNode',
       en_name: 'GeoNode',
       description: '开源地理空间内容管理系统。',
@@ -112,7 +112,7 @@ export const WebMapServer: IGroup = {
       ]
     },
     {
-      icon: 'https://www.geowebcache.org/img/gwc-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*YGeCSql8yd4AAAAAAAAAAAAADjDHAQ/original',
       name: 'GeoWebCache',
       en_name: 'GeoWebCache',
       description: '用于加速和优化地图图像交付的Java Web应用程序。',
@@ -135,7 +135,7 @@ export const WebMapServer: IGroup = {
       tags: ['Open Source', 'Geospatial Application', '3D Globes', '2D Maps']
     },
     {
-      icon: 'http://www.mapbender.org/images/b/bc/Mapbender3Logo.png',
+      icon: 'https://mapbender.org/fileadmin/mapbender/templates/assets/mapbender-logo-brand.png',
       name: 'mapbender3',
       en_name: 'mapbender3',
       description: '在Symfony 2 PHP上发布空间数据基础设施服务。',
@@ -146,7 +146,7 @@ export const WebMapServer: IGroup = {
       tags: ['Spatial Data Infrastructure Services', 'Symfony 2 PHP']
     },
     {
-      icon: 'http://www.mapfish.org/img/mapfish_logo.png',
+      icon: 'http://www.mapfish.org/static/mapfish_white.png',
       name: 'MapFish',
       en_name: 'MapFish',
       description:
@@ -158,7 +158,7 @@ export const WebMapServer: IGroup = {
       tags: ['Web-Mapping Applications', 'Python Web Framework']
     },
     {
-      icon: 'http://mapguide.osgeo.org/images/mg-logo.png',
+      icon: 'https://www.osgeo.org/wp-content/uploads/cropped-osgeo-emblem-rgb-1-32x32.png',
       name: 'MapGuide',
       en_name: 'MapGuide',
       description: '用于显示分布式制图数据的Web客户端JavaScript框架。',
@@ -180,7 +180,7 @@ export const WebMapServer: IGroup = {
       tags: ['Open Source', 'Mapping Toolkit', 'C++', 'Desktop', 'Server']
     },
     {
-      icon: 'http://www.mapserver.org/_static/feature.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*AD1zSIfOtEoAAAAAAAAAAAAADjDHAQ/original',
       name: 'MapServer',
       en_name: 'MapServer',
       description: '发布空间数据和交互式地图应用程序到Web。',
@@ -191,7 +191,7 @@ export const WebMapServer: IGroup = {
       tags: ['Spatial Data', 'Interactive Mapping', 'Web']
     },
     {
-      icon: 'https://www.maptiler.com/media/2018-09-12-introducing-server/maptiler-server-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*cKHJQ5ATqkMAAAAAAAAAAAAADjDHAQ/original',
       name: 'MapTiler Server',
       en_name: 'MapTiler Server',
       description:
@@ -209,7 +209,7 @@ export const WebMapServer: IGroup = {
       ]
     },
     {
-      icon: 'http://www.nanocubes.net/images/nanocube.png',
+      icon: '',
       name: 'Nanocubes',
       en_name: 'Nanocubes',
       description: '用于时空数据立方体的内存数据结构。',
@@ -220,7 +220,7 @@ export const WebMapServer: IGroup = {
       tags: ['In-Memory Data Structure', 'Spatiotemporal Data Cubes']
     },
     {
-      icon: 'https://www.nextgis.com/wp-content/uploads/2015/02/nextgis-web-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*jW3sQoEFC7EAAAAAAAAAAAAADjDHAQ/original',
       name: 'NextGIS Web',
       en_name: 'NextGIS Web',
       description: '一种用于存储、可视化和管理各种地理空间数据的开源框架。',
@@ -237,7 +237,7 @@ export const WebMapServer: IGroup = {
       ]
     },
     {
-      icon: 'https://opentileserver.org/images/opentileserver-logo.png',
+      icon: '',
       name: 'OpenTileServer',
       en_name: 'OpenTileServer',
       description: '用于构建基本瓦片服务器与OpenStreetMap数据的脚本。',
@@ -248,7 +248,7 @@ export const WebMapServer: IGroup = {
       tags: ['Tile Server', 'OpenStreetMap Data']
     },
     {
-      icon: 'https://docs.qgis.org/3.16/en/_static/logo_qgis_2.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*Cq8uQqVqV_QAAAAAAAAAAAAADjDHAQ/original',
       name: 'QGIS Server',
       en_name: 'QGIS Server',
       description: '一个用C++编写的FastCGI/CGI应用程序，与Web服务器一起使用。',
@@ -279,7 +279,7 @@ export const WebMapServer: IGroup = {
       ]
     },
     {
-      icon: 'http://www.telemac-mascaret.org/wp-content/uploads/2018/09/telemac2.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*14gGQa9DgisAAAAAAAAAAAAADjDHAQ/original',
       name: 'Telemac',
       en_name: 'Telemac',
       description: '开源的水动力学软件包，用于模拟河流和沿海地区的复杂流动。',
@@ -295,7 +295,7 @@ export const WebMapServer: IGroup = {
       ]
     },
     {
-      icon: 'http://www.udig.refractions.net/images/udig_logo.png',
+      icon: 'http://udig.refractions.net/images/udig.png',
       name: 'uDig',
       en_name: 'uDig',
       description:
@@ -311,7 +311,7 @@ export const WebMapServer: IGroup = {
       ]
     },
     {
-      icon: 'https://www.unavco.org/images/gateway/ras/teqc.png',
+      icon: 'https://www.unavco.org/wordpress/wp-content/uploads/2023/07/cropped-favicon-192x192.png',
       name: 'teqc',
       en_name: 'teqc',
       description: '用于GNSS数据质量控制的工具。',
