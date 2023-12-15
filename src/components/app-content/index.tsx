@@ -7,7 +7,6 @@ import { IconFont } from '../../constants'
 import React from 'react'
 import { CollectCard } from './component/collect'
 import { useLocalStorageState } from 'ahooks'
-import { randomUUID } from 'crypto'
 
 type AppCardPopup = {
   siteData: string
@@ -70,7 +69,9 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                         onClick={() => {
                           window.open(val.site_url)
                         }}
-                        key={`${name}_${val.name.replace(/\s/g, '-')}_${val.order}`}
+                        key={`${name}_${val.name.replace(/\s/g, '-')}_${
+                          val.order
+                        }`}
                       >
                         <div className="card-item">
                           <div>
