@@ -185,7 +185,7 @@ export const CSharp: IGroup = {
       tags: ['.NET Standard', 'OGC Extensions', 'PostGIS', 'LINQ']
     },
     {
-      icon: 'https://www.mapbox.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',  
       name: 'Mapbox Maps SDK for Unity',
       en_name: 'Mapbox Maps SDK for Unity',
       description:

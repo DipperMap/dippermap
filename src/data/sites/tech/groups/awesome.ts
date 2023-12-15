@@ -26,7 +26,7 @@ export const Awesome: IGroup = {
       tags: ['ArcGIS', '开发']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*QMTFQK37TTsAAAAAAAAAAAAADjDHAQ/original',
       name: 'Earth Observation',
       en_name: 'EarthobservationCode',
       description:
@@ -58,7 +58,7 @@ export const Awesome: IGroup = {
       tags: ['GeoJSON']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*RXfYQ7oi15EAAAAAAAAAAAAADjDHAQ/original',
       name: 'GeoSpatial',
       en_name: 'GeoSpatial',
       description: '大量的地理空间工具和资源。',
@@ -80,7 +80,7 @@ export const Awesome: IGroup = {
       tags: ['地理空间公司', 'GIS', '地球观测', '无人机', '卫星', '数字农业']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*2K65RotoglsAAAAAAAAAAAAADjDHAQ/original',
       name: 'OpenGeoscience',
       en_name: 'OpenGeoscience',
       description:
@@ -105,7 +105,7 @@ export const Awesome: IGroup = {
       tags: ['QGis', '框架', '库', '工具', '插件', '教程']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*SLH1QZOg_JAAAAAAAAAAAAAADjDHAQ/original',
       name: 'RS-Change-Detection',
       en_name: 'RS-Change-Detection',
       description: '与遥感变化检测相关的数据集、代码、研究人员和竞赛的列表。',
@@ -117,7 +117,7 @@ export const Awesome: IGroup = {
       tags: ['遥感变化检测', '数据集', '代码', '研究人员', '竞赛']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*QMTFQK37TTsAAAAAAAAAAAAADjDHAQ/original',
       name: 'Satellite-imagery-datasets',
       en_name: 'Satellite-imagery-datasets',
       description: '带有计算机视觉和深度学习注释的卫星图像数据集的列表。',
@@ -127,7 +127,7 @@ export const Awesome: IGroup = {
       tags: ['卫星图像数据集', '计算机视觉', '深度学习']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*SLH1QZOg_JAAAAAAAAAAAAAADjDHAQ/original',
       name: 'Vector-tiles',
       en_name: 'vector-tiles',
       description: '实现Mapbox Vector Tile规范的令人敬畏的工具。',
@@ -137,7 +137,7 @@ export const Awesome: IGroup = {
       tags: ['Mapbox Vector Tile规范']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*-UBVSpAQHXoAAAAAAAAAAAAADjDHAQ/original',
       name: 'Historic(al) Maps',
       en_name: 'Historic(al) Maps',
       description: '与历史地图相关的资源、数据库和工具的精选列表。',
@@ -147,7 +147,7 @@ export const Awesome: IGroup = {
       tags: ['历史地图', '资源', '数据库', '工具']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*37IkTLyFeBoAAAAAAAAAAAAADjDHAQ/original',
       name: '3d-tiles',
       en_name: '3d-Tiles',
       description:

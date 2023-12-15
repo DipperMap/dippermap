@@ -97,7 +97,7 @@ export const JavaScript: IGroup = {
       tags: ['City Roads', 'Visualization']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original?s=200&v=4',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*BUiIRqsFAbYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'deck.gl',
       en_name: 'deck.gl',
       description: 'WebGL2 powered geospatial visualization layers.',
@@ -355,7 +355,7 @@ export const JavaScript: IGroup = {
       tags: ['Javascript', '3D Globes', 'Military Symbology']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',  
       name: 'mapbox-gl-draw',
       en_name: 'mapbox-gl-draw',
       description: 'Draw tools for mapbox-gl-js.',
@@ -365,7 +365,7 @@ export const JavaScript: IGroup = {
       tags: ['Mapbox', 'Draw Tools']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',  
       name: 'mapboxgl-powerbi',
       en_name: 'mapboxgl-powerbi',
       description: 'Mapbox GL PowerBI custom visual.',
@@ -443,7 +443,7 @@ export const JavaScript: IGroup = {
       tags: ['Node.js', 'PostGres', 'REST API']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',  
       name: 'pixelmatch',
       en_name: 'pixelmatch',
       description:
@@ -497,7 +497,7 @@ export const JavaScript: IGroup = {
       tags: ['Node.js', 'Spatial Hash']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Supercluster',
       en_name: 'Supercluster',
       description:
@@ -630,7 +630,7 @@ export const JavaScript: IGroup = {
       tags: ['Vue 2', 'Leaflet']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*mvMlQquWXgMAAAAAAAAAAAAADrZ5AQ/original',
       name: 'vue-cesium',
       en_name: 'vue-cesium',
       description:

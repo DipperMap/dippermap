@@ -87,7 +87,7 @@ export const CPlus: IGroup = {
       tags: ['Earth Observation', 'Data Cubes', 'Library']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*w-DqRZd3f88AAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',  
       name: 'geojson-vt-cpp',
       en_name: 'geojson-vt-cpp',
       description: 'JS GeoJSON-VT 的 C++ 移植，用于动态切片 GeoJSON。',
@@ -198,7 +198,7 @@ export const CPlus: IGroup = {
       tags: ['R*-tree', 'MVR-tree', 'TPR-tree', 'C++']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*w-DqRZd3f88AAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',  
       name: 'Mapbox GL Native',
       en_name: 'Mapbox GL Native',
       description:
@@ -210,7 +210,7 @@ export const CPlus: IGroup = {
       tags: ['C++', 'OpenGL', 'Map Rendering']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*w-DqRZd3f88AAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',  
       name: 'Mapbox Maps SDK for Qt',
       en_name: 'Mapbox Maps SDK for Qt',
       description: 'Qt Automotive Map Suite。',
@@ -378,7 +378,7 @@ export const CPlus: IGroup = {
       tags: ['C++', 'Header-only Library', 'Multi-dimensional Containers']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*w-DqRZd3f88AAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',  
       name: 'Supercluster',
       en_name: 'Supercluster',
       description:
@@ -436,7 +436,7 @@ export const CPlus: IGroup = {
       tags: ['GeoTIFF', 'Heightmaps', 'Command-line Tool']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',  
       name: 'tippecanoe',
       en_name: 'tippecanoe',
       description: '从大量的 GeoJSON 要素构建矢量切片集的工具。',

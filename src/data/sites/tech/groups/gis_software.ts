@@ -19,7 +19,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'ArcGIS', 'Desktop', 'Spatial Analysis']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*j2QfRKp-hBgAAAAAAAAAAAAADjDHAQ/original',
       name: 'DIVA-GIS',
       en_name: 'DIVA-GIS',
       description:
@@ -53,7 +53,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'GDAL', 'MapServer', 'Development']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*hhqLR5O1rOEAAAAAAAAAAAAADjDHAQ/original',
       name: 'Global Mapper',
       en_name: 'Global Mapper',
       description:
@@ -82,7 +82,7 @@ export const GISSoftWare: IGroup = {
       ]
     },
     {
-      icon: 'http://www.gvsig.com/en/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*-ix9R523PEUAAAAAAAAAAAAADjDHAQ/original',
       name: 'gvSIG',
       en_name: 'gvSIG',
       description: '一款强大、用户友好、可互操作的GIS。',

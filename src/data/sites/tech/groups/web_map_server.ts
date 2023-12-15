@@ -54,17 +54,7 @@ export const WebMapServer: IGroup = {
       tags: ['Python Web Framework', 'Django', 'GIS Server']
     },
     {
-      icon: '',
-      name: 'geomajas',
-      en_name: 'geomajas',
-      description: '用于创建Web GIS应用程序的开源平台。',
-      en_description: 'An open source platform to create Web GIS applications.',
-      site_url: 'http://www.geomajas.org/',
-      order: 112,
-      tags: ['Web GIS Applications', 'Open Source Platform']
-    },
-    {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*kSqVSohpafkAAAAAAAAAAAAADjDHAQ/original',
       name: 'GeoMOOSE',
       en_name: 'GeoMOOSE',
       description: '用于显示分布式制图数据的Web客户端JavaScript框架。',
@@ -209,17 +199,6 @@ export const WebMapServer: IGroup = {
       ]
     },
     {
-      icon: '',
-      name: 'Nanocubes',
-      en_name: 'Nanocubes',
-      description: '用于时空数据立方体的内存数据结构。',
-      en_description:
-        'An in-memory data structure for spatiotemporal data cubes.',
-      site_url: 'http://www.nanocubes.net/',
-      order: 125,
-      tags: ['In-Memory Data Structure', 'Spatiotemporal Data Cubes']
-    },
-    {
       icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*jW3sQoEFC7EAAAAAAAAAAAAADjDHAQ/original',
       name: 'NextGIS Web',
       en_name: 'NextGIS Web',
@@ -248,7 +227,7 @@ export const WebMapServer: IGroup = {
       tags: ['Tile Server', 'OpenStreetMap Data']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*Cq8uQqVqV_QAAAAAAAAAAAAADjDHAQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*kpIwTZzKPrkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'QGIS Server',
       en_name: 'QGIS Server',
       description: '一个用C++编写的FastCGI/CGI应用程序，与Web服务器一起使用。',
