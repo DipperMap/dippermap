@@ -30,7 +30,7 @@ export const CollectCard: React.FC<collectPopup> = ({
     >
       <Row className="card" gutter={[16, 16]}>
         {localCollect?.[siteData] && localCollect?.[siteData].length ? (
-          localCollect?.[siteData].map((val) => {
+          localCollect?.[siteData].map((val, index) => {
             return (
               <Col
                 md={16}
@@ -41,7 +41,7 @@ export const CollectCard: React.FC<collectPopup> = ({
                 onClick={() => {
                   window.open(val.site_url)
                 }}
-                key={`collect_${val.site_url}`}
+                key={`collect_${val.site_url}_${index}`}
               >
                 <div className="card-item">
                   <div>
@@ -71,7 +71,10 @@ export const CollectCard: React.FC<collectPopup> = ({
                         e.stopPropagation()
                         const newSiteData = localCollect?.[siteData]?.filter(
                           (item) => {
-                            return item.name !== val.name
+                            return (
+                              item.name !== val.name &&
+                              item.site_url !== val.site_url
+                            )
                           }
                         )
                         setLocalCollect({

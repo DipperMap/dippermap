@@ -7,6 +7,7 @@ import { IconFont } from '../../constants'
 import React from 'react'
 import { CollectCard } from './component/collect'
 import { useLocalStorageState } from 'ahooks'
+import { randomUUID } from 'crypto'
 
 type AppCardPopup = {
   siteData: string
@@ -55,7 +56,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
             >
               <Row className="card" gutter={[16, 16]}>
                 {children.length ? (
-                  children.map((val) => {
+                  children.map((val, index) => {
                     const findData = localCollect?.[siteData]?.find((item) => {
                       return item.name === val.name
                     })
@@ -69,7 +70,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                         onClick={() => {
                           window.open(val.site_url)
                         }}
-                        key={val.site_url}
+                        key={`${name}_${val.name}_${index}`}
                       >
                         <div className="card-item">
                           <div>
@@ -103,7 +104,10 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                                   const newSiteData = localCollect?.[
                                     siteData
                                   ]?.filter((item) => {
-                                    return item.name !== val.name
+                                    return (
+                                      item.name !== val.name &&
+                                      item.site_url !== val.site_url
+                                    )
                                   })
                                   setLocalCollect({
                                     ...localCollect,
