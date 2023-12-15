@@ -56,7 +56,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
             >
               <Row className="card" gutter={[16, 16]}>
                 {children.length ? (
-                  children.map((val, index) => {
+                  children.map((val) => {
                     const findData = localCollect?.[siteData]?.find((item) => {
                       return item.name === val.name
                     })
@@ -70,7 +70,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                         onClick={() => {
                           window.open(val.site_url)
                         }}
-                        key={`${name}_${val.name}_${index}`}
+                        key={`${name}_${val.name.replace(/\s/g, '-')}_${val.order}`}
                       >
                         <div className="card-item">
                           <div>
