@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const MapEngine: IGroup = {
-  icon: '',
+  icon: 'icon-ditu',
   name: '地图可视化',
   en_name: 'Map Engine',
   order: 1,

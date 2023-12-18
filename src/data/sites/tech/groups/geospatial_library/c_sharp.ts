@@ -1,6 +1,6 @@
 import { IGroup } from '../../../../types'
 export const CSharp: IGroup = {
-  icon: '',
+  icon: 'icon-Cyuyan',
   name: 'C Sharp',
   en_name: 'C Sharp',
   order: 5,

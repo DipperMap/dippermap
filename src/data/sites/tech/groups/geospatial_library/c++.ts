@@ -1,6 +1,6 @@
 import { IGroup } from '../../../../types'
 export const CPlus: IGroup = {
-  icon: '',
+  icon: 'icon-cyuyan',
   name: 'C++',
   en_name: 'C++',
   order: 5,

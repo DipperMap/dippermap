@@ -1,6 +1,6 @@
 import { IGroup } from '../../../../types'
 export const Go: IGroup = {
-  icon: '',
+  icon: 'icon-Goyuyan',
   name: 'Go',
   en_name: 'Go',
   order: 5,

@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const RSSoftWare: IGroup = {
-  icon: '',
+  icon: 'icon-yaogancehui1',
   name: '遥感软件',
   en_name: 'Remote Sensing Software',
   order: 5,

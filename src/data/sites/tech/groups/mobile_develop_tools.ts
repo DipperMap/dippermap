@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const Application3D: IGroup = {
-  icon: '',
+  icon: 'icon-shujuxietong',
   name: '移动开发工具',
   en_name: 'Mobile Develop Tools',
   order: 5,

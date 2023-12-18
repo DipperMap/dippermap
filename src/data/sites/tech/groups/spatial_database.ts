@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const spatialDatabase: IGroup = {
-  icon: '',
+  icon: 'icon-shujuyuanguanli',
   name: '空间数据库',
   en_name: ' Spatial Database',
   order: 1,

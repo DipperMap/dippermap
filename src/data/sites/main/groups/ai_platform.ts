@@ -1,7 +1,7 @@
 import { IGroup } from '../../../types'
 
 export const AIPlatform: IGroup = {
-  icon: 'ai_platform',
+  icon: 'icon-rengongzhinengdanao',
   name: 'AI 平台',
   en_name: 'AI platform',
   order: 12,

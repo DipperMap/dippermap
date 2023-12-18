@@ -1,6 +1,6 @@
 import { IGroup } from '../../../../types'
 export const JavaScript: IGroup = {
-  icon: '',
+  icon: 'icon-javascript',
   name: 'JavaScript',
   en_name: 'JavaScript',
   order: 5,

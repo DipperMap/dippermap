@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const FrontEndFramework: IGroup = {
-  icon: '',
+  icon: 'icon-qianduankaifa',
   name: '前端框架',
   en_name: 'Deep Learning',
   order: 4,

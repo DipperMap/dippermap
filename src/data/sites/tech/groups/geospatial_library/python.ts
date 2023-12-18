@@ -1,6 +1,6 @@
 import { IGroup } from '../../../../types'
 export const Python: IGroup = {
-  icon: '',
+  icon: 'icon-Pythonyuyan',
   name: 'Python',
   en_name: 'Python',
   order: 5,
