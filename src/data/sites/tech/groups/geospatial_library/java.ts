@@ -1,6 +1,6 @@
 import { IGroup } from '../../../../types'
 export const Java: IGroup = {
-  icon: '',
+  icon: 'icon-JAVAkaifa',
   name: 'Java',
   en_name: 'Java',
   order: 5,

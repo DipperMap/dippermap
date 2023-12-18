@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const WebMapServer: IGroup = {
-  icon: '',
+  icon: 'icon-ChartMap',
   name: 'Web 地图服务',
   en_name: 'Web Map Servers',
   order: 5,

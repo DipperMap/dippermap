@@ -1,6 +1,6 @@
 import { IGroup } from '../../../../types'
 export const C: IGroup = {
-  icon: '',
+  icon: 'icon-cyuyan',
   name: 'C 语言',
   en_name: 'C',
   order: 5,

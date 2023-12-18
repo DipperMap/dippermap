@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const Awesome: IGroup = {
-  icon: '',
+  icon: 'icon-danganheji',
   name: '系列合集',
   en_name: 'Awesome',
   order: 0,

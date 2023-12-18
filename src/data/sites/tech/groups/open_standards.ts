@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const OpenStandards: IGroup = {
-  icon: '',
+  icon: 'icon-shujubiaozhunhua',
   name: '开放标准',
   en_name: 'Open Standards',
   order: 20,

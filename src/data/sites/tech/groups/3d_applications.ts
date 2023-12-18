@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const Application3D: IGroup = {
-  icon: '',
+  icon: 'icon-a-3d',
   name: '3D 应用',
   en_name: '3D Applications',
   order: 5,

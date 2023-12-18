@@ -1,6 +1,6 @@
 import { IGroup } from '../../../../types'
 export const Julia: IGroup = {
-  icon: '',
+  icon: 'icon-julia',
   name: 'Julia',
   en_name: 'Julia',
   order: 5,

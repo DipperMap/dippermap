@@ -1,6 +1,6 @@
 import { IGroup } from '../../../../types'
 export const Rust: IGroup = {
-  icon: '',
+  icon: 'icon-Rustyuyan',
   name: 'Rust',
   en_name: 'Rust',
   order: 5,

@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const GISSoftWare: IGroup = {
-  icon: '',
+  icon: 'icon-ditushezhi',
   name: 'GIS 软件',
   en_name: 'Geographic Information System Software',
   order: 5,

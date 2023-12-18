@@ -1,6 +1,6 @@
 import { IGroup } from '../../../../types'
 export const Ruby: IGroup = {
-  icon: '',
+  icon: 'icon-Rubyyuyan',
   name: 'Ruby',
   en_name: 'Ruby',
   order: 5,
