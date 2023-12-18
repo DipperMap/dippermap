@@ -1,9 +1,9 @@
 import { IGroup } from '../../../types'
 export const DataProcess: IGroup = {
   icon: 'icon-a-shujuchuli1',
-  name: '数据分析',
+  name: 'GIS 软件工具',
   en_name: 'data process',
-  order: 2,
+  order: 4,
   children: [
     {
       icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*kpIwTZzKPrkAAAAAAAAAAAAADrZ5AQ/original',
@@ -28,7 +28,8 @@ export const DataProcess: IGroup = {
       site_url: 'https://geodacenter.github.io/index-cn.html',
       order: 14,
       tags: ['Spatial Analysis', 'Spatial Statistics', 'Research']
-    },{
+    },
+    {
       icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'TileMill',
       en_name: 'TileMill',
@@ -38,7 +39,8 @@ export const DataProcess: IGroup = {
       site_url: 'https://tilemill-project.github.io/tilemill/',
       order: 48,
       tags: ['Open Source', 'Map Design']
-    }, {
+    },
+    {
       icon: 'http://udig.refractions.net/images/udig.png',
       name: 'uDig',
       en_name: 'uDig',

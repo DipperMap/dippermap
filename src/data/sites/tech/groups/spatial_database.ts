@@ -97,7 +97,7 @@ export const spatialDatabase: IGroup = {
       tags: ['H2 Database', 'Spatial Extension']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',  
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'MBtiles',
       en_name: 'MBtiles',
       description: '用于在SQLite数据库中存储瓦片地图数据的规范。',

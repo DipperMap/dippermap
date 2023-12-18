@@ -6,7 +6,7 @@ export const GISSoftWare: IGroup = {
   order: 5,
   children: [
     {
-      icon: 'https://www.esri.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lvWgQa9WbVwAAAAAAAAAAAAADrZ5AQ/original',
       name: 'ArcGIS Desktop',
       en_name: 'ArcGIS Desktop',
       description:
@@ -40,17 +40,6 @@ export const GISSoftWare: IGroup = {
       site_url: 'http://geodacenter.github.io/',
       order: 36,
       tags: ['GIS', 'Spatial Data Analysis', 'Open Source']
-    },
-    {
-      icon: 'http://www.gisinternals.com/favicon.ico',
-      name: 'GISInternals',
-      en_name: 'GISInternals',
-      description: '为GDAL和MapServer提供每日构建包和软件开发工具包。',
-      en_description:
-        'Provides daily build packages and software development kits for the GDAL and MapServer.',
-      site_url: 'http://www.gisinternals.com/',
-      order: 37,
-      tags: ['GIS', 'GDAL', 'MapServer', 'Development']
     },
     {
       icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*hhqLR5O1rOEAAAAAAAAAAAAADjDHAQ/original',
@@ -115,7 +104,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'Desktop Solution', 'Data Analysis', 'Web Mapping']
     },
     {
-      icon: 'https://marble.kde.org/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*gAMCSavhwjEAAAAAAAAAAAAADjDHAQ/original',
       name: 'Marble',
       en_name: 'Marble',
       description: '一个虚拟地球仪和世界地图。',

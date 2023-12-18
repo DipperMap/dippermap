@@ -4,7 +4,7 @@ export const AIPlatform: IGroup = {
   icon: 'ai_platform',
   name: 'AI 平台',
   en_name: 'AI platform',
-  order: 2,
+  order: 12,
   children: [
     {
       icon: 'https://aistudio-fe-online.cdn.bcebos.com/aistudio/dist/1702030665650/favicon-32.ico',
