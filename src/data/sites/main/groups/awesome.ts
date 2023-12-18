@@ -3,7 +3,7 @@ export const Awesome: IGroup = {
   icon: 'icon-danganheji',
   name: '系列合集',
   en_name: 'Awesome',
-  order: 0,
+  order: 7,
   children: [
     {
       icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*4mL3R7tK0mAAAAAAAAAAAAAADrZ5AQ/original',
