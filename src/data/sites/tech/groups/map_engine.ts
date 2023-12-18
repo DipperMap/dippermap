@@ -76,7 +76,7 @@ export const MapEngine: IGroup = {
       tags: ['Open-source', 'JavaScript Library', 'Interactive Maps']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*SLH1QZOg_JAAAAAAAAAAAAAADjDHAQ/original',
       name: 'Maptalks',
       en_name: 'Maptalks',
       description:

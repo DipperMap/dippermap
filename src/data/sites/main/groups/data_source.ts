@@ -2,9 +2,9 @@
 import { IGroup } from '../../../types'
 export const DataSource: IGroup = {
   icon: 'icon-shujuyuanguanli',
-  name: '行政区划数据',
+  name: '常用数据源',
   en_name: 'data source',
-  order: 1.1,
+  order: 3,
   children: [
     {
       icon: 'https://img.alicdn.com/imgextra/i3/O1CN01NQARus1gyEAmmQ9T0_!!6000000004210-0-tps-670-670.jpg',

@@ -3,7 +3,7 @@ export const RSPlatform: IGroup = {
   icon: 'icon-yaogancehui',
   name: '遥感平台',
   en_name: 'RS Platform',
-  order: 2,
+  order: 6,
   children: [
     // gee
     {

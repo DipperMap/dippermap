@@ -1,9 +1,9 @@
 import { IGroup } from '../../../types'
 export const DataProcess: IGroup = {
   icon: 'icon-a-shujuchuli1',
-  name: '数据分析',
+  name: 'GIS 软件工具',
   en_name: 'data process',
-  order: 2,
+  order: 4,
   children: [
     {
       icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*kpIwTZzKPrkAAAAAAAAAAAAADrZ5AQ/original',
@@ -28,6 +28,29 @@ export const DataProcess: IGroup = {
       site_url: 'https://geodacenter.github.io/index-cn.html',
       order: 14,
       tags: ['Spatial Analysis', 'Spatial Statistics', 'Research']
+    },
+    {
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      name: 'TileMill',
+      en_name: 'TileMill',
+      description: '一个开源的地图设计工作室，由志愿者开发的社区提供支持。',
+      en_description:
+        'An open-source map design studio, developed by a community of volunteer open source contributors.',
+      site_url: 'https://tilemill-project.github.io/tilemill/',
+      order: 48,
+      tags: ['Open Source', 'Map Design']
+    },
+    {
+      icon: 'http://udig.refractions.net/images/udig.png',
+      name: 'uDig',
+      en_name: 'uDig',
+      description:
+        '一个轻量级且用户友好的Web GIS。创建、从各种来源导入数据、导出地图或轻松在线分享。',
+      en_description:
+        'A lightweight and user-friendly Web GIS. Create, import data from various sources, export maps or share them online freely and easily.',
+      site_url: 'http://udig.refractions.net/',
+      order: 49,
+      tags: ['GIS', 'Web GIS', 'Data Import', 'Data Export']
     }
   ]
 }

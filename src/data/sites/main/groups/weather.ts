@@ -3,7 +3,7 @@ export const Weather: IGroup = {
   icon: 'icon-tianqi',
   name: '天气',
   en_name: 'Weather',
-  order: 2,
+  order: 8,
   children: [
     {
       icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*YoLURLhIs0wAAAAAAAAAAAAADrZ5AQ/original',

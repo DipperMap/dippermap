@@ -412,7 +412,7 @@ export const Python: IGroup = {
       tags: ['Image Reading', 'Numpy', 'Python']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'mapboxgl-jupyter',
       en_name: 'mapboxgl-jupyter',
       description:
@@ -584,7 +584,7 @@ export const Python: IGroup = {
       tags: ['Python', 'OGC', 'Web Service']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*BUiIRqsFAbYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'pydeck',
       en_name: 'pydeck',
       description:
@@ -664,7 +664,7 @@ export const Python: IGroup = {
       tags: ['Python', 'PROJ4', 'Cartographic Transformations']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*kpIwTZzKPrkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'PyQGIS',
       en_name: 'PyQGIS',
       description: 'Python for QGIS.',
@@ -761,7 +761,7 @@ export const Python: IGroup = {
       tags: ['Python', 'GeoTIFF', 'Rasterio']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'rio-color',
       en_name: 'rio-color',
       description: 'Color correction plugin for rasterio.',
@@ -771,7 +771,7 @@ export const Python: IGroup = {
       tags: ['Python', 'Color Correction', 'Rasterio']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'rio-hist',
       en_name: 'rio-hist',
       description: 'Histogram matching plugin for rasterio.',
@@ -950,7 +950,7 @@ export const Python: IGroup = {
       tags: ['Time-Series Analysis', 'Raster Data', 'Machine Learning']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'untiler',
       en_name: 'untiler',
       description: 'Stitch image tiles into larger composite TIFs.',
