@@ -140,6 +140,21 @@ export const RSSharingStationCN: IGroup = {
         'Economic Activities',
         'Population Distribution'
       ]
+    },
+    {
+      icon: 'https://landcover100.com/img/logo.png',
+      name: '遥感产品数据云',
+      en_name: 'Data Cloud of RS products - DEMs & LCs',
+      description:
+        '由锐多宝提供。目前涵盖了大部分的 DEM 数据和土地覆盖数据下载，以及部分数据的快速预览。下载无需登陆。',
+      en_description:
+        "Provided by Ruiduobao. The site currently provides freely download service as well as quick preview of most DEM datasets and land cover datasets.",
+      site_url: 'https://landcover100.com',
+      order: 12,
+      tags: [
+        'DEM',
+        'Land Cover Data'
+      ]
     }
   ]
 }
