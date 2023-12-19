@@ -104,17 +104,6 @@ export const RSSharingStationCN: IGroup = {
       site_url: 'https://ladsweb.modaps.eosdis.nasa.gov/',
       order: 9,
       tags: ['NASA', 'Remote Sensing Data', 'MODIS', 'Envisat', 'Sentinel']
-      icon: 'https://ladsweb.modaps.eosdis.nasa.gov/images/favicon/index.ico',
-      name: '一级和大气存档与分发系统分布式活动存档中心',
-      en_name:
-        'Level 1 and Atmospheric Archive and Distribution System Distributed Active Archive Center',
-      description:
-        'LAADS DAAC是美国国家航空航天局戈达德航天中心用于存储数据的网站接口。该平台提供了MODIS、Envisat、Sentinel等常见遥感数据。',
-      en_description:
-        "LAADS DAAC, the Level 1 and Atmospheric Archive and Distribution System Distributed Active Archive Center, is a website interface used by NASA's Goddard Space Flight Center for data storage. The platform offers commonly used remote sensing data such as MODIS, Envisat, Sentinel, and more.",
-      site_url: 'https://ladsweb.modaps.eosdis.nasa.gov/',
-      order: 9,
-      tags: ['NASA', 'Remote Sensing Data', 'MODIS', 'Envisat', 'Sentinel']
     },
     {
       icon: 'https://srtm.csi.cgiar.org/wp-content/uploads/2018/11/cropped-cgiar-csi_new_logo_2011_final-2.png',
@@ -159,13 +148,10 @@ export const RSSharingStationCN: IGroup = {
       description:
         '由锐多宝提供。目前涵盖了大部分的 DEM 数据和土地覆盖数据下载，以及部分数据的快速预览。下载无需登陆。',
       en_description:
-        "Provided by Ruiduobao. The site currently provides freely download service as well as quick preview of most DEM datasets and land cover datasets.",
+        'Provided by Ruiduobao. The site currently provides freely download service as well as quick preview of most DEM datasets and land cover datasets.',
       site_url: 'https://landcover100.com',
       order: 12,
-      tags: [
-        'DEM',
-        'Land Cover Data'
-      ]
+      tags: ['DEM', 'Land Cover Data']
     }
   ]
 }
