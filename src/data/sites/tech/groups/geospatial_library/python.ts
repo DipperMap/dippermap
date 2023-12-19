@@ -1,12 +1,12 @@
 import { IGroup } from '../../../../types'
 export const Python: IGroup = {
-  icon: '',
+  icon: 'icon-Pythonyuyan',
   name: 'Python',
   en_name: 'Python',
   order: 5,
   children: [
     {
-      icon: 'https://developers.arcgis.com/assets/img/features/analytics/arcgis-api-for-python.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*a7XdQalbFI0AAAAAAAAAAAAADjDHAQ/original',
       name: 'ArcGIS Python API',
       en_name: 'ArcGIS Python API',
       description:
@@ -30,7 +30,7 @@ export const Python: IGroup = {
       tags: ['Blender', 'GIS', 'Geographic Data']
     },
     {
-      icon: 'http://scitools.org.uk/cartopy/_static/cartopy.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*WSydSKuTHF8AAAAAAAAAAAAADjDHAQ/original',
       name: 'Cartopy',
       en_name: 'Cartopy',
       description:
@@ -78,7 +78,7 @@ export const Python: IGroup = {
       tags: ['Dask', 'Rasterio', 'Parallel']
     },
     {
-      icon: 'https://pypi.python.org/pypi/descartes/1.0.2',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*VTjRTbFeFQwAAAAAAAAAAAAADjDHAQ/original',
       name: 'Descartes',
       en_name: 'Descartes',
       description: 'Plot geometries in matplotlib.',
@@ -100,7 +100,7 @@ export const Python: IGroup = {
       tags: ['Earth Observation', 'Machine Learning', 'Python']
     },
     {
-      icon: 'https://eodag.readthedocs.io/en/latest/_static/eodag.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*loZLQbWe53kAAAAAAAAAAAAADjDHAQ/original',
       name: 'EODAG',
       en_name: 'EODAG',
       description:
@@ -132,7 +132,7 @@ export const Python: IGroup = {
       tags: ['Fiona', 'GIS Data', 'Python']
     },
     {
-      icon: 'https://code.google.com/archive/p/freetype-py/',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*3lKDS4Z3oIkAAAAAAAAAAAAADjDHAQ/original',
       name: 'FreeType',
       en_name: 'FreeType',
       description: 'For converting font glyphs to polygons.',
@@ -196,7 +196,7 @@ export const Python: IGroup = {
       tags: ['GeoDaSpace', 'Spatial Econometrics', 'Software']
     },
     {
-      icon: 'http://geodjango.org/s/img/geodjango-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*-m_JSqNzcwYAAAAAAAAAAAAADjDHAQ/original',
       name: 'GeoDjango',
       en_name: 'GeoDjango',
       description: 'Django geographic web framework.',
@@ -262,7 +262,7 @@ export const Python: IGroup = {
       tags: ['Geocoding', 'Python']
     },
     {
-      icon: 'https://m.ithub.io/geoserver-rest/',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*VTjRTbFeFQwAAAAAAAAAAAAADjDHAQ/original',
       name: 'geoserver-rest',
       en_name: 'geoserver-rest',
       description:
@@ -342,7 +342,7 @@ export const Python: IGroup = {
       tags: ['Landsat', 'Command Line', 'Python']
     },
     {
-      icon: 'https://lets-plot.org/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original?s=200&v=4',
       name: 'Lets-Plot',
       en_name: 'Lets-Plot',
       description:
@@ -412,7 +412,7 @@ export const Python: IGroup = {
       tags: ['Image Reading', 'Numpy', 'Python']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'mapboxgl-jupyter',
       en_name: 'mapboxgl-jupyter',
       description:
@@ -424,7 +424,7 @@ export const Python: IGroup = {
       tags: ['Mapbox GL JS', 'Python', 'Jupyter']
     },
     {
-      icon: 'https://matplotlib.org/_static/logo2_compressed.svg',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*x0TJSrgZiVoAAAAAAAAAAAAADjDHAQ/original',
       name: 'matplotlib',
       en_name: 'matplotlib',
       description: 'Python 2D plotting library.',
@@ -480,7 +480,7 @@ export const Python: IGroup = {
       tags: ['Networks', 'Python']
     },
     {
-      icon: 'https://www.cityinabottle.org/sites/default/files/2017-09/nodebox_icon_0.png',
+      icon: '',
       name: 'NodeBox-opengl',
       en_name: 'NodeBox-opengl',
       description: 'For playing around with animations.',
@@ -490,7 +490,7 @@ export const Python: IGroup = {
       tags: ['Animations', 'Python']
     },
     {
-      icon: 'https://numpy.org/images/logos/numpy.svg',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*DV4IQaKXyyAAAAAAAAAAAAAADjDHAQ/original',
       name: 'NumPy',
       en_name: 'NumPy',
       description:
@@ -512,7 +512,7 @@ export const Python: IGroup = {
       tags: ['Python', 'WMS', 'Mapnik']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original?s=200&v=4',
       name: 'OSMnet',
       en_name: 'OSMnet',
       description:
@@ -572,7 +572,7 @@ export const Python: IGroup = {
       tags: ['Transit Data', 'Network Analysis', 'Python']
     },
     {
-      icon: 'http://pycsw.org/wp-content/uploads/2015/02/pycsw_logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*UtQ3SJGbP60AAAAAAAAAAAAADjDHAQ/original',
       name: 'pyCSW',
       en_name: 'pyCSW',
       description:
@@ -584,7 +584,7 @@ export const Python: IGroup = {
       tags: ['Python', 'OGC', 'Web Service']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*BUiIRqsFAbYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'pydeck',
       en_name: 'pydeck',
       description:
@@ -596,7 +596,7 @@ export const Python: IGroup = {
       tags: ['Python', 'Spatial Rendering', 'deck.gl']
     },
     {
-      icon: 'https://pygeoapi.io/static/img/pygeoapi-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*VB_MTp_GB0QAAAAAAAAAAAAADjDHAQ/original',
       name: 'pygeoapi',
       en_name: 'pygeoapi',
       description:
@@ -664,7 +664,7 @@ export const Python: IGroup = {
       tags: ['Python', 'PROJ4', 'Cartographic Transformations']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*kpIwTZzKPrkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'PyQGIS',
       en_name: 'PyQGIS',
       description: 'Python for QGIS.',
@@ -717,7 +717,7 @@ export const Python: IGroup = {
       tags: ['Python', 'OpenCage Geocoding API']
     },
     {
-      icon: 'http://pywps.org/wp-content/uploads/2014/12/pywps-logo-80x80.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*epVdQZkyDO0AAAAAAAAAAAAADjDHAQ/original',
       name: 'pyWPS',
       en_name: 'pyWPS',
       description:
@@ -761,7 +761,7 @@ export const Python: IGroup = {
       tags: ['Python', 'GeoTIFF', 'Rasterio']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'rio-color',
       en_name: 'rio-color',
       description: 'Color correction plugin for rasterio.',
@@ -771,7 +771,7 @@ export const Python: IGroup = {
       tags: ['Python', 'Color Correction', 'Rasterio']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'rio-hist',
       en_name: 'rio-hist',
       description: 'Histogram matching plugin for rasterio.',
@@ -781,7 +781,7 @@ export const Python: IGroup = {
       tags: ['Python', 'Histogram', 'Rasterio']
     },
     {
-      icon: 'https://bitbucket.org/repo/icon/1083/images/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original?s=200&v=4',
       name: 'RIOS',
       en_name: 'RIOS',
       description:
@@ -892,7 +892,7 @@ export const Python: IGroup = {
       ]
     },
     {
-      icon: 'https://statsmodels.sourceforge.net/stable/_static/statsmodels-logo-v2-shortname.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*xbhzRphuh-wAAAAAAAAAAAAADjDHAQ/original',
       name: 'Statsmodels',
       en_name: 'Statsmodels',
       description:
@@ -904,7 +904,7 @@ export const Python: IGroup = {
       tags: ['Python Module', 'Statistical Models', 'Statistical Tests']
     },
     {
-      icon: 'http://iclientpy.supermap.io/docs/iClientPy/logo.jpg',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*JDl-Qo6fJ0EAAAAAAAAAAAAADjDHAQ/original',
       name: 'SuperMap iClient Python',
       en_name: 'SuperMap iClient Python',
       description: 'Cloud GIS client Python sdk supported by SuperMap.',
@@ -950,7 +950,7 @@ export const Python: IGroup = {
       tags: ['Time-Series Analysis', 'Raster Data', 'Machine Learning']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'untiler',
       en_name: 'untiler',
       description: 'Stitch image tiles into larger composite TIFs.',
@@ -1031,7 +1031,7 @@ export const Python: IGroup = {
       tags: ['ArcGIS', 'Python Toolbox', 'WhiteboxTools']
     },
     {
-      icon: 'http://xarray.pydata.org/en/stable/_images/xarray_150px.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*7q_-R72vvmUAAAAAAAAAAAAADjDHAQ/original',
       name: 'xarray',
       en_name: 'xarray',
       description:

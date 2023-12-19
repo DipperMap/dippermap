@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const OpenStandards: IGroup = {
-  icon: '',
+  icon: 'icon-shujubiaozhunhua',
   name: '开放标准',
   en_name: 'Open Standards',
   order: 20,
@@ -334,7 +334,7 @@ export const OpenStandards: IGroup = {
       tags: ['Location Services', 'OpenLS', 'location-based services']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Mapbox Vector Tile',
       en_name: 'Mapbox Vector Tile',
       description:

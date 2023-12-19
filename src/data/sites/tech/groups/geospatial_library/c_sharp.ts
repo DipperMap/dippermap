@@ -1,6 +1,6 @@
 import { IGroup } from '../../../../types'
 export const CSharp: IGroup = {
-  icon: '',
+  icon: 'icon-Cyuyan',
   name: 'C Sharp',
   en_name: 'C Sharp',
   order: 5,
@@ -52,7 +52,7 @@ export const CSharp: IGroup = {
       tags: ['Bing Maps', 'Spatial Data Services', '.NET']
     },
     {
-      icon: 'https://msdn.microsoft.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*y-ExSp5xVbkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Bing Maps WPF SDK',
       en_name: 'Bing Maps WPF SDK',
       description: 'Bing Maps WPF API。',
@@ -97,7 +97,7 @@ export const CSharp: IGroup = {
       tags: ['Digital Elevation Models', 'OSM', '3D']
     },
     {
-      icon: 'https://dotspatial.codeplex.com/favicon.ico',
+      icon: '',
       name: 'DotSpatial',
       en_name: 'DotSpatial',
       description: '为.NET 4编写的地理信息系统库。',
@@ -162,7 +162,7 @@ export const CSharp: IGroup = {
       tags: ['GeoJSON', '.Net', 'Json.Net']
     },
     {
-      icon: 'https://archive.codeplex.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*y-ExSp5xVbkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'GMap.NET',
       en_name: 'GMap.NET',
       description: '一款强大而强大的、免费的、跨平台的、开源的.NET控件。',
@@ -185,7 +185,7 @@ export const CSharp: IGroup = {
       tags: ['.NET Standard', 'OGC Extensions', 'PostGIS', 'LINQ']
     },
     {
-      icon: 'https://www.mapbox.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Mapbox Maps SDK for Unity',
       en_name: 'Mapbox Maps SDK for Unity',
       description:
@@ -209,7 +209,7 @@ export const CSharp: IGroup = {
       tags: ['.NET', 'GIS', 'Geometry']
     },
     {
-      icon: 'http://www.osmsharp.com/favicon.ico',
+      icon: '',
       name: 'osmsharp',
       en_name: 'osmsharp',
       description: 'A C# library to work with OpenStreetMap (OSM) data.',
@@ -220,7 +220,7 @@ export const CSharp: IGroup = {
       tags: ['C#', 'OpenStreetMap']
     },
     {
-      icon: 'https://sharpkml.codeplex.com/favicon.ico',
+      icon: '',
       name: 'SharpKml',
       en_name: 'SharpKml',
       description: 'Is able to read/write both KML files and KMZ files.',
@@ -242,7 +242,7 @@ export const CSharp: IGroup = {
       tags: ['Mapping Library', 'Web Applications', 'Desktop Applications']
     },
     {
-      icon: 'https://msdn.microsoft.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*y-ExSp5xVbkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Windows UWP map control',
       en_name: 'Windows UWP map control',
       description: 'The Bing Maps control built into the Windows UWP platform.',

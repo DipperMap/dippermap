@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const MapEngine: IGroup = {
-  icon: '',
+  icon: 'icon-ditu',
   name: '地图可视化',
   en_name: 'Map Engine',
   order: 1,
@@ -76,7 +76,7 @@ export const MapEngine: IGroup = {
       tags: ['Open-source', 'JavaScript Library', 'Interactive Maps']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*SLH1QZOg_JAAAAAAAAAAAAAADjDHAQ/original',
       name: 'Maptalks',
       en_name: 'Maptalks',
       description:

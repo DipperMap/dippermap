@@ -55,7 +55,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
             >
               <Row className="card" gutter={[16, 16]}>
                 {children.length ? (
-                  children.map((val) => {
+                  children.map((val, index) => {
                     const findData = localCollect?.[siteData]?.find((item) => {
                       return item.name === val.name
                     })
@@ -69,7 +69,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                         onClick={() => {
                           window.open(val.site_url)
                         }}
-                        key={val.site_url}
+                        key={`${name}_${val.name}_${index}`}
                       >
                         <div className="card-item">
                           <div>
@@ -93,13 +93,20 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                           <div className="collect">
                             {findData ? (
                               <IconFont
-                                type="icon-a-xin21"
+                                type="icon-a-xingxing1"
+                                style={{
+                                  display: 'block'
+                                }}
+                                className="collect_icon"
                                 onClick={(e) => {
                                   e.stopPropagation()
                                   const newSiteData = localCollect?.[
                                     siteData
                                   ]?.filter((item) => {
-                                    return item.name !== val.name
+                                    return (
+                                      item.name !== val.name &&
+                                      item.site_url !== val.site_url
+                                    )
                                   })
                                   setLocalCollect({
                                     ...localCollect,
@@ -109,12 +116,8 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                               />
                             ) : (
                               <IconFont
-                                type="icon-xin2"
-                                style={{
-                                  width: 32,
-                                  height: 32,
-                                  justifyContent: 'center'
-                                }}
+                                type="icon-xingxing"
+                                className="collect_icon"
                                 onClick={(e) => {
                                   e.stopPropagation()
                                   const newData = {

@@ -1,6 +1,6 @@
 import { IGroup } from '../../../../types'
 export const C: IGroup = {
-  icon: '',
+  icon: 'icon-cyuyan',
   name: 'C 语言',
   en_name: 'C',
   order: 5,
@@ -50,7 +50,7 @@ export const C: IGroup = {
       tags: ['Image Processing', 'Low Memory']
     },
     {
-      icon: 'http://shapelib.maptools.org/favicon.ico',
+      icon: '',
       name: 'Shapefile C Library',
       en_name: 'Shapefile C Library',
       description:

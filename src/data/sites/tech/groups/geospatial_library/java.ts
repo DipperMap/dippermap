@@ -1,12 +1,12 @@
 import { IGroup } from '../../../../types'
 export const Java: IGroup = {
-  icon: '',
+  icon: 'icon-JAVAkaifa',
   name: 'Java',
   en_name: 'Java',
   order: 5,
   children: [
     {
-      icon: 'http://sis.apache.org/img/sis-logo.png',
+      icon: 'https://sis.apache.org./images/logo.png',
       name: 'Apache SIS',
       en_name: 'Apache SIS',
       description:
@@ -30,7 +30,7 @@ export const Java: IGroup = {
       tags: ['Java', 'GIS', 'Remote Sensing']
     },
     {
-      icon: 'http://www.geoapi.org/images/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*xg2_T5hGx7UAAAAAAAAAAAAADjDHAQ/original',
       name: 'Geoapi',
       en_name: 'Geoapi',
       description:
@@ -42,7 +42,7 @@ export const Java: IGroup = {
       tags: ['Java', 'Geospatial Applications']
     },
     {
-      icon: 'http://geonetwork-opensource.org/images/geonetwork-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*sm2cR534g-cAAAAAAAAAAAAADjDHAQ/original',
       name: 'Geonetwork',
       en_name: 'Geonetwork',
       description:
@@ -65,7 +65,7 @@ export const Java: IGroup = {
       tags: ['Open Source', 'Geospatial Data']
     },
     {
-      icon: 'http://www.geotools.org/images/GeoTools-Project.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*c4cJQIWXrjkAAAAAAAAAAAAADjDHAQ/original',
       name: 'GeoTools',
       en_name: 'GeoTools',
       description:
@@ -89,7 +89,7 @@ export const Java: IGroup = {
       tags: ['Geospatial Indexing', 'Big Data']
     },
     {
-      icon: 'http://www.geowebcache.org/img/gwc_logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*YGeCSql8yd4AAAAAAAAAAAAADjDHAQ/original',
       name: 'GeoWebCache',
       en_name: 'GeoWebCache',
       description:
@@ -101,7 +101,7 @@ export const Java: IGroup = {
       tags: ['Java Web Application', 'Map Tiles']
     },
     {
-      icon: 'https://sourceforge.net/p/oxygene-project/code/ci/master/tree/src/fr/oxygene/project/favicon.ico',
+      icon: 'https://a.fsdn.com/allura/p/oxygene-project/icon?1461342670',
       name: 'GeOxygene',
       en_name: 'GeOxygene',
       description:
@@ -137,7 +137,7 @@ export const Java: IGroup = {
       tags: ['Java', 'Routing Engine']
     },
     {
-      icon: 'http://jgeocoder.sourceforge.net/jgeocoder-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*qvsSRKceyb0AAAAAAAAAAAAADjDHAQ/original',
       name: 'JGeocoder',
       en_name: 'JGeocoder',
       description: 'Free Java Geocoder.',
@@ -159,7 +159,7 @@ export const Java: IGroup = {
       tags: ['Java', 'libpostal', 'International Street Address Parsing']
     },
     {
-      icon: 'http://www.vividsolutions.com/images/jts-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*OsDDTr5LKdgAAAAAAAAAAAAADjDHAQ/original',
       name: 'JTS Topology Suite',
       en_name: 'JTS Topology Suite',
       description: 'An API of 2D spatial predicates and functions.',
@@ -170,7 +170,7 @@ export const Java: IGroup = {
       tags: ['API', '2D Spatial Predicates', 'Functions']
     },
     {
-      icon: 'http://www.luciad.com/wp-content/uploads/2019/10/Luciad_Lightspeed_Logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*vDdFQpGzrkQAAAAAAAAAAAAADjDHAQ/original',
       name: 'LuciadLightspeed',
       en_name: 'LuciadLightspeed',
       description:
@@ -239,7 +239,7 @@ export const Java: IGroup = {
       tags: ['Open Source', 'GIS', 'Remote Sensing']
     },
     {
-      icon: 'http://worldwind.arc.nasa.gov/favicon.ico',
+      icon: '',
       name: 'World Wind Java SDK',
       en_name: 'World Wind Java SDK',
       description: 'NASA cross-platform Java SDK.',

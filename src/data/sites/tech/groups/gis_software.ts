@@ -1,12 +1,12 @@
 import { IGroup } from '../../../types'
 export const GISSoftWare: IGroup = {
-  icon: '',
+  icon: 'icon-ditushezhi',
   name: 'GIS 软件',
   en_name: 'Geographic Information System Software',
   order: 5,
   children: [
     {
-      icon: 'https://www.esri.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lvWgQa9WbVwAAAAAAAAAAAAADrZ5AQ/original',
       name: 'ArcGIS Desktop',
       en_name: 'ArcGIS Desktop',
       description:
@@ -19,7 +19,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'ArcGIS', 'Desktop', 'Spatial Analysis']
     },
     {
-      icon: 'https://www.diva-gis.org/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*j2QfRKp-hBgAAAAAAAAAAAAADjDHAQ/original',
       name: 'DIVA-GIS',
       en_name: 'DIVA-GIS',
       description:
@@ -42,18 +42,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'Spatial Data Analysis', 'Open Source']
     },
     {
-      icon: 'http://www.gisinternals.com/favicon.ico',
-      name: 'GISInternals',
-      en_name: 'GISInternals',
-      description: '为GDAL和MapServer提供每日构建包和软件开发工具包。',
-      en_description:
-        'Provides daily build packages and software development kits for the GDAL and MapServer.',
-      site_url: 'http://www.gisinternals.com/',
-      order: 37,
-      tags: ['GIS', 'GDAL', 'MapServer', 'Development']
-    },
-    {
-      icon: 'http://www.bluemarblegeo.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*hhqLR5O1rOEAAAAAAAAAAAAADjDHAQ/original',
       name: 'Global Mapper',
       en_name: 'Global Mapper',
       description:
@@ -65,7 +54,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'Spatial Data Processing', 'Data Formats']
     },
     {
-      icon: 'https://grass.osgeo.org/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*JGrmS4HBS7kAAAAAAAAAAAAADjDHAQ/original',
       name: 'GRASS GIS',
       en_name: 'GRASS GIS',
       description:
@@ -82,7 +71,7 @@ export const GISSoftWare: IGroup = {
       ]
     },
     {
-      icon: 'http://www.gvsig.com/en/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*-ix9R523PEUAAAAAAAAAAAAADjDHAQ/original',
       name: 'gvSIG',
       en_name: 'gvSIG',
       description: '一款强大、用户友好、可互操作的GIS。',
@@ -92,7 +81,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'User-friendly', 'Interoperable']
     },
     {
-      icon: 'http://jump-pilot.sourceforge.net/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*KjlKQKsVoxAAAAAAAAAAAAAADjDHAQ/original',
       name: 'JUMP GIS',
       en_name: 'JUMP GIS',
       description: '用Java编写的开源GIS。',
@@ -115,7 +104,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'Desktop Solution', 'Data Analysis', 'Web Mapping']
     },
     {
-      icon: 'https://marble.kde.org/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*gAMCSavhwjEAAAAAAAAAAAAADjDHAQ/original',
       name: 'Marble',
       en_name: 'Marble',
       description: '一个虚拟地球仪和世界地图。',
@@ -179,7 +168,7 @@ export const GISSoftWare: IGroup = {
       tags: ['Open Source', 'Map Design']
     },
     {
-      icon: 'http://udig.refractions.net/favicon.ico',
+      icon: 'http://udig.refractions.net/images/udig.png',
       name: 'uDig',
       en_name: 'uDig',
       description:
@@ -191,7 +180,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'Web GIS', 'Data Import', 'Data Export']
     },
     {
-      icon: 'http://www.uoguelph.ca/~hydrogeo/Whitebox/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*7uF4QbzWn0AAAAAAAAAAAAAADjDHAQ/original',
       name: 'Whitebox GAT',
       en_name: 'Whitebox GAT',
       description: '用于地理空间分析和数据可视化的开源桌面GIS和遥感软件包。',
@@ -202,7 +191,7 @@ export const GISSoftWare: IGroup = {
       tags: ['GIS', 'Geospatial Analysis', 'Remote Sensing', 'Open Source']
     },
     {
-      icon: 'https://abc-map.fr/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*0x5oSpVFjjkAAAAAAAAAAAAADjDHAQ/original',
       name: 'Abc-Map',
       en_name: 'Abc-Map',
       description:

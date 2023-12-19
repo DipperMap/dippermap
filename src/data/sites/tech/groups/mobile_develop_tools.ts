@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const Application3D: IGroup = {
-  icon: '',
+  icon: 'icon-shujuxietong',
   name: '移动开发工具',
   en_name: 'Mobile Develop Tools',
   order: 5,
@@ -131,7 +131,7 @@ export const Application3D: IGroup = {
       tags: ['iOS', 'Mapping API']
     },
     {
-      icon: 'https://www.mapbox.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Mapbox iOS SDK',
       en_name: 'Mapbox iOS SDK',
       description: '包括用于静态地图、路线和导航的 API。',

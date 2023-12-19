@@ -41,7 +41,7 @@ export const CollectCard: React.FC<collectPopup> = ({
                 onClick={() => {
                   window.open(val.site_url)
                 }}
-                key={val.site_url}
+                key={`collect_${val.site_url}`}
               >
                 <div className="card-item">
                   <div>
@@ -62,12 +62,19 @@ export const CollectCard: React.FC<collectPopup> = ({
                   </div>
                   <div className="collect">
                     <IconFont
-                      type="icon-a-xin21"
+                      type="icon-a-xingxing1"
+                      style={{
+                        display: 'block'
+                      }}
+                      className="collect_icon"
                       onClick={(e) => {
                         e.stopPropagation()
                         const newSiteData = localCollect?.[siteData]?.filter(
                           (item) => {
-                            return item.name !== val.name
+                            return (
+                              item.name !== val.name &&
+                              item.site_url !== val.site_url
+                            )
                           }
                         )
                         setLocalCollect({

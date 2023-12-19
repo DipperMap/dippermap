@@ -1,6 +1,6 @@
 import { IGroup } from '../../../types'
 export const FrontEndFramework: IGroup = {
-  icon: '',
+  icon: 'icon-qianduankaifa',
   name: '前端框架',
   en_name: 'Deep Learning',
   order: 4,
@@ -159,7 +159,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['Community Led Fork', 'Mapbox GL JS', 'Non-OSS License']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*SLH1QZOg_JAAAAAAAAAAAAAADjDHAQ/original',
       name: 'maptalks.js',
       en_name: 'maptalks.js',
       description: '一个轻量级且可插拔的JavaScript库，用于集成2D/3D地图。',
@@ -178,23 +178,6 @@ export const FrontEndFramework: IGroup = {
       site_url: 'https://github.com/huiyan-fe/mapv/',
       order: 150,
       tags: ['Geography Visualization']
-    },
-    {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
-      name: 'OpenGlobus',
-      en_name: 'OpenGlobus',
-      description:
-        '基于纯WebGL技术的JavaScript 3D地图和地理空间数据可视化引擎库。',
-      en_description:
-        'JavaScript 3D maps and geospatial data visualization engine library. It uses the pure WebGL technology.',
-      site_url: 'https://www.openglobus.org/',
-      order: 151,
-      tags: [
-        'JavaScript Library',
-        'WebGL',
-        '3D Maps',
-        'Geospatial Data Visualization'
-      ]
     },
     {
       icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*ebYBSJl97_8AAAAAAAAAAAAADrZ5AQ/original',
@@ -218,7 +201,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['Open Source', 'Self-hosting', 'OpenStreetMap Maps']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*37IkTLyFeBoAAAAAAAAAAAAADjDHAQ/original',
       name: 'GEOS-WASM',
       en_name: 'GEOS-WASM',
       description:
@@ -262,7 +245,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['three.js', 'Geographic Visualization']
     },
     {
-      icon: '',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*SLH1QZOg_JAAAAAAAAAAAAAADjDHAQ/original',
       name: 'three.js',
       en_name: 'three.js',
       description: '使WebGL更简单的JavaScript 3D库。',
@@ -283,7 +266,7 @@ export const FrontEndFramework: IGroup = {
       tags: ['Browser', 'Node', 'Geospatial Analysis', 'Mapbox']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*SLH1QZOg_JAAAAAAAAAAAAAADjDHAQ/original',
       name: 'webglearth2',
       en_name: 'webglearth2',
       description:

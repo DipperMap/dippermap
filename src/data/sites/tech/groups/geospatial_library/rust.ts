@@ -1,12 +1,12 @@
 import { IGroup } from '../../../../types'
 export const Rust: IGroup = {
-  icon: '',
+  icon: 'icon-Rustyuyan',
   name: 'Rust',
   en_name: 'Rust',
   order: 5,
   children: [
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Hecate',
       en_name: 'Hecate',
       description: 'Fast Geospatial Feature Storage API.',

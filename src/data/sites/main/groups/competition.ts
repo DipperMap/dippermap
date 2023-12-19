@@ -4,7 +4,7 @@ export const Competition: IGroup = {
   icon: 'icon-ditupeise',
   name: '竞赛',
   en_name: 'Competition',
-  order: 6,
+  order: 13,
   children: [
     {
       icon: 'https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico',

@@ -40,3 +40,16 @@ Submit your code this way.
 <a href="https://github.com/DipperMap/dippermap/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=DipperMap/dippermap" />
 </a>
+
+
+● https://github.com/Sh1-5
+
+● https://github.com/wsqstar
+
+● https://github.com/asorn
+
+● https://github.com/websybin
+
+● https://github.com/SevenNorth
+
+● https://github.com/baixixi2020

@@ -28,6 +28,10 @@
   background-color: #ebeff5;
 }
 
+.card-item:hover .collect_icon {
+  display: block;
+}
+
 .link-content {
   display: flex;
   align-items: flex-start;
@@ -62,6 +66,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  padding-right: 20px;
 }
 
 .card-description {
@@ -99,4 +104,11 @@
   width: 100%;
   padding-bottom: 15px;
   color: rgba(147, 158, 169, 1);
+}
+
+.collect_icon {
+  display: none;
+  width: 32px;
+  height: 32px;
+  line-height: 37px;
 }

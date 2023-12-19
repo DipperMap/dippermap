@@ -1,12 +1,12 @@
 import { IGroup } from '../../../../types'
 export const JavaScript: IGroup = {
-  icon: '',
+  icon: 'icon-javascript',
   name: 'JavaScript',
   en_name: 'JavaScript',
   order: 5,
   children: [
     {
-      icon: 'https://developers.arcgis.com/assets/img/branding/webgisapis/mapping/arcgis-mapping-api-for-javascript.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*drbSSZyxVYYAAAAAAAAAAAAADjDHAQ/original',
       name: 'ArcGIS Maps SDK for JavaScript',
       en_name: 'ArcGIS Maps SDK for JavaScript',
       description:
@@ -18,7 +18,7 @@ export const JavaScript: IGroup = {
       tags: ['JavaScript', 'Mapping', 'Esri']
     },
     {
-      icon: 'https://raw.githubusercontent.com/springmeyer/arc.js/master/arcjs.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original?s=200&v=4',
       name: 'arc.js',
       en_name: 'arc.js',
       description:
@@ -42,7 +42,7 @@ export const JavaScript: IGroup = {
       tags: ['Bing Maps V8', 'Code Samples']
     },
     {
-      icon: 'https://www.bing.com/api/maps/sdkrelease/mapcontrol/isdk#loadMapWithOptions+JS',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*y-ExSp5xVbkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Bing Maps V8 Interactive SDK',
       en_name: 'Bing Maps V8 Interactive SDK',
       description: 'An interactive code sample gallery for Bing Maps V8.',
@@ -53,7 +53,7 @@ export const JavaScript: IGroup = {
       tags: ['Bing Maps V8', 'Interactive SDK']
     },
     {
-      icon: 'https://raw.githubusercontent.com/Microsoft/Bing-Maps-V8-TypeScript-Definitions/master/bing-maps-v8.d.svg',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Bing Maps V8 TypeScript Definitions',
       en_name: 'Bing Maps V8 TypeScript Definitions',
       description: 'TypeScript Definitions for the Bing Maps V8 web control.',
@@ -65,7 +65,7 @@ export const JavaScript: IGroup = {
       tags: ['Bing Maps V8', 'TypeScript Definitions']
     },
     {
-      icon: 'https://msdn.microsoft.com/en-us/library/mt712542.aspx',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*y-ExSp5xVbkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Bing Maps V8 Web Control',
       en_name: 'Bing Maps V8 Web Control',
       description: 'Bing Maps API for JavaScript.',
@@ -87,7 +87,7 @@ export const JavaScript: IGroup = {
       tags: ['JavaScript', '3D Globes']
     },
     {
-      icon: 'https://camo.githubusercontent.com/d1f3de855d52b4200c344b5a4da3ff517e82ecb3/68747470733a2f2f7472617669732d63692e6f72672f33364369747944422d5765622d4d61702d436c69656e742f6d61737465722f6d6170732e7376673f6272616e63683d6d6173746572',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'city-roads',
       en_name: 'city-roads',
       description: 'Visualization of all roads within any city.',
@@ -97,7 +97,7 @@ export const JavaScript: IGroup = {
       tags: ['City Roads', 'Visualization']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original?s=200&v=4',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*BUiIRqsFAbYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'deck.gl',
       en_name: 'deck.gl',
       description: 'WebGL2 powered geospatial visualization layers.',
@@ -107,7 +107,7 @@ export const JavaScript: IGroup = {
       tags: ['WebGL2', 'Geospatial', 'Visualization']
     },
     {
-      icon: 'https://raw.githubusercontent.com/urbica/galton/main/assets/logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Galton',
       en_name: 'Galton',
       description:
@@ -130,7 +130,7 @@ export const JavaScript: IGroup = {
       tags: ['地理坐标系', 'WGS84', 'GCJ02', 'BD09']
     },
     {
-      icon: 'https://gdal3.js.org/assets/img/logo.png',
+      icon: '',
       name: 'gdal3.js',
       en_name: 'gdal3.js',
       description:
@@ -190,7 +190,7 @@ export const JavaScript: IGroup = {
       tags: ['CLI', 'JavaScript', 'GeoJSON']
     },
     {
-      icon: 'http://geonode.org/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*z1MMSraMrdUAAAAAAAAAAAAADjDHAQ/original',
       name: 'GeoNode',
       en_name: 'GeoNode',
       description: 'Open Source Geospatial Content Management System.',
@@ -224,7 +224,7 @@ export const JavaScript: IGroup = {
       tags: ['Google Maps', 'JavaScript']
     },
     {
-      icon: 'https://developers.google.com/maps/documentation/javascript/images/new-google-logo.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*TrBASa3dWpkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Google Maps API',
       en_name: 'Google Maps API',
       description: 'Google Maps API for JavaScript.',
@@ -311,7 +311,7 @@ export const JavaScript: IGroup = {
       tags: ['WMS', 'Node.js', 'mapnik']
     },
     {
-      icon: 'http://leafletjs.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*ERSVTouMPTQAAAAAAAAAAAAADjDHAQ/original',
       name: 'Leaflet',
       en_name: 'Leaflet',
       description:
@@ -343,7 +343,7 @@ export const JavaScript: IGroup = {
       tags: ['Leaflet', 'Time Dimension']
     },
     {
-      icon: 'http://www.luciad.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*4-zJRb9Qj8AAAAAAAAAAAAAADjDHAQ/original',
       name: 'LuciadRIA',
       en_name: 'LuciadRIA',
       description:
@@ -355,7 +355,7 @@ export const JavaScript: IGroup = {
       tags: ['Javascript', '3D Globes', 'Military Symbology']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'mapbox-gl-draw',
       en_name: 'mapbox-gl-draw',
       description: 'Draw tools for mapbox-gl-js.',
@@ -365,7 +365,7 @@ export const JavaScript: IGroup = {
       tags: ['Mapbox', 'Draw Tools']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'mapboxgl-powerbi',
       en_name: 'mapboxgl-powerbi',
       description: 'Mapbox GL PowerBI custom visual.',
@@ -409,7 +409,7 @@ export const JavaScript: IGroup = {
       tags: ['Ajax', 'Javascript']
     },
     {
-      icon: 'https://osmbuildings.org/favicon.ico',
+      icon: '',
       name: 'OSM Building',
       en_name: 'OSM Building',
       description:
@@ -443,7 +443,7 @@ export const JavaScript: IGroup = {
       tags: ['Node.js', 'PostGres', 'REST API']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'pixelmatch',
       en_name: 'pixelmatch',
       description:
@@ -497,7 +497,7 @@ export const JavaScript: IGroup = {
       tags: ['Node.js', 'Spatial Hash']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*AovwR7a7TqkAAAAAAAAAAAAADrZ5AQ/original',
       name: 'Supercluster',
       en_name: 'Supercluster',
       description:
@@ -630,7 +630,7 @@ export const JavaScript: IGroup = {
       tags: ['Vue 2', 'Leaflet']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*mvMlQquWXgMAAAAAAAAAAAAADrZ5AQ/original',
       name: 'vue-cesium',
       en_name: 'vue-cesium',
       description:

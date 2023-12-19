@@ -1,12 +1,12 @@
 import { IGroup } from '../../../types'
 export const Tiles3D: IGroup = {
-  icon: '',
+  icon: 'icon-a-3d',
   name: '3D瓦片',
   en_name: '3DTiles',
   order: 4,
   children: [
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*mvMlQquWXgMAAAAAAAAAAAAADrZ5AQ/original',
       name: 'CesiumJS',
       en_name: 'CesiumJS',
       description:
@@ -39,7 +39,7 @@ export const Tiles3D: IGroup = {
       tags: ['3D Formats', 'Geospatial Data', 'WebGL']
     },
     {
-      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*lImyTYAmEoYAAAAAAAAAAAAADrZ5AQ/original',
+      icon: 'https://mdn.alipayobjects.com/huamei_b5qxsh/afts/img/A*BUiIRqsFAbYAAAAAAAAAAAAADrZ5AQ/original',
       name: 'deck.gl',
       en_name: 'deck.gl',
       description:
