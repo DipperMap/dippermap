@@ -37,9 +37,25 @@
 .selectSearchDrawer .ant-btn.activeSearch {
   color: #fff !important;
   background-color: #38404d !important;
+  border: none;
+  box-shadow: none;
 }
 
 .selectSearchDrawer {
-  border-top-left-radius: 36px;
-  border-top-right-radius: 36px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.selectSearchDrawer .ant-drawer-title {
+  color: #1d2531;
+}
+
+.selectSearchDrawer .ant-btn-default {
+  border-color: #dde3ec;
+  color: #38404d;
+}
+
+.selectSearchDrawer .ant-btn {
+  height: unset;
+  padding: 8px 20px;
 }
