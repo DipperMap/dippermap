@@ -4,21 +4,42 @@ import { FileTextOutlined } from '@ant-design/icons'
 import './index.css'
 import { IGroup, IItem } from '../../data/types'
 import { IconFont } from '../../constants'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { CollectCard } from './component/collect'
 import { useLocalStorageState } from 'ahooks'
 
 type AppCardPopup = {
   siteData: string
+  siteSearch: string
 }
 
-export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
+export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
   const siteConfig = SitesConfig[siteData]
   const [localCollect, setLocalCollect] = useLocalStorageState<{
     [key: string]: IItem[]
   }>('collect', {
     defaultValue: {}
   })
+  const [searchData, setSearchData] = useState<IGroup[]>([])
+
+  useEffect(() => {
+    const newListData: IGroup[] = []
+    siteConfig.groups.forEach((item) => {
+      const { children } = item
+      const newChildren = children.filter((v) => {
+        const { name, tags, description } = v
+        return (
+          name.indexOf(siteSearch) > -1 ||
+          tags.includes(siteSearch) ||
+          description.indexOf(siteSearch) > -1
+        )
+      })
+      if (newChildren.length) {
+        newListData.push({ ...item, children: newChildren })
+      }
+    })
+    setSearchData(newListData)
+  }, [siteSearch, siteConfig])
 
   return (
     <>
@@ -34,7 +55,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
           siteData={siteData}
           setLocalCollect={setLocalCollect}
         />
-        {siteConfig.groups.map((group: IGroup) => {
+        {searchData.map((group: IGroup) => {
           const { name, children, icon } = group
           return (
             <Card

@@ -16,6 +16,7 @@ function App() {
   const [siteData, setSiteData] = useLocalStorageState<string>('siteData', {
     defaultValue: 'main'
   })
+  const [siteSearch, setSiteSearch] = useState('')
 
   useEffect(() => {
     const currentUrl = new URL(window.location.href)
@@ -43,10 +44,15 @@ function App() {
             collapsed={collapsed}
             siteData={siteData || ''}
             setSiteData={setSiteData}
+            setSiteSearch={setSiteSearch}
           />
         </Sider>
       ) : (
-        <MobileSider siteData={siteData || ''} setSiteData={setSiteData} />
+        <MobileSider
+          siteData={siteData || ''}
+          setSiteData={setSiteData}
+          setSiteSearch={setSiteSearch}
+        />
       )}
       <Layout
         style={{
@@ -63,7 +69,7 @@ function App() {
 
         <Content className="App-content">
           <AppSearch />
-          <AppCard siteData={siteData || ''} />
+          <AppCard siteData={siteData || ''} siteSearch={siteSearch} />
         </Content>
         <Footer className="App-footer">DipperMap 星辰地图站点导航</Footer>
         <FloatButton.BackTop style={{ insetBlockEnd: '96px' }} />

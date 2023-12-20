@@ -3,7 +3,7 @@ import logo from '../../assets/logo.png'
 import type { IGroup } from '../../data/types'
 import { SitesConfig } from '../../data/sites'
 import './index.css'
-import { Space, Tag } from 'antd'
+import { Input, Space, Tag } from 'antd'
 import classNames from 'classnames'
 import logoIcon from '../../assets/logo_icon.png'
 import {
@@ -13,17 +13,20 @@ import {
   CheckOutlined
 } from '@ant-design/icons'
 import { UrlSetSite } from '../../utils'
+import { useDebounceFn } from 'ahooks'
 
 type AppSilderPopup = {
   collapsed: boolean
   siteData: string
   setSiteData: (value: string) => void
+  setSiteSearch: (value: string) => void
 }
 
 export const AppSider: React.FC<AppSilderPopup> = ({
   collapsed,
   siteData,
-  setSiteData
+  setSiteData,
+  setSiteSearch
 }) => {
   const [selectedTag, setSelectedTag] = useState<string | undefined>(undefined)
   const [activeIcon, setActiveIcon] = useState(false)
@@ -31,15 +34,21 @@ export const AppSider: React.FC<AppSilderPopup> = ({
   const siteConfig = SitesConfig[siteData]
   const divRef = useRef<HTMLDivElement | null>(null)
   const collapsedTag = useRef<HTMLDivElement | null>(null)
-
+  const [inputValue, setInputValue] = useState('')
   const tagClick = (item: IGroup) => {
-    const element = document.querySelector(
-      `#map-${item.name.replace(/\s/g, '-').replace(/\+/g, 'plus')}`
-    )
-    if (element) {
-      element.scrollIntoView({ block: 'start', behavior: 'smooth' })
-      setSelectedTag(item.name)
+    if (inputValue !== '') {
+      setSiteSearch('')
+      setInputValue('')
     }
+    setTimeout(() => {
+      const element = document.querySelector(
+        `#map-${item.name.replace(/\s/g, '-').replace(/\+/g, 'plus')}`
+      )
+      if (element) {
+        element.scrollIntoView({ block: 'start', behavior: 'smooth' })
+        setSelectedTag(item.name)
+      }
+    }, 110)
   }
   useEffect(() => {
     const handleClickOutside: EventListener = (event) => {
@@ -81,6 +90,13 @@ export const AppSider: React.FC<AppSilderPopup> = ({
       </div>
     ) : null
   }, [siteData, activeSite])
+
+  const { run: onInputChange } = useDebounceFn(
+    (e) => {
+      setSiteSearch(e.target.value)
+    },
+    { wait: 100 }
+  )
   return (
     <div>
       <div className="logo">
@@ -112,6 +128,8 @@ export const AppSider: React.FC<AppSilderPopup> = ({
             setSiteData('main')
             UrlSetSite('main')
             setSelectedTag(undefined)
+            setInputValue('')
+            setSiteSearch('')
           }}
           src={logo}
           alt=""
@@ -123,6 +141,8 @@ export const AppSider: React.FC<AppSilderPopup> = ({
               onClick={(e) => {
                 e.stopPropagation()
                 setActiveSite(!activeSite)
+                setInputValue('')
+                setSiteSearch('')
               }}
               className="silder-select"
             >
@@ -137,6 +157,19 @@ export const AppSider: React.FC<AppSilderPopup> = ({
 
             {content}
           </div>
+        )}
+      </div>
+      <div style={{ textAlign: 'center' }}>
+        {!collapsed && (
+          <Input
+            style={{ width: 230 }}
+            value={inputValue}
+            placeholder="站点搜索"
+            onChange={(e) => {
+              onInputChange(e)
+              setInputValue(e.target.value)
+            }}
+          />
         )}
       </div>
       {collapsed ? (
