@@ -40,12 +40,8 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
         const regex = new RegExp(siteSearch, 'gi')
 
         newChildren = children.filter((v) => {
-          const { name, tags, description } = v
-          return (
-            regex.test(name) ||
-            tags.some((tag) => regex.test(tag)) ||
-            regex.test(description)
-          )
+          const { name, description } = v
+          return regex.test(name) || regex.test(description)
         })
       }
       if (newChildren.length) {
