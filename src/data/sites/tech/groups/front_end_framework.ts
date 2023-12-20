@@ -281,7 +281,7 @@ export const FrontEndFramework: IGroup = {
       icon: '',
       name: 'pigeon-maps',
       en_name: 'pigeon-maps',
-      description: 'ReactJS地图没有外部依赖性。',
+      description: '没有外部依赖的ReactJS地图。',
       en_description:
         'ReactJS Maps without external dependencies.',
       site_url: 'https://pigeon-maps.js.org/',
