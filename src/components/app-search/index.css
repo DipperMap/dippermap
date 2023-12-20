@@ -19,8 +19,19 @@
   background-color: #38404d !important;
 }
 
+.searchBox .ant-space {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.searchBox .ant-space-gap-col-small {
+  column-gap: 4px;
+}
+
 .searchBox .ant-input.ant-input-lg {
   border-top-left-radius: 0;
+  padding: 12px 15px;
+  font-size: 14px;
 }
 
 .searchBox .ant-input-prefix .ant-btn-icon {
@@ -37,9 +48,25 @@
 .selectSearchDrawer .ant-btn.activeSearch {
   color: #fff !important;
   background-color: #38404d !important;
+  border: none;
+  box-shadow: none;
 }
 
 .selectSearchDrawer {
-  border-top-left-radius: 36px;
-  border-top-right-radius: 36px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.selectSearchDrawer .ant-drawer-title {
+  color: #1d2531;
+}
+
+.selectSearchDrawer .ant-btn-default {
+  border-color: #dde3ec;
+  color: #38404d;
+}
+
+.selectSearchDrawer .ant-btn {
+  height: unset;
+  padding: 8px 20px;
 }

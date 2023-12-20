@@ -39,8 +39,9 @@ export const NarrowSearch = (props: { searchConfig: ISearchItem[] }) => {
                 )
               }
               style={{
-                borderRadius: '10px',
-                color: '#000'
+                borderRadius: '6px',
+                color: '#000',
+                backgroundColor: '#f7f9fc'
               }}
               onClick={() => setOpen(true)}
             />
@@ -60,24 +61,8 @@ export const NarrowSearch = (props: { searchConfig: ISearchItem[] }) => {
         className="selectSearchDrawer"
         mask
         maskClosable
+        height={280}
         onClose={() => setOpen(false)}
-        footer={
-          <ConfigProvider
-            theme={{
-              components: {
-                Button: {
-                  defaultBg: '#d9d9d9',
-                  borderRadius: 8,
-                  fontWeight: 500
-                }
-              }
-            }}
-          >
-            <Button onClick={() => setOpen(false)} block>
-              取消
-            </Button>
-          </ConfigProvider>
-        }
       >
         <ConfigProvider
           theme={{

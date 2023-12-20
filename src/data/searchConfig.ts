@@ -12,13 +12,14 @@ export const searchConfig: ISearchItem[] = [
     name: '百度',
     site: 'https://www.baidu.com/s',
     paramKey: 'wd',
-    icon: 'https://www.baidu.com/favicon.ico'
+    icon: 'http://sevennorth.lovinghlx.cn/imgbed/www.baidu.com.ico'
   },
   {
     id: 'baidu-dev',
     name: '百度开发者',
     site: 'https://kaifa.baidu.com/searchPage',
-    paramKey: 'wd'
+    paramKey: 'wd',
+    icon: 'http://sevennorth.lovinghlx.cn/imgbed/www.baidu.com.ico'
   },
   {
     id: 'google',
@@ -30,19 +31,22 @@ export const searchConfig: ISearchItem[] = [
     id: 'github',
     name: 'Github',
     site: 'https://github.com/search',
-    paramKey: 'q'
+    paramKey: 'q',
+    icon: 'http://sevennorth.lovinghlx.cn/imgbed/github.com.ico'
   },
   {
     id: 'ecosia',
     name: 'Ecosia',
     site: 'https://www.ecosia.org/search',
-    paramKey: 'q'
+    paramKey: 'q',
+    icon: 'http://sevennorth.lovinghlx.cn/imgbed/www.ecosia.org.ico'
   },
   {
     id: 'yandex',
     name: 'Yandex',
     site: 'https://yandex.com/search/',
-    paramKey: 'text'
+    paramKey: 'text',
+    icon: 'http://sevennorth.lovinghlx.cn/imgbed/yandex.com.ico'
   },
   {
     id: '360-so',
@@ -54,7 +58,8 @@ export const searchConfig: ISearchItem[] = [
     id: 'bing',
     name: 'Bing',
     site: 'https://www.bing.com/search',
-    paramKey: 'q'
+    paramKey: 'q',
+    icon: 'http://sevennorth.lovinghlx.cn/imgbed/www.bing.com.ico'
   },
   {
     id: 'zhihu',
@@ -66,7 +71,8 @@ export const searchConfig: ISearchItem[] = [
     id: 'bilibili',
     name: 'Bilibili',
     site: 'https://search.bilibili.com/all',
-    paramKey: 'keyword'
+    paramKey: 'keyword',
+    icon: 'http://sevennorth.lovinghlx.cn/imgbed/search.bilibili.com.ico'
   },
   {
     id: 'douban',
