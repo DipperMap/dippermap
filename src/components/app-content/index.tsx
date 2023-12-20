@@ -31,17 +31,26 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
         })
       })
       .flat()
-    console.log(newData)
     newData.forEach((item) => {
       const { children } = item
-      const newChildren = children.filter((v) => {
-        const { name, tags, description } = v
-        return (
-          name.indexOf(siteSearch) > -1 ||
-          tags.includes(siteSearch) ||
-          description.indexOf(siteSearch) > -1
-        )
-      })
+      let newChildren
+
+      if (siteSearch) {
+        // siteSearch不是空字符串，创建不区分大小写的正则表达式
+        const regex = new RegExp(siteSearch, 'gi')
+
+        newChildren = children.filter((v) => {
+          const { name, tags, description } = v
+          return (
+            regex.test(name) ||
+            tags.some((tag) => regex.test(tag)) ||
+            regex.test(description)
+          )
+        })
+      } else {
+        // siteSearch是空字符串，直接使用原始children数组
+        newChildren = [...children]
+      }
       if (newChildren.length) {
         newListData.push({ ...item, children: newChildren })
       }
