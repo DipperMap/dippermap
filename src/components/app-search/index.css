@@ -19,8 +19,19 @@
   background-color: #38404d !important;
 }
 
+.searchBox .ant-space {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.searchBox .ant-space-gap-col-small {
+  column-gap: 4px;
+}
+
 .searchBox .ant-input.ant-input-lg {
   border-top-left-radius: 0;
+  padding: 12px 15px;
+  font-size: 14px;
 }
 
 .searchBox .ant-input-prefix .ant-btn-icon {
