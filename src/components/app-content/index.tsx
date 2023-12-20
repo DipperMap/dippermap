@@ -24,7 +24,15 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
 
   useEffect(() => {
     const newListData: IGroup[] = []
-    siteConfig.groups.forEach((item) => {
+    const newData = Object.entries(SitesConfig)
+      .map(([key, value]) => {
+        return value.groups.map((item) => {
+          return { ...item, key: key }
+        })
+      })
+      .flat()
+    console.log(newData)
+    newData.forEach((item) => {
       const { children } = item
       const newChildren = children.filter((v) => {
         const { name, tags, description } = v
@@ -38,7 +46,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
         newListData.push({ ...item, children: newChildren })
       }
     })
-    setSearchData(newListData)
+    setSearchData(siteSearch ? newListData : siteConfig.groups)
   }, [siteSearch, siteConfig])
 
   return (
@@ -77,7 +85,9 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
               <Row className="card" gutter={[16, 16]}>
                 {children.length ? (
                   children.map((val, index) => {
-                    const findData = localCollect?.[siteData]?.find((item) => {
+                    const findData = localCollect?.[
+                      group.key ? group.key : siteData
+                    ]?.find((item) => {
                       return item.name === val.name
                     })
                     return (
@@ -129,9 +139,11 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
                                       item.site_url !== val.site_url
                                     )
                                   })
+
                                   setLocalCollect({
                                     ...localCollect,
-                                    [siteData]: newSiteData ?? []
+                                    [group.key ? group.key : siteData]:
+                                      newSiteData ?? []
                                   })
                                 }}
                               />
@@ -141,13 +153,23 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
                                 className="collect_icon"
                                 onClick={(e) => {
                                   e.stopPropagation()
-                                  const newData = {
-                                    ...localCollect,
-                                    [siteData]: localCollect?.[siteData]
-                                      ? [...localCollect[siteData], val]
-                                      : [val]
+                                  if (group.key) {
+                                    const newData = {
+                                      ...localCollect,
+                                      [group.key]: localCollect?.[group.key]
+                                        ? [...localCollect[group.key], val]
+                                        : [val]
+                                    }
+                                    setLocalCollect(newData)
+                                  } else {
+                                    const newData = {
+                                      ...localCollect,
+                                      [siteData]: localCollect?.[siteData]
+                                        ? [...localCollect[siteData], val]
+                                        : [val]
+                                    }
+                                    setLocalCollect(newData)
                                   }
-                                  setLocalCollect(newData)
                                 }}
                               />
                             )}
