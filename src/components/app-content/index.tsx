@@ -33,7 +33,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
       .flat()
     newData.forEach((item) => {
       const { children } = item
-      let newChildren
+      let newChildren: IItem[] = []
 
       if (siteSearch) {
         // siteSearch不是空字符串，创建不区分大小写的正则表达式
@@ -47,9 +47,6 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
             regex.test(description)
           )
         })
-      } else {
-        // siteSearch是空字符串，直接使用原始children数组
-        newChildren = [...children]
       }
       if (newChildren.length) {
         newListData.push({ ...item, children: newChildren })
