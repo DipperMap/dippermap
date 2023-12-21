@@ -1,6 +1,7 @@
 import { Avatar, Card, Col, Empty, Row, Tooltip } from 'antd'
 import { IconFont } from '../../../constants'
 import { IItem } from '../../../data/types'
+import { useEffect, useState } from 'react'
 
 type collectPopup = {
   localCollect: { [key: string]: IItem[] } | undefined
@@ -13,6 +14,15 @@ export const CollectCard: React.FC<collectPopup> = ({
   siteData,
   setLocalCollect
 }) => {
+  const [collectData, setCollectData] = useState<IItem[] | undefined>(undefined)
+  
+  useEffect(() => {
+    if (localCollect) {
+      const newData = Object.values(localCollect).flat()
+      setCollectData(newData)
+    }
+  }, [localCollect])
+
   return (
     <Card
       bodyStyle={{ paddingBottom: 8 }}
@@ -29,8 +39,8 @@ export const CollectCard: React.FC<collectPopup> = ({
       id={`map-collect`}
     >
       <Row className="card" gutter={[16, 16]}>
-        {localCollect?.[siteData] && localCollect?.[siteData].length ? (
-          localCollect?.[siteData].map((val) => {
+        {collectData ? (
+          collectData.map((val) => {
             return (
               <Col
                 md={16}
