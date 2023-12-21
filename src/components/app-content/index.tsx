@@ -7,6 +7,7 @@ import { IconFont } from '../../constants'
 import React, { useEffect, useState } from 'react'
 import { CollectCard } from './component/collect'
 import { useLocalStorageState } from 'ahooks'
+import classNames from 'classnames'
 
 type AppCardPopup = {
   siteData: string
@@ -59,6 +60,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
           alignItems: 'center',
           flexDirection: 'column'
         }}
+        id="map-card"
       >
         <CollectCard
           localCollect={localCollect}
@@ -80,7 +82,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
                   <div style={{ color: '#1D2B3A' }}>{name}</div>
                 </div>
               }
-              className="item-content"
+              className={classNames(['item-content'])}
               id={`map-${name.replace(/\s/g, '-').replace(/\+/g, 'plus')}`}
               key={name}
             >

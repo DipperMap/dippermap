@@ -6,7 +6,7 @@ import { NarrowSearch } from './NarrowSearch'
 
 export const AppSearch = () => {
   return (
-    <div className="searchWrapper">
+    <div id="app-search" className="searchWrapper">
       <div className="searchBox">
         {isMobileDevice() ? (
           <NarrowSearch searchConfig={searchConfig} />

@@ -98,7 +98,7 @@ export const AppSider: React.FC<AppSilderPopup> = ({
     { wait: 100 }
   )
   return (
-    <div>
+    <div id="app-sider">
       <div className="logo">
         <img
           width={40}
@@ -135,7 +135,7 @@ export const AppSider: React.FC<AppSilderPopup> = ({
           alt=""
         />
         {!collapsed && (
-          <div className="site">
+          <div id="app-site" className="site">
             <div
               ref={divRef}
               onClick={(e) => {
@@ -162,6 +162,7 @@ export const AppSider: React.FC<AppSilderPopup> = ({
       <div style={{ textAlign: 'center' }}>
         {!collapsed && (
           <Input
+            id="app-input"
             style={{ width: 230 }}
             value={inputValue}
             placeholder="站点搜索"
@@ -205,7 +206,7 @@ export const AppSider: React.FC<AppSilderPopup> = ({
           )}
         </div>
       ) : (
-        <div className="all-tag">
+        <div id="app-tag" className="all-tag">
           {siteConfig.groups.map((group: IGroup) => {
             return (
               <Space key={group.name}>
