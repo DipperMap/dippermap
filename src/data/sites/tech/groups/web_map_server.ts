@@ -295,7 +295,7 @@ export const WebMapServer: IGroup = {
       ]
     },
     {
-      icon: 'http://udig.refractions.net/images/udig.png',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*3U1YSJsMrbcAAAAAAAAAAAAADjDHAQ/original',
       name: 'uDig',
       en_name: 'uDig',
       description:
