@@ -8,6 +8,7 @@ import React, { useEffect, useState } from 'react'
 import { CollectCard } from './component/collect'
 import { useLocalStorageState } from 'ahooks'
 import classNames from 'classnames'
+import { isMobileDevice } from '../../utils'
 
 type AppCardPopup = {
   siteData: string
@@ -154,6 +155,9 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
                             ) : (
                               <IconFont
                                 type="icon-xingxing"
+                                style={{
+                                  display: isMobileDevice() ? 'block' : 'none'
+                                }}
                                 className="collect_icon"
                                 onClick={(e) => {
                                   e.stopPropagation()
