@@ -39,7 +39,7 @@ export const RSPlatform: IGroup = {
       tags: ['Geospatial Visualization', 'Maps', 'Online Browser']
     },
     {
-      icon: 'https://senseearth-cloud.com/favicon.ico',
+      icon: 'https://mdn.alipayobjects.com/huamei_gjo0cl/afts/img/A*IB2tSa2hA0sAAAAAAAAAAAAADjDHAQ/original',
       name: 'SenseEarth Cloud',
       en_name: 'SenseEarth Cloud',
       description: 'SenseEarth Cloud 提供先进的地球观测数据处理和分析服务。',

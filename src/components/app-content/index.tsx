@@ -7,6 +7,8 @@ import { IconFont } from '../../constants'
 import React, { useEffect, useState } from 'react'
 import { CollectCard } from './component/collect'
 import { useLocalStorageState } from 'ahooks'
+import classNames from 'classnames'
+import { isMobileDevice } from '../../utils'
 
 type AppCardPopup = {
   siteData: string
@@ -31,17 +33,19 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
         })
       })
       .flat()
-    console.log(newData)
     newData.forEach((item) => {
       const { children } = item
-      const newChildren = children.filter((v) => {
-        const { name, tags, description } = v
-        return (
-          name.indexOf(siteSearch) > -1 ||
-          tags.includes(siteSearch) ||
-          description.indexOf(siteSearch) > -1
-        )
-      })
+      let newChildren: IItem[] = []
+
+      if (siteSearch) {
+        // siteSearch不是空字符串，创建不区分大小写的正则表达式
+        const regex = new RegExp(siteSearch, 'gi')
+
+        newChildren = children.filter((v) => {
+          const { name, description } = v
+          return regex.test(name) || regex.test(description)
+        })
+      }
       if (newChildren.length) {
         newListData.push({ ...item, children: newChildren })
       }
@@ -57,6 +61,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
           alignItems: 'center',
           flexDirection: 'column'
         }}
+        id="map-card"
       >
         <CollectCard
           localCollect={localCollect}
@@ -78,7 +83,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
                   <div style={{ color: '#1D2B3A' }}>{name}</div>
                 </div>
               }
-              className="item-content"
+              className={classNames(['item-content'])}
               id={`map-${name.replace(/\s/g, '-').replace(/\+/g, 'plus')}`}
               key={name}
             >
@@ -150,6 +155,9 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
                             ) : (
                               <IconFont
                                 type="icon-xingxing"
+                                style={{
+                                  display: isMobileDevice() ? 'block' : 'none'
+                                }}
                                 className="collect_icon"
                                 onClick={(e) => {
                                   e.stopPropagation()
