@@ -4,21 +4,54 @@ import { FileTextOutlined } from '@ant-design/icons'
 import './index.css'
 import { IGroup, IItem } from '../../data/types'
 import { IconFont } from '../../constants'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { CollectCard } from './component/collect'
 import { useLocalStorageState } from 'ahooks'
+import classNames from 'classnames'
+import { isMobileDevice } from '../../utils'
 
 type AppCardPopup = {
   siteData: string
+  siteSearch: string
 }
 
-export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
+export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
   const siteConfig = SitesConfig[siteData]
   const [localCollect, setLocalCollect] = useLocalStorageState<{
     [key: string]: IItem[]
   }>('collect', {
     defaultValue: {}
   })
+  const [searchData, setSearchData] = useState<IGroup[]>([])
+
+  useEffect(() => {
+    const newListData: IGroup[] = []
+    const newData = Object.entries(SitesConfig)
+      .map(([key, value]) => {
+        return value.groups.map((item) => {
+          return { ...item, key: key }
+        })
+      })
+      .flat()
+    newData.forEach((item) => {
+      const { children } = item
+      let newChildren: IItem[] = []
+
+      if (siteSearch) {
+        // siteSearch不是空字符串，创建不区分大小写的正则表达式
+        const regex = new RegExp(siteSearch, 'gi')
+
+        newChildren = children.filter((v) => {
+          const { name, description } = v
+          return regex.test(name) || regex.test(description)
+        })
+      }
+      if (newChildren.length) {
+        newListData.push({ ...item, children: newChildren })
+      }
+    })
+    setSearchData(siteSearch ? newListData : siteConfig.groups)
+  }, [siteSearch, siteConfig])
 
   return (
     <>
@@ -28,13 +61,14 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
           alignItems: 'center',
           flexDirection: 'column'
         }}
+        id="map-card"
       >
         <CollectCard
           localCollect={localCollect}
           siteData={siteData}
           setLocalCollect={setLocalCollect}
         />
-        {siteConfig.groups.map((group: IGroup) => {
+        {searchData.map((group: IGroup) => {
           const { name, children, icon } = group
           return (
             <Card
@@ -49,14 +83,16 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                   <div style={{ color: '#1D2B3A' }}>{name}</div>
                 </div>
               }
-              className="item-content"
+              className={classNames(['item-content'])}
               id={`map-${name.replace(/\s/g, '-').replace(/\+/g, 'plus')}`}
               key={name}
             >
               <Row className="card" gutter={[16, 16]}>
                 {children.length ? (
                   children.map((val, index) => {
-                    const findData = localCollect?.[siteData]?.find((item) => {
+                    const findData = localCollect?.[
+                      group.key ? group.key : siteData
+                    ]?.find((item) => {
                       return item.name === val.name
                     })
                     return (
@@ -108,25 +144,40 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData }) => {
                                       item.site_url !== val.site_url
                                     )
                                   })
+
                                   setLocalCollect({
                                     ...localCollect,
-                                    [siteData]: newSiteData ?? []
+                                    [group.key ? group.key : siteData]:
+                                      newSiteData ?? []
                                   })
                                 }}
                               />
                             ) : (
                               <IconFont
                                 type="icon-xingxing"
+                                style={{
+                                  display: isMobileDevice() ? 'block' : 'none'
+                                }}
                                 className="collect_icon"
                                 onClick={(e) => {
                                   e.stopPropagation()
-                                  const newData = {
-                                    ...localCollect,
-                                    [siteData]: localCollect?.[siteData]
-                                      ? [...localCollect[siteData], val]
-                                      : [val]
+                                  if (group.key) {
+                                    const newData = {
+                                      ...localCollect,
+                                      [group.key]: localCollect?.[group.key]
+                                        ? [...localCollect[group.key], val]
+                                        : [val]
+                                    }
+                                    setLocalCollect(newData)
+                                  } else {
+                                    const newData = {
+                                      ...localCollect,
+                                      [siteData]: localCollect?.[siteData]
+                                        ? [...localCollect[siteData], val]
+                                        : [val]
+                                    }
+                                    setLocalCollect(newData)
                                   }
-                                  setLocalCollect(newData)
                                 }}
                               />
                             )}

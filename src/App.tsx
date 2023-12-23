@@ -1,4 +1,4 @@
-import { Layout, FloatButton } from 'antd'
+import { Layout, FloatButton, ConfigProvider } from 'antd'
 import './App.css'
 import { AppCard } from './components/app-content'
 import { AppSider } from './components/app-sider'
@@ -9,6 +9,7 @@ import { AppSearch } from './components/app-search'
 import { useLocalStorageState } from 'ahooks'
 import { isMobileDevice } from './utils'
 import { MobileSider } from './components/mobile-sider'
+import zhCN from 'antd/locale/zh_CN'
 const { Header, Footer, Sider, Content } = Layout
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   const [siteData, setSiteData] = useLocalStorageState<string>('siteData', {
     defaultValue: 'main'
   })
+  const [siteSearch, setSiteSearch] = useState('')
 
   useEffect(() => {
     const currentUrl = new URL(window.location.href)
@@ -31,44 +33,51 @@ function App() {
   }, [siteData])
 
   return (
-    <Layout className="App">
-      {!isMobileDevice() ? (
-        <Sider
-          className={classNames([
-            'App-sider',
-            collapsed ? 'retractSiderWidth' : 'siderWidth'
-          ])}
-        >
-          <AppSider
-            collapsed={collapsed}
+    <ConfigProvider locale={zhCN}>
+      <Layout className="App">
+        {!isMobileDevice() ? (
+          <Sider
+            className={classNames([
+              'App-sider',
+              collapsed ? 'retractSiderWidth' : 'siderWidth'
+            ])}
+          >
+            <AppSider
+              collapsed={collapsed}
+              siteData={siteData || ''}
+              setSiteData={setSiteData}
+              setSiteSearch={setSiteSearch}
+            />
+          </Sider>
+        ) : (
+          <MobileSider
             siteData={siteData || ''}
             setSiteData={setSiteData}
+            setSiteSearch={setSiteSearch}
           />
-        </Sider>
-      ) : (
-        <MobileSider siteData={siteData || ''} setSiteData={setSiteData} />
-      )}
-      <Layout
-        style={{
-          marginLeft: !isMobileDevice() ? (collapsed ? 80 : 280) : 0,
-          marginTop: !isMobileDevice() ? 0 : 64
-        }}
-        className="contentLayout"
-      >
-        {!isMobileDevice() && (
-          <Header className="App-header">
-            <AppHeader collapsed={collapsed} setCollapsed={setCollapsed} />
-          </Header>
         )}
+        <Layout
+          style={{
+            marginLeft: !isMobileDevice() ? (collapsed ? 80 : 280) : 0,
+            marginTop: !isMobileDevice() ? 0 : 64
+          }}
+          className="contentLayout"
+        >
+          {!isMobileDevice() && (
+            <Header className="App-header">
+              <AppHeader collapsed={collapsed} setCollapsed={setCollapsed} />
+            </Header>
+          )}
 
-        <Content className="App-content">
-          <AppSearch />
-          <AppCard siteData={siteData || ''} />
-        </Content>
-        <Footer className="App-footer">DipperMap 星辰地图站点导航</Footer>
-        <FloatButton.BackTop style={{ insetBlockEnd: '96px' }} />
+          <Content className="App-content">
+            <AppSearch />
+            <AppCard siteData={siteData || ''} siteSearch={siteSearch} />
+          </Content>
+          <Footer className="App-footer">DipperMap 星辰地图站点导航</Footer>
+          <FloatButton.BackTop style={{ insetBlockEnd: '96px' }} />
+        </Layout>
       </Layout>
-    </Layout>
+    </ConfigProvider>
   )
 }
 

@@ -12,6 +12,7 @@ export interface IItem {
   favorite?: boolean
 }
 export interface IGroup {
+  [x: string]: any
   icon?: any
   name: string
   en_name: string

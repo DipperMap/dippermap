@@ -29,7 +29,7 @@
 }
 
 .card-item:hover .collect_icon {
-  display: block;
+  display: block !important;
 }
 
 .link-content {

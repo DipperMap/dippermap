@@ -276,6 +276,17 @@ export const FrontEndFramework: IGroup = {
       site_url: 'https://github.com/webglearth/webglearth2',
       order: 159,
       tags: ['Open Source', 'Virtual Planet', 'Web Application', 'WebGL']
+    },
+    {
+      icon: '',
+      name: 'pigeon-maps',
+      en_name: 'pigeon-maps',
+      description: '没有外部依赖的ReactJS地图。',
+      en_description:
+        'ReactJS Maps without external dependencies.',
+      site_url: 'https://pigeon-maps.js.org/',
+      order: 160,
+      tags: ['Open Source', 'ReactJS', 'JavaScript Library', 'Map Viewing']
     }
   ]
 }

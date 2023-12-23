@@ -11,39 +11,49 @@ import {
   CaretUpOutlined,
   CheckOutlined
 } from '@ant-design/icons'
-import { Space, Tag } from 'antd'
+import { Input, Space, Tag } from 'antd'
 import { UrlSetSite } from '../../utils'
+import { useDebounceFn } from 'ahooks'
 
 type MobileSiderPopup = {
   siteData: string
   setSiteData: (value: string) => void
+  setSiteSearch: (value: string) => void
 }
 
 export const MobileSider: React.FC<MobileSiderPopup> = ({
   siteData,
-  setSiteData
+  setSiteData,
+  setSiteSearch
 }) => {
   const [selectedTag, setSelectedTag] = useState<string | undefined>(undefined)
   const [collapsed, setCollapsed] = useState(false)
   const [activeIcon, setActiveIcon] = useState(false)
   const [activeSite, setActiveSite] = useState(false)
+  const [inputValue, setInputValue] = useState('')
   const siteConfig = SitesConfig[siteData]
   const divRef = useRef<HTMLDivElement>(null)
 
   const tagClick = (item: IGroup) => {
-    const element = document.querySelector(
-      `#map-${item.name.replace(/\s/g, '-').replace(/\+/g, 'plus')}`
-    )
-    if (element) {
-      // element.scrollIntoView({ block: 'start', behavior: 'smooth' })
-      const elementPosition = element.getBoundingClientRect().top
-      const offsetPosition = elementPosition + window.scrollY - 68
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      })
-      setSelectedTag(item.name)
+    if (inputValue !== '') {
+      setSiteSearch('')
+      setInputValue('')
     }
+    setTimeout(() => {
+      const element = document.querySelector(
+        `#map-${item.name.replace(/\s/g, '-').replace(/\+/g, 'plus')}`
+      )
+      if (element) {
+        // element.scrollIntoView({ block: 'start', behavior: 'smooth' })
+        const elementPosition = element.getBoundingClientRect().top
+        const offsetPosition = elementPosition + window.scrollY - 68
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        })
+        setSelectedTag(item.name)
+      }
+    }, 110)
   }
   useEffect(() => {
     const handleTouchStart: EventListener = (event) => {
@@ -58,6 +68,13 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
       document.removeEventListener('touchstart', handleTouchStart)
     }
   }, [])
+
+  const { run: onInputChange } = useDebounceFn(
+    (e) => {
+      setSiteSearch(e.target.value)
+    },
+    { wait: 100 }
+  )
   return (
     <Sider
       className={classNames(['mobile-sider'])}
@@ -77,12 +94,16 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
                 setActiveIcon(false)
                 setActiveSite(false)
                 setCollapsed(false)
+                setInputValue('')
+                setSiteSearch('')
               }}
             />
             <div
               onClick={(e) => {
                 e.stopPropagation()
                 setActiveSite(!activeSite)
+                setInputValue('')
+                setSiteSearch('')
                 if (!activeSite && activeIcon) {
                   setCollapsed(true)
                   setActiveIcon(false)
@@ -103,7 +124,17 @@ export const MobileSider: React.FC<MobileSiderPopup> = ({
               </div>
             </div>
           </div>
-          <div>
+
+          <div style={{ display: 'flex' }}>
+            <Input
+              value={inputValue}
+              style={{ maxWidth: 240, marginRight: 10, minWidth: 100 }}
+              placeholder="站点搜索"
+              onChange={(e) => {
+                onInputChange(e)
+                setInputValue(e.target.value)
+              }}
+            />
             <AppstoreOutlined
               className={
                 activeIcon ? 'active_collapsed_icon' : 'collapsed_icon'
