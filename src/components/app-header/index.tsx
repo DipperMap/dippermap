@@ -112,7 +112,7 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
           </Button>
           <Divider type="vertical" />
         </div>
-   
+
         <div className="weChat">
           <Tooltip
             color={'#fff'}

@@ -282,8 +282,7 @@ export const FrontEndFramework: IGroup = {
       name: 'pigeon-maps',
       en_name: 'pigeon-maps',
       description: '没有外部依赖的ReactJS地图。',
-      en_description:
-        'ReactJS Maps without external dependencies.',
+      en_description: 'ReactJS Maps without external dependencies.',
       site_url: 'https://pigeon-maps.js.org/',
       order: 160,
       tags: ['Open Source', 'ReactJS', 'JavaScript Library', 'Map Viewing']
