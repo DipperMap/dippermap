@@ -20,6 +20,8 @@ import { OpenStandards } from './groups/open_standards'
 import { Ruby } from './groups/geospatial_library/ruby'
 import { Rust } from './groups/geospatial_library/rust'
 import { Awesome } from './groups/awesome'
+import { Week2 } from './groups/weekly/week2'
+import { Week1 } from './groups/weekly/week1'
 
 export const Tech: ISiteConfig = {
   name: '开源技术',
@@ -45,6 +47,8 @@ export const Tech: ISiteConfig = {
     Julia,
     OpenStandards,
     Rust,
-    Ruby
+    Ruby,
+    Week1,
+    Week2
   ].sort((a, b) => a.order - b.order)
 }

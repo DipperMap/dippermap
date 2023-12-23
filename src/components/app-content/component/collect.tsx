@@ -15,7 +15,7 @@ export const CollectCard: React.FC<collectPopup> = ({
   setLocalCollect
 }) => {
   const [collectData, setCollectData] = useState<IItem[] | undefined>(undefined)
-  
+
   useEffect(() => {
     if (localCollect) {
       const newData = Object.values(localCollect).flat()

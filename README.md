@@ -41,7 +41,6 @@ Submit your code this way.
   <img src="https://contrib.rocks/image?repo=DipperMap/dippermap" />
 </a>
 
-
 ● https://github.com/Sh1-5
 
 ● https://github.com/wsqstar

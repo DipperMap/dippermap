@@ -148,13 +148,10 @@ export const RSSharingStationCN: IGroup = {
       description:
         '由锐多宝提供。目前涵盖了大部分的 DEM 数据和土地覆盖数据下载，以及部分数据的快速预览。下载无需登陆。',
       en_description:
-        "Provided by Ruiduobao. The site currently provides freely download service as well as quick preview of most DEM datasets and land cover datasets.",
+        'Provided by Ruiduobao. The site currently provides freely download service as well as quick preview of most DEM datasets and land cover datasets.',
       site_url: 'https://landcover100.com',
       order: 12,
-      tags: [
-        'DEM',
-        'Land Cover Data'
-      ]
+      tags: ['DEM', 'Land Cover Data']
     }
   ]
 }
