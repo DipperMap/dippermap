@@ -16,11 +16,12 @@ type AppCardPopup = {
 }
 
 export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
-  const [localCollect, setLocalCollect] = useLocalStorageState<{
-    [key: string]: IItem[]
-  }>('collects', {
-    defaultValue: {}
-  })
+  const [localCollect, setLocalCollect] = useLocalStorageState<IItem[]>(
+    'collects',
+    {
+      defaultValue: []
+    }
+  )
   const [searchData, setSearchData] = useState<IGroup[]>([])
 
   const siteConfig = useMemo(() => {
@@ -75,7 +76,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
         id="map-card"
       >
         <CollectCard
-          localCollect={localCollect}
+          localCollect={localCollect as IItem[]}
           setLocalCollect={setLocalCollect}
         />
         {searchData.map((group: IGroup, index) => {
@@ -100,9 +101,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
               <Row className="card" gutter={[16, 16]}>
                 {children.length ? (
                   children.map((val, index) => {
-                    const findData = localCollect?.[
-                      group.key ? group.key : siteData
-                    ]?.find((item) => {
+                    const findData = localCollect?.find((item) => {
                       return item.name === val.name
                     })
                     return (
@@ -146,20 +145,17 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
                                 className="collect_icon"
                                 onClick={(e) => {
                                   e.stopPropagation()
-                                  const newSiteData = localCollect?.[
-                                    siteData
-                                  ]?.filter((item) => {
-                                    return (
-                                      item.name !== val.name &&
-                                      item.site_url !== val.site_url
-                                    )
-                                  })
-
-                                  setLocalCollect({
-                                    ...localCollect,
-                                    [group.key ? group.key : siteData]:
-                                      newSiteData ?? []
-                                  })
+                                  const newSiteData = localCollect?.filter(
+                                    (item) => {
+                                      return (
+                                        item.name !== val.name &&
+                                        item.site_url !== val.site_url
+                                      )
+                                    }
+                                  )
+                                  if (localCollect && newSiteData) {
+                                    setLocalCollect(newSiteData)
+                                  }
                                 }}
                               />
                             ) : (
@@ -171,21 +167,8 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
                                 className="collect_icon"
                                 onClick={(e) => {
                                   e.stopPropagation()
-                                  if (group.key) {
-                                    const newData = {
-                                      ...localCollect,
-                                      [group.key]: localCollect?.[group.key]
-                                        ? [...localCollect[group.key], val]
-                                        : [val]
-                                    }
-                                    setLocalCollect(newData)
-                                  } else {
-                                    const newData = {
-                                      ...localCollect,
-                                      [siteData]: localCollect?.[siteData]
-                                        ? [...localCollect[siteData], val]
-                                        : [val]
-                                    }
+                                  if (localCollect) {
+                                    const newData = [...localCollect, val]
                                     setLocalCollect(newData)
                                   }
                                 }}

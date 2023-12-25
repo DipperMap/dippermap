@@ -4,8 +4,8 @@ import { IItem } from '../../../data/types'
 import { useEffect, useState } from 'react'
 
 type collectPopup = {
-  localCollect: { [key: string]: IItem[] } | undefined
-  setLocalCollect: (val: { [key: string]: IItem[] }) => void
+  localCollect: IItem[]
+  setLocalCollect: (val: IItem[]) => void
 }
 
 export const CollectCard: React.FC<collectPopup> = ({
@@ -78,18 +78,13 @@ export const CollectCard: React.FC<collectPopup> = ({
                       onClick={(e) => {
                         console.log(val)
                         e.stopPropagation()
-                        const newSiteData = localCollect?.[val.key]?.filter(
-                          (item) => {
-                            return (
-                              item.name !== val.name &&
-                              item.site_url !== val.site_url
-                            )
-                          }
-                        )
-                        setLocalCollect({
-                          ...localCollect,
-                          [val.key]: newSiteData ?? []
+                        const newSiteData = localCollect?.filter((item) => {
+                          return (
+                            item.name !== val.name &&
+                            item.site_url !== val.site_url
+                          )
                         })
+                        setLocalCollect(newSiteData)
                       }}
                     />
                   </div>
