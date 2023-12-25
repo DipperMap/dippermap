@@ -102,7 +102,9 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
                 {children.length ? (
                   children.map((val, index) => {
                     const findData = localCollect?.find((item) => {
-                      return item.name === val.name
+                      return (
+                        item.name === val.name && item.site_url === val.site_url
+                      )
                     })
                     return (
                       <Col
