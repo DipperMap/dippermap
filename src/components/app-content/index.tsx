@@ -4,7 +4,7 @@ import { FileTextOutlined } from '@ant-design/icons'
 import './index.css'
 import { IGroup, IItem } from '../../data/types'
 import { IconFont } from '../../constants'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { CollectCard } from './component/collect'
 import { useLocalStorageState } from 'ahooks'
 import classNames from 'classnames'
@@ -16,13 +16,24 @@ type AppCardPopup = {
 }
 
 export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
-  const siteConfig = SitesConfig[siteData]
   const [localCollect, setLocalCollect] = useLocalStorageState<{
     [key: string]: IItem[]
-  }>('collect', {
+  }>('collects', {
     defaultValue: {}
   })
   const [searchData, setSearchData] = useState<IGroup[]>([])
+
+  const siteConfig = useMemo(() => {
+    for (const key in SitesConfig) {
+      SitesConfig[key].groups.forEach((item) => {
+        item['key'] = key
+        item.children.forEach((v) => {
+          v['key'] = key
+        })
+      })
+    }
+    return SitesConfig
+  }, [siteData])
 
   useEffect(() => {
     const newListData: IGroup[] = []
@@ -50,8 +61,8 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
         newListData.push({ ...item, children: newChildren })
       }
     })
-    setSearchData(siteSearch ? newListData : siteConfig.groups)
-  }, [siteSearch, siteConfig])
+    setSearchData(siteSearch ? newListData : siteConfig[siteData].groups)
+  }, [siteSearch, siteConfig, siteData])
 
   return (
     <>
@@ -65,10 +76,9 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
       >
         <CollectCard
           localCollect={localCollect}
-          siteData={siteData}
           setLocalCollect={setLocalCollect}
         />
-        {searchData.map((group: IGroup) => {
+        {searchData.map((group: IGroup, index) => {
           const { name, children, icon } = group
           return (
             <Card
@@ -85,7 +95,7 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
               }
               className={classNames(['item-content'])}
               id={`map-${name.replace(/\s/g, '-').replace(/\+/g, 'plus')}`}
-              key={name}
+              key={`${group.key}_${name}_${index}`}
             >
               <Row className="card" gutter={[16, 16]}>
                 {children.length ? (

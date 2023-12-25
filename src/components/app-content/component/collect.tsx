@@ -5,17 +5,15 @@ import { useEffect, useState } from 'react'
 
 type collectPopup = {
   localCollect: { [key: string]: IItem[] } | undefined
-  siteData: string
   setLocalCollect: (val: { [key: string]: IItem[] }) => void
 }
 
 export const CollectCard: React.FC<collectPopup> = ({
   localCollect,
-  siteData,
   setLocalCollect
 }) => {
   const [collectData, setCollectData] = useState<IItem[] | undefined>(undefined)
-  
+
   useEffect(() => {
     if (localCollect) {
       const newData = Object.values(localCollect).flat()
@@ -39,7 +37,7 @@ export const CollectCard: React.FC<collectPopup> = ({
       id={`map-collect`}
     >
       <Row className="card" gutter={[16, 16]}>
-        {collectData ? (
+        {collectData?.length ? (
           collectData.map((val) => {
             return (
               <Col
@@ -78,8 +76,9 @@ export const CollectCard: React.FC<collectPopup> = ({
                       }}
                       className="collect_icon"
                       onClick={(e) => {
+                        console.log(val)
                         e.stopPropagation()
-                        const newSiteData = localCollect?.[siteData]?.filter(
+                        const newSiteData = localCollect?.[val.key]?.filter(
                           (item) => {
                             return (
                               item.name !== val.name &&
@@ -89,7 +88,7 @@ export const CollectCard: React.FC<collectPopup> = ({
                         )
                         setLocalCollect({
                           ...localCollect,
-                          [siteData]: newSiteData ?? []
+                          [val.key]: newSiteData ?? []
                         })
                       }}
                     />
