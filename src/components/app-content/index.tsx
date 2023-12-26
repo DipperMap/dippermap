@@ -4,7 +4,7 @@ import { FileTextOutlined } from '@ant-design/icons'
 import './index.css'
 import { IGroup, IItem } from '../../data/types'
 import { IconFont } from '../../constants'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { CollectCard } from './component/collect'
 import { useLocalStorageState } from 'ahooks'
 import classNames from 'classnames'
@@ -16,13 +16,25 @@ type AppCardPopup = {
 }
 
 export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
-  const siteConfig = SitesConfig[siteData]
-  const [localCollect, setLocalCollect] = useLocalStorageState<{
-    [key: string]: IItem[]
-  }>('collect', {
-    defaultValue: {}
-  })
+  const [localCollect, setLocalCollect] = useLocalStorageState<IItem[]>(
+    'collects',
+    {
+      defaultValue: []
+    }
+  )
   const [searchData, setSearchData] = useState<IGroup[]>([])
+
+  const siteConfig = useMemo(() => {
+    for (const key in SitesConfig) {
+      SitesConfig[key].groups.forEach((item) => {
+        item['key'] = key
+        item.children.forEach((v) => {
+          v['key'] = key
+        })
+      })
+    }
+    return SitesConfig
+  }, [siteData])
 
   useEffect(() => {
     const newListData: IGroup[] = []
@@ -50,8 +62,8 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
         newListData.push({ ...item, children: newChildren })
       }
     })
-    setSearchData(siteSearch ? newListData : siteConfig.groups)
-  }, [siteSearch, siteConfig])
+    setSearchData(siteSearch ? newListData : siteConfig[siteData].groups)
+  }, [siteSearch, siteConfig, siteData])
 
   return (
     <>
@@ -64,11 +76,10 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
         id="map-card"
       >
         <CollectCard
-          localCollect={localCollect}
-          siteData={siteData}
+          localCollect={localCollect as IItem[]}
           setLocalCollect={setLocalCollect}
         />
-        {searchData.map((group: IGroup) => {
+        {searchData.map((group: IGroup, index) => {
           const { name, children, icon } = group
           return (
             <Card
@@ -85,15 +96,15 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
               }
               className={classNames(['item-content'])}
               id={`map-${name.replace(/\s/g, '-').replace(/\+/g, 'plus')}`}
-              key={name}
+              key={`${group.key}_${name}_${index}`}
             >
               <Row className="card" gutter={[16, 16]}>
                 {children.length ? (
                   children.map((val, index) => {
-                    const findData = localCollect?.[
-                      group.key ? group.key : siteData
-                    ]?.find((item) => {
-                      return item.name === val.name
+                    const findData = localCollect?.find((item) => {
+                      return (
+                        item.name === val.name && item.site_url === val.site_url
+                      )
                     })
                     return (
                       <Col
@@ -136,20 +147,17 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
                                 className="collect_icon"
                                 onClick={(e) => {
                                   e.stopPropagation()
-                                  const newSiteData = localCollect?.[
-                                    siteData
-                                  ]?.filter((item) => {
-                                    return (
-                                      item.name !== val.name &&
-                                      item.site_url !== val.site_url
-                                    )
-                                  })
-
-                                  setLocalCollect({
-                                    ...localCollect,
-                                    [group.key ? group.key : siteData]:
-                                      newSiteData ?? []
-                                  })
+                                  const newSiteData = localCollect?.filter(
+                                    (item) => {
+                                      return (
+                                        item.name !== val.name &&
+                                        item.site_url !== val.site_url
+                                      )
+                                    }
+                                  )
+                                  if (localCollect && newSiteData) {
+                                    setLocalCollect(newSiteData)
+                                  }
                                 }}
                               />
                             ) : (
@@ -161,21 +169,8 @@ export const AppCard: React.FC<AppCardPopup> = ({ siteData, siteSearch }) => {
                                 className="collect_icon"
                                 onClick={(e) => {
                                   e.stopPropagation()
-                                  if (group.key) {
-                                    const newData = {
-                                      ...localCollect,
-                                      [group.key]: localCollect?.[group.key]
-                                        ? [...localCollect[group.key], val]
-                                        : [val]
-                                    }
-                                    setLocalCollect(newData)
-                                  } else {
-                                    const newData = {
-                                      ...localCollect,
-                                      [siteData]: localCollect?.[siteData]
-                                        ? [...localCollect[siteData], val]
-                                        : [val]
-                                    }
+                                  if (localCollect) {
+                                    const newData = [...localCollect, val]
                                     setLocalCollect(newData)
                                   }
                                 }}

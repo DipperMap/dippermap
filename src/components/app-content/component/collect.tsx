@@ -4,18 +4,16 @@ import { IItem } from '../../../data/types'
 import { useEffect, useState } from 'react'
 
 type collectPopup = {
-  localCollect: { [key: string]: IItem[] } | undefined
-  siteData: string
-  setLocalCollect: (val: { [key: string]: IItem[] }) => void
+  localCollect: IItem[]
+  setLocalCollect: (val: IItem[]) => void
 }
 
 export const CollectCard: React.FC<collectPopup> = ({
   localCollect,
-  siteData,
   setLocalCollect
 }) => {
   const [collectData, setCollectData] = useState<IItem[] | undefined>(undefined)
-  
+
   useEffect(() => {
     if (localCollect) {
       const newData = Object.values(localCollect).flat()
@@ -39,7 +37,7 @@ export const CollectCard: React.FC<collectPopup> = ({
       id={`map-collect`}
     >
       <Row className="card" gutter={[16, 16]}>
-        {collectData ? (
+        {collectData?.length ? (
           collectData.map((val) => {
             return (
               <Col
@@ -78,19 +76,15 @@ export const CollectCard: React.FC<collectPopup> = ({
                       }}
                       className="collect_icon"
                       onClick={(e) => {
+                        console.log(val)
                         e.stopPropagation()
-                        const newSiteData = localCollect?.[siteData]?.filter(
-                          (item) => {
-                            return (
-                              item.name !== val.name &&
-                              item.site_url !== val.site_url
-                            )
-                          }
-                        )
-                        setLocalCollect({
-                          ...localCollect,
-                          [siteData]: newSiteData ?? []
+                        const newSiteData = localCollect?.filter((item) => {
+                          return (
+                            item.name !== val.name &&
+                            item.site_url !== val.site_url
+                          )
                         })
+                        setLocalCollect(newSiteData)
                       }}
                     />
                   </div>

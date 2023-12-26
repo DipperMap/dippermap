@@ -42,36 +42,36 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
   useLayoutEffect(() => {
     const steps = [
       {
-        title: '切换站点',
-        description: '点击切换站点，每个站点下网站皆为不同。',
+        title: '快速站点切换',
+        description:
+          '通过点击“站点切换”，即可轻松浏览每个站点下的独特网站内容。',
         target: () => document.getElementById('app-site') as HTMLElement
       },
       {
-        title: '全栈搜索',
-        description: '输入搜索全栈的网站信息，根据名称和简介来进行搜索',
+        title: '站点内搜索',
+        description: '在搜索框输入关键字，快速找到站点内相关的网站和信息。',
         target: () => document.getElementById('app-input') as HTMLElement
       },
       {
-        title: '快速跳转',
-        description: '点击不同标签，右侧内容部分就会快速滚动到相应标签的卡片',
+        title: '标签快速导航',
+        description: '点击不同的快速导航标签，页面将立即滚动至对应的内容区域。',
         target: () => document.getElementById('app-tag') as HTMLElement
       },
       {
-        title: '引擎搜索',
+        title: '搜索引擎直达',
         description:
-          '通过选择相关引擎，输入搜索内容，回车即可跳转到相关搜索界面',
+          '选中想要的搜索引擎，输入关键词并按回车，直接进入搜索结果页面。',
         target: () => document.getElementById('app-search') as HTMLElement
       },
       {
-        title: '收藏',
-        description:
-          '用户通过下方网站进行收藏，每个站点收藏内容都是独立的，互不干扰',
+        title: '一键收藏功能',
+        description: '对您感兴趣的站点进行一键收藏。',
         target: () => document.getElementById('map-collect') as HTMLElement
       },
       {
-        title: '网站',
+        title: '网站快速访问',
         description:
-          '每个卡片下会有多个网站，点击网站即可跳转，滑入点击右上角，即可收藏',
+          '点选卡片中的网站链接，即可直接跳转访问。将鼠标悬停至卡片右上角，一键添加至收藏。',
         target: () => {
           const elements = document.getElementsByClassName('item-content')
           if (
@@ -112,7 +112,7 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
           </Button>
           <Divider type="vertical" />
         </div>
-   
+
         <div className="weChat">
           <Tooltip
             color={'#fff'}

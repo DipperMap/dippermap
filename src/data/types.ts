@@ -1,5 +1,6 @@
 export type toolsType = 'tool' | 'data' | 'tool' | 'DataBase' | 'Map Server'
 export interface IItem {
+  [x: string]: any
   icon: string
   name: string
   en_name: string
